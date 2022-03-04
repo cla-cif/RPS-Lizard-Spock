@@ -73,14 +73,20 @@ header {
     height: 50vh;
 }
 
-img {
+svg {
     width: 9vw;
     height: auto;
     padding: 0.5rem;
 }
-img:hover {
-    stroke:blue;
+.user-choices, .computer-choices {
+    display:flex;
 }
+.rock, .paper, .scissor, .lizard, .spock {
+    display:flex;
+    flex-direction: column;
+}
+.rock:hover {
+    stroke: green;
 
 footer {
     height: 10vh;
