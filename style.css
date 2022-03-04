@@ -1,0 +1,26 @@
+:root {
+	--color-main: #f1f0eb;
+	--color-header: #0057b7;
+	--color-footer: #ffd700;
+	--color-dark: #000;
+    --color-light: #fafafa;
+	--color-shadow: #8e8d8a;
+	--ff-body:'Smooch Sans', sans-serif;
+}
+* {
+	box-sizing: border-box;
+	color: var(--color-main);
+	letter-spacing: .03em;
+	margin: 0;
+	max-width: 100%;
+}
+header {
+    height: 10rem;
+    background-color: var(--color-header);
+    color: var(color-light);
+}
+h1 {
+    font-family: var(--ff-body);
+    font-weight: 600;
+    font-size: 10vh;
+}
