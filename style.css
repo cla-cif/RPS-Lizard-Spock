@@ -28,15 +28,25 @@ header {
     font-weight: 600;
     font-size: 5vh;
 }
+
 .btn {
-    color:var(--color-dark);
-    border: 1px;
-    text-align: center;
-    height: 5rem;
-    float:right;
-    font-weight: 500;
-    font-size: 6vh; 
-}
+    background-color: var(--color-light);
+    border: none;
+    color: var(--color-header);
+    padding: .8rem 1rem;
+    font-size: 5vh; 
+    font-weight:500;
+    cursor: pointer; 
+    border-radius: .3rem;
+  }
+  a {
+      text-decoration:none;
+  }
+  
+  .btn:hover {
+    background-color: var(--color-footer);
+
+  }
 .main {
     display:flex;
     flex-direction: column;
@@ -60,14 +70,16 @@ header {
     height: 20vh;
 }
 .game-area {
-    height: 60vh;
-    background-color: coral;
+    height: 50vh;
 }
 
 img {
     width: 9vw;
     height: auto;
     padding: 0.5rem;
+}
+img:hover {
+    stroke:blue;
 }
 
 footer {
