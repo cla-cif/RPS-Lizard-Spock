@@ -13,14 +13,69 @@
 	letter-spacing: .03em;
 	margin: 0;
 	max-width: 100%;
+    font-family: var(--ff-body);
+    max-height: 100vw;
 }
 header {
     height: 10rem;
     background-color: var(--color-header);
     color: var(color-light);
+    display:flex;
+    justify-content:space-around;
+    align-items: center;
 }
-h1 {
-    font-family: var(--ff-body);
+.title {
     font-weight: 600;
-    font-size: 10vh;
+    font-size: 5vh;
+}
+.btn {
+    color:var(--color-dark);
+    border: 1px;
+    text-align: center;
+    height: 5rem;
+    float:right;
+    font-weight: 500;
+    font-size: 6vh; 
+}
+.main {
+    display:flex;
+    flex-direction: column;
+}
+
+.scores-area, 
+.game-area {
+    display:flex;
+    flex-direction:row;
+    width:100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.scores-area p {
+    color: var(--color-dark);
+    font-weight: 400;
+    font-size: 8vh;
+}
+.scores-area {
+    height: 20vh;
+}
+.game-area {
+    height: 60vh;
+    background-color: coral;
+}
+
+img {
+    width: 9vw;
+    height: auto;
+    padding: 0.5rem;
+}
+
+footer {
+    height: 10vh;
+    background-color: var(--color-footer);
+}
+footer>* {
+    font-weight: 500;
+    font-size: 4vh;
+    color: var(--color-dark);
 }
