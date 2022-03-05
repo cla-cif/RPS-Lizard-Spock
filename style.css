@@ -14,7 +14,8 @@
 	margin: 0;
 	max-width: 100%;
     font-family: var(--ff-body);
-    max-height: 100vw;
+  overflow-y: hidden;
+   
 }
 header {
     height: 10rem;
@@ -66,6 +67,12 @@ header {
     font-weight: 400;
     font-size: 8vh;
 }
+#score-you, 
+#score-computer {
+    color: var(--color-dark);
+    font-weight: 400;
+    font-size: 8vh;
+}
 .scores-area {
     height: 20vh;
 }
@@ -73,11 +80,11 @@ header {
     height: 50vh;
 }
 
-svg {
+ svg {
     width: 9vw;
     height: auto;
     padding: 0.5rem;
-}
+} 
 .user-choices, .computer-choices {
     display:flex;
 }
@@ -85,15 +92,23 @@ svg {
     display:flex;
     flex-direction: column;
 }
-.rock:hover {
-    stroke: green;
-
-footer {
+.rock:hover svg path, 
+.paper:hover svg path, 
+.scissor:hover svg path,
+.lizard:hover svg path,
+.spock:hover svg path {
+    stroke: #6667AB;
+    cursor:pointer;
+}
+footer{
     height: 10vh;
     background-color: var(--color-footer);
+    position:fixed;
+    width: 100%;
 }
 footer>* {
     font-weight: 500;
     font-size: 4vh;
     color: var(--color-dark);
+    text-align: center;
 }
