@@ -67,11 +67,11 @@ header {
     font-weight: 400;
     font-size: 8vh;
 }
-#score-you, 
-#score-computer {
+#you-score, 
+#computer-score {
     color: var(--color-dark);
     font-weight: 400;
-    font-size: 8vh;
+    font-size: 6vh;
 }
 .scores-area {
     height: 20vh;
@@ -88,17 +88,13 @@ header {
 .user-choices, .computer-choices {
     display:flex;
 }
-.rock, .paper, .scissor, .lizard, .spock {
+.uchoice {
     display:flex;
     flex-direction: column;
-}
-.rock:hover svg path, 
-.paper:hover svg path, 
-.scissor:hover svg path,
-.lizard:hover svg path,
-.spock:hover svg path {
-    stroke: #6667AB;
     cursor:pointer;
+}
+.uchoice:hover svg path {
+    stroke: #6667AB;
 }
 footer{
     height: 10vh;
