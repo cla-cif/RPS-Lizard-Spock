@@ -94,7 +94,7 @@ header {
     cursor:pointer;
 }
 .uchoice:hover svg path {
-    stroke: white;
+    stroke: black;
     fill: var(--color-header);
 }
 footer{
