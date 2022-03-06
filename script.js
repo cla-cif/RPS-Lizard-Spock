@@ -2,12 +2,17 @@ document.addEventListener("DOMContentLoaded", function () {
     let choices = document.getElementsByClassName("uchoice");
     for (let choice of choices) {
         choice.addEventListener("click", function () {
-            let mygame = this.getAttribute("data-selection");
             incrementScore();
-            computerChoice ();
+            computerChoice();
+
         });
     }
 });
+
+// function outRock() {
+//     var rock = document.getElementById("crock");
+//     rock.style.fill = "#ffd700";
+// };
 
 function incrementScore() {
     // Gets the current score from the DOM and increments it
@@ -27,18 +32,24 @@ function resetScore() {
 }
 resetScore();
 
-function computerChoice () {
+function computerChoice() {
     const rand = Math.floor(Math.random() * 5) + 1;
-        alert (`Computer chose: ${rand}`);
+    alert(`Computer chose: ${rand}`);
+    let rock = document.getElementById("crock");
+    let paper = document.getElementById("cpaper");
+    let scissor = document.getElementById("cscissor");
+    let lizard = document.getElementById("clizard");
+    let spock = document.getElementById("cspock");
+
     if (rand == 1) {
-      return "Rock";
+        rock.style.fill = "#ffd700";
     } else if (rand == 2) {
-      return "Paper";
+        paper.style.fill = "#ffd700";
     } else if (rand == 3) {
-      return "Scissors";
+        scissor.style.fill = "#ffd700";
     } else if (rand == 4) {
-      return "Lizard";
+        lizard.style.fill = "#ffd700";
     } else if (rand == 5) {
-      return "Spock";
+        spock.style.fill = "#ffd700";
     }
-  }
+}
