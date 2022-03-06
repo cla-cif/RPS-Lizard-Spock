@@ -3,8 +3,8 @@ document.addEventListener("DOMContentLoaded", function () {
     for (let choice of choices) {
         choice.addEventListener("click", function () {
             let mygame = this.getAttribute("data-selection");
-            // alert(`You clicked ${mygame}`);
             incrementScore();
+            computerChoice ();
         });
     }
 });
@@ -17,27 +17,28 @@ function incrementScore() {
     document.getElementById("computer-score").innerText = ++computerScore;
 }
 
-// function resetScore() {
-//     let clear = document.getElementById("reset");
-//      clear.addEventListener("click", function() {
-//          alert('you clicked reset');
-//     let userScore = parseInt(document.getElementById("you-score").innerText);
-// 	document.getElementById("you-score").innerText = 0;
-//     let computerScore = parseInt(document.getElementById("computer-score").innerText);
-// 	document.getElementById("computer-score").innerText = 0;
-
-//      });
-// }
-// resetScore();
 
 function resetScore() {
     let clear = document.getElementById("reset");
     clear.addEventListener("click", function () {
-        let userScore = parseInt(document.getElementById("you-score").innerText);
         document.getElementById("you-score").innerText = 0;
-        let computerScore = parseInt(document.getElementById("computer-score").innerText);
         document.getElementById("computer-score").innerText = 0;
     });
-    if (document.getElementById("computer-score").innerText = 3) {alert('it is three')}
 }
 resetScore();
+
+function computerChoice () {
+    const rand = Math.floor(Math.random() * 5) + 1;
+        alert (`Computer chose: ${rand}`);
+    if (rand == 1) {
+      return "Rock";
+    } else if (rand == 2) {
+      return "Paper";
+    } else if (rand == 3) {
+      return "Scissors";
+    } else if (rand == 4) {
+      return "Lizard";
+    } else if (rand == 5) {
+      return "Spock";
+    }
+  }
