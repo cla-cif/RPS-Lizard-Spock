@@ -32,13 +32,32 @@ header {
     font-weight: 600;
     font-size: 5vh;
 }
-
+.support {
+    display:flex;
+}
+#btn-clickme {
+    background: var(--color-light);
+    color: var(--color-header);
+    text-align:center;
+    font-weight:600;
+    font-size:5vh;
+    padding: 1rem;
+}
+#btn-clickme:hover {
+    background: var(--color-footer);
+}
 .btn {
+    text-align: center;
+    display:block;
+    justify-content: center;
+    padding-bottom: 1rem;
+}
+#reset {
     background-color: var(--color-light);
     border: none;
     color: var(--color-header);
     padding: .8rem 1rem;
-    font-size: 5vh;
+    font-size: 4vh;
     font-weight: 500;
     cursor: pointer;
     border-radius: .3rem;
@@ -49,7 +68,7 @@ a {
     text-decoration: none;
 }
 
-.btn:hover {
+#reset:hover {
     background-color: var(--color-footer);
 }
 
@@ -63,15 +82,26 @@ a {
     display: flex;
     flex-direction: row;
     width: 100%;
+    height:auto;
     justify-content: space-around;
     align-items: center;
 }
 
-.scores-area p {
+.scores-area > p {
     color: var(--color-dark);
     font-weight: 400;
     font-size: 8vh;
 }
+
+
+#result-message{
+    color: white;
+    font-weight: 700;
+    font-size: 7vh;
+    background: var(--color-header);
+    padding: .3rem 1rem;
+}
+
 
 #user-score,
 #computer-score {
@@ -85,7 +115,7 @@ a {
 }
 
 .game-area {
-    height: 50vh;
+    height: 40vh;
 }
 
 svg {
@@ -120,7 +150,7 @@ footer {
 
 footer>* {
     font-weight: 500;
-    font-size: 4vh;
+    font-size: 3vh;
     color: var(--color-dark);
     text-align: center;
 }
