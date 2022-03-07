@@ -1,30 +1,33 @@
 :root {
-	--color-main: #f1f0eb;
-	--color-header: #0057b7;
-	--color-footer: #ffd700;
-	--color-dark: #000;
+    --color-main: #f1f0eb;
+    --color-header: #0057b7;
+    --color-footer: #ffd700;
+    --color-dark: #000;
     --color-light: #fafafa;
-	--color-shadow: #8e8d8a;
-	--ff-body:'Smooch Sans', sans-serif;
+    --color-shadow: #8e8d8a;
+    --ff-body: 'Smooch Sans', sans-serif;
 }
+
 * {
-	box-sizing: border-box;
-	color: var(--color-main);
-	letter-spacing: .03em;
-	margin: 0;
-	max-width: 100%;
+    box-sizing: border-box;
+    color: var(--color-main);
+    letter-spacing: .03em;
+    margin: 0;
+    max-width: 100%;
     font-family: var(--ff-body);
-  overflow-y: hidden;
-   
+    overflow-y: hidden;
+
 }
+
 header {
     height: 10rem;
     background-color: var(--color-header);
     color: var(color-light);
-    display:flex;
-    justify-content:space-around;
+    display: flex;
+    justify-content: space-around;
     align-items: center;
 }
+
 .title {
     font-weight: 600;
     font-size: 5vh;
@@ -35,29 +38,31 @@ header {
     border: none;
     color: var(--color-header);
     padding: .8rem 1rem;
-    font-size: 5vh; 
-    font-weight:500;
-    cursor: pointer; 
+    font-size: 5vh;
+    font-weight: 500;
+    cursor: pointer;
     border-radius: .3rem;
-  }
-  a {
-      text-decoration:none;
-  }
-  
-  .btn:hover {
-    background-color: var(--color-footer);
+    transition: all .5s ease;
+}
 
-  }
+a {
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: var(--color-footer);
+}
+
 .main {
-    display:flex;
+    display: flex;
     flex-direction: column;
 }
 
-.scores-area, 
+.scores-area,
 .game-area {
-    display:flex;
-    flex-direction:row;
-    width:100%;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
     justify-content: space-around;
     align-items: center;
 }
@@ -67,42 +72,52 @@ header {
     font-weight: 400;
     font-size: 8vh;
 }
-#you-score, 
+
+#user-score,
 #computer-score {
     color: var(--color-dark);
     font-weight: 400;
     font-size: 6vh;
 }
+
 .scores-area {
     height: 20vh;
 }
+
 .game-area {
     height: 50vh;
 }
 
- svg {
+svg {
     width: 9vw;
     height: auto;
     padding: 0.5rem;
-} 
-.user-choices, .computer-choices {
-    display:flex;
 }
-.uchoice, .cchoice {
-    display:flex;
+
+.user-choices,
+.computer-choices {
+    display: flex;
+}
+
+.uchoice,
+.cchoice {
+    display: flex;
     flex-direction: column;
-    cursor:pointer;
+    cursor: pointer; 
 }
-.uchoice:hover svg path {
+
+.uchoice:hover > svg > path {
     stroke: black;
     fill: var(--color-header);
 }
-footer{
+
+footer {
     height: 10vh;
     background-color: var(--color-footer);
-    position:fixed;
+    position: fixed;
     width: 100%;
 }
+
 footer>* {
     font-weight: 500;
     font-size: 4vh;

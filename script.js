@@ -1,12 +1,64 @@
+
+const reset_btn = document.getElementById("reset");
+const rock_div = document.getElementById("urock");
+const paper_div = document.getElementById("upaper");
+const scissors_div = document.getElementById("uscissors");
+const lizard_div = document.getElementById("ulizard");
+const spock_div = document.getElementById("uspock");
+
 document.addEventListener("DOMContentLoaded", function () {
     let choices = document.getElementsByClassName("uchoice");
     for (let choice of choices) {
         choice.addEventListener("click", function () {
             computerChoice();
-
+            incrementComputerScore();
+            incrementUserScore();
         });
     }
 });
+
+
+function incrementComputerScore() {    
+    let computerScore = parseInt(document.getElementById("computer-score").innerText);
+    document.getElementById("computer-score").innerText = ++computerScore;
+}
+
+function incrementUserScore () {
+    let userScore = parseInt(document.getElementById("user-score").innerText);
+    document.getElementById("user-score").innerText = ++userScore;
+}
+
+function resetScore() {
+    reset_btn.addEventListener("click", function () {
+        document.getElementById("user-score").innerText = 0;
+        document.getElementById("computer-score").innerText = 0;
+    });
+}
+resetScore();
+
+function computerChoice() {
+    const cChoices =["rock", "paper", "scissors", "lizard", "spock"]
+    const randomNumber = Math.floor(Math.random() * 5) + 1;
+    return cChoices[randomNumber]
+    if (cChoices === "rock") {
+        document.getElementById("path-rock").style.fill = "#ffd700";
+        
+    } else if (randomNumber == 2) {
+        document.getElementById("path-paper").style.fill = "#ffd700";
+      
+    } else if (randomNumber == 3) {
+        document.getElementById("path-scissor").style.fill = "#ffd700";
+        r
+    } else if (randomNumber == 4) {
+        document.getElementById("path-lizard").style.fill = "#ffd700";
+     
+    } else if (randomNumber == 5) {
+        document.getElementById("path-spock").style.fill = "#ffd700";
+     
+    }
+}
+console.log(computerChoice());
+
 
 const selectWinner = (user, computer) => {
     let result = null;
@@ -38,47 +90,3 @@ const selectWinner = (user, computer) => {
 
     return result;
 };
-
-
-function incrementComputerScore() {    
-    let computerScore = parseInt(document.getElementById("computer-score").innerText);
-    document.getElementById("computer-score").innerText = ++computerScore;
-}
-
-function incrementUserScore () {
-    let userScore = parseInt(document.getElementById("you-score").innerText);
-    document.getElementById("you-score").innerText = ++userScore;
-}
-
-function resetScore() {
-    let clear = document.getElementById("reset");
-    clear.addEventListener("click", function () {
-        document.getElementById("you-score").innerText = 0;
-        document.getElementById("computer-score").innerText = 0;
-    });
-}
-resetScore();
-
-function computerChoice() {
-    const rand = Math.floor(Math.random() * 5) + 1;
-    let rock = document.getElementById("path-rock");
-    let paper = document.getElementById("path-paper");
-    let scissor = document.getElementById("path-scissor");
-    let lizard = document.getElementById("path-lizard");
-    let spock = document.getElementById("path-spock");
-    if (rand == 1) {
-        rock.style.fill = "#ffd700";
-    } else if (rand == 2) {
-        paper.style.fill = "#ffd700";
-        paper.style.transitionDuration= "2s";
-    } else if (rand == 3) {
-        scissor.style.fill = "#ffd700";
-        scissor.style.transitionDuration= "2s";
-    } else if (rand == 4) {
-        lizard.style.fill = "#ffd700";
-        lizard.style.transitionDuration= "2s";
-    } else if (rand == 5) {
-        spock.style.fill = "#ffd700";
-        spock.style.transitionDuration= "2s";
-    }
-}
