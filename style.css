@@ -91,15 +91,21 @@ a {
     color: var(--color-dark);
     font-weight: 400;
     font-size: 8vh;
+    text-align: center;
 }
 
-
+.scores {
+    width: 33.33%;
+    justify-content: center;
+}
 #result-message{
     color: white;
     font-weight: 700;
     font-size: 7vh;
     background: var(--color-header);
     padding: .3rem 1rem;
+    display:none;
+    text-align:center;
 }
 
 
@@ -137,18 +143,18 @@ svg {
 }
 
 .uchoice:hover > svg > path {
-    stroke: black;
-    fill: var(--color-header);
+    stroke: var(--color-header);
 }
 
 footer {
-    height: 10vh;
+    height: 5vh;
     background-color: var(--color-footer);
     position: fixed;
     width: 100%;
+    bottom:0;
 }
 
-footer>* {
+footer>p {
     font-weight: 500;
     font-size: 3vh;
     color: var(--color-dark);

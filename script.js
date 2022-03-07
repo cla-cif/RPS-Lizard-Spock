@@ -23,18 +23,23 @@ const result_p = document.getElementById("result-message");
 function main() {
     rock_div.addEventListener("click", function () {
         game("rock");
+        result_p.style.display="block";
     })
     paper_div.addEventListener("click", function () {
         game("paper");
+        result_p.style.display="block";
     })
     scissors_div.addEventListener("click", function () {
         game("scissors");
+        result_p.style.display="block";
     })
     lizard_div.addEventListener("click", function () {
         game("lizard");
+        result_p.style.display="block";
     })
     spock_div.addEventListener("click", function () {
         game("spock");
+        result_p.style.display="block";
     })
 };
 main();
@@ -102,23 +107,25 @@ function computerChoice() {
     const computerDraws = ["rock", "paper", "scissors", "lizard", "spock"]
     const randomNumber = Math.floor(Math.random() * 5) + 1;
 
-    if (computerDraws[1]) {
-        document.getElementById("path-rock").style.fill = "#ffd700";
+    if (randomNumber == "1") {
+        document.getElementById("path-rock").style.stroke = "#ffd700";
+        document.getElementById("path-rock").style.stroke.transition = "all 1s";
 
-    } else if (computerDraws[2]) {
-        document.getElementById("path-paper").style.fill = "#ffd700";
+    } else if (randomNumber == "2") {
+        document.getElementById("path-paper").style.stroke= "#ffd700";
 
-    } else if (computerDraws[3]) {
-        document.getElementById("path-scissors").style.fill = "#ffd700";
+    } else if (randomNumber == "3") {
+        document.getElementById("path-scissors").style.stroke = "#ffd700";
 
-    } else if (computerDraws[4]) {
-        document.getElementById("path-lizard").style.fill = "#ffd700";
+    } else if (randomNumber == "4") {
+        document.getElementById("path-lizard").style.stroke = "#ffd700";
 
-    } else if (computerDraws[5]) {
-        document.getElementById("path-spock").style.fill = "#ffd700";
+    } else if (randomNumber == "5") {
+        document.getElementById("path-spock").style.stroke = "#ffd700";
     }
     return computerDraws[randomNumber];
 }
+
 
 
 
