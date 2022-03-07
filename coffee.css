@@ -2,59 +2,94 @@
     --color-main: #f1f0eb;
     --color-blue: #0057b7;
     --color-yellow: #ffd700;
-    --color-grey: #d3d3d3;
+    --color-grey: #f5f5f5;
     --ff-body: 'Smooch Sans', sans-serif;
+    --ff-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
+
 * {
-    margin:0;
+    margin: 0;
     box-sizing: border-box;
     font-family: var(--ff-body);
     letter-spacing: .03em;
 }
+
 header {
-    display:block;
+    display: block;
     position: fixed;
-    top:0;
+    top: 0;
     background: var(--color-blue);
     height: 5vh;
     width: 100%;
+    box-shadow: var(--ff-shadow);
 }
+
+#home {
+    font-size: 5vh;
+    padding-left: 5vw;
+}
+
+i {
+    color: white;
+}
+
+i:hover {
+    color: var(--color-yellow);
+}
+
 main {
-    display:flex;
-    position:relative;
+    display: flex;
+    position: relative;
     justify-content: center;
     top: 10vh;
     bottom: 10vh;
 }
+
 #main-par {
     font-size: 4vh;
     font-weight: 500;
-padding-top: 5vh;
-padding-bottom: 5vh;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
     background: var(--color-grey);
-    border: 1px solid darkgray;
+    border: 1px solid rgba(99, 99, 99, 0.2);
     width: 30vw;
     padding: 2rem;
-    box-shadow: 0px 0px 28px rgba(0, 0, 0, 0.80), 0 -10px 20px -5px lightgray;
-   
-    position:absolute;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+    position: absolute;
 }
-a {
-    padding: .2rem;
-    margin: .5rem auto;
-    background: var(--color-blue);
-    color: var(--color-yellow);
+
+#support {
+    padding: .5rem 1rem;
+    background: var(--color-yellow);
+    color: var(--color-blue);
     font-weight: 600;
+    font-size: 5vh;
     text-decoration: none;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    border-radius: 4px;
 }
+#support:hover {
+
+    text-decoration: none;
+    color: var(--color-yellow);
+    background: var(--color-blue);
+    transition: .5s;
+
+    /*text-shadow: 2px 2px black;
+    background: linear-gradient(to bottom, #0057b7 50%, #ffd700 50%);*/
+
+}
+
 
 footer {
     height: 5vh;
     background-color: var(--color-yellow);
     position: fixed;
-    display:block;
+    display: block;
     width: 100%;
-    bottom:0;
+    bottom: 0;
+    box-shadow: var(--ff-shadow);
 }
 
 #footer-par {
@@ -62,6 +97,6 @@ footer {
     font-size: 3vh;
     color: black;
     text-align: center;
-    display:block;
-    
+    display: block;
+
 }

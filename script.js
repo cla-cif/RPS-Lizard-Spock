@@ -99,6 +99,7 @@ function resetScore() {
     reset_btn.addEventListener("click", function () {
         computerScore_span.innerHTML = 0;
         userScore_span.innerHTML = 0;
+        result_p.style.display="none";
     });
 }
 resetScore();
