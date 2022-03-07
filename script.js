@@ -73,7 +73,7 @@ function game(uChoice) {
         case "scissorsscissors":
         case "lizardlizard":
         case "spockspock":
-
+        result_p.innerHTML ="IT'S A DRAW!"
     }
 }
 
@@ -81,12 +81,13 @@ function game(uChoice) {
 function incrementComputerScore() {
     computerScore++;
     computerScore_span.innerHTML = computerScore;
+    result_p.innerHTML= "COMPUTER WON!";
 }
 
 function incrementUserScore() {
     userScore++;
     userScore_span.innerHTML = userScore;
-    result_p.innerHTM= "computer won";
+    result_p.innerHTML= "YOU WON!";
 }
 
 function resetScore() {
