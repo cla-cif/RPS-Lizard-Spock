@@ -23,23 +23,23 @@ const result_p = document.getElementById("result-message");
 function main() {
     rock_div.addEventListener("click", function () {
         game("rock");
-        result_p.style.visibility="visible";
+        result_p.style.visibility = "visible";
     })
     paper_div.addEventListener("click", function () {
         game("paper");
-        result_p.style.visibility="visible";
+        result_p.style.visibility = "visible";
     })
     scissors_div.addEventListener("click", function () {
         game("scissors");
-        result_p.style.visibility="visible";
+        result_p.style.visibility = "visible";
     })
     lizard_div.addEventListener("click", function () {
         game("lizard");
-        result_p.style.visibility="visible";
+        result_p.style.visibility = "visible";
     })
     spock_div.addEventListener("click", function () {
         game("spock");
-        result_p.style.visibility="visible";
+        result_p.style.visibility = "visible";
     })
 };
 main();
@@ -58,8 +58,8 @@ function game(uChoice) {
         case "spockrock":
         case "spockscissors":
             incrementUserScore();
-
             break;
+
         case "rockpaper":
         case "rockspock":
         case "paperlizard":
@@ -72,92 +72,93 @@ function game(uChoice) {
         case "spockpaper":
             incrementComputerScore()
             break;
+
         case "rockrock":
         case "paperpaper":
         case "scissorsscissors":
         case "lizardlizard":
         case "spockspock":
-        result_p.innerHTML ="IT'S A TIE!"
-        setTimeout (()=> (result_p.style.visibility="hidden"), 1500);
+            result_p.innerHTML = "IT'S A TIE!"
+            setTimeout(() => (result_p.style.visibility = "hidden"), 1500);
     }
 }
 
 
 function incrementComputerScore() {
     computerScore++;
-    computerScore_span.innerHTML = computerScore;
-    result_p.innerHTML= "COMPUTER WON!";
-    setTimeout (()=> (result_p.style.visibility="hidden"), 1500);
+        computerScore_span.innerHTML = computerScore;
+    result_p.innerHTML = "COMPUTER WON!";
+    setTimeout(() => (result_p.style.visibility = "hidden"), 1500);
 }
 
 function incrementUserScore() {
     userScore++;
     userScore_span.innerHTML = userScore;
-    result_p.innerHTML= "YOU WON!";
-    setTimeout (()=> (result_p.style.visibility="hidden"), 1500);
+    result_p.innerHTML = "YOU WON!";
+    setTimeout(() => (result_p.style.visibility = "hidden"), 1500);
 }
-function winMatch () {
-    if (userScore==10) {
-        alert("you reached 10");
-        result_p.innerHTML= "COMPUTER WON THE MATCH!";
-        setTimeout (()=> (result_p.style.visibility="hidden"), 1500);
-        resetScore()
+
+function winMatch(userScore, computerScore) {
+    if (computerScore == "10") {
+        result_p.innerHTML = "COMPUTER WON THE MATCH!";
+        setTimeout(() => (result_p.style.visibility = "hidden"), 1500);
     }
-    if (userScore==10) {
-        alert("you reached 10");
-        result_p.innerHTML= "YOU WON THE MATCH!";
-        setTimeout (()=> (result_p.style.visibility="hidden"), 1500);
-        resetScore()
+    if (userScore == "10") {
+        result_p.innerHTML = "YOU WON THE MATCH!";
+        setTimeout(() => (result_p.style.visibility = "hidden"), 1500);
     }
 }
 winMatch();
 
 function resetScore() {
     reset_btn.addEventListener("click", function () {
-        computerScore_span.innerHTML = "";
-        userScore_span.innerHTML = "";
-        result_p.style.visibility="hidden";
+        userScore = 0;
+        computerScore = 0;
+        userScore_span.innerHTML = 0;
+        computerScore_span.innerHTML = 0;
+        result_p.style.visibility = "hidden";
     });
 }
 resetScore();
 
+function styleComputerChoice(styles){
+    let styleme = document.getElementsByClassName(".styleme");
+    for (let stile of styleme) {
+        stile.style.stroke="#ffd700"
+        setTimeout(() => (stile.style.stroke = "#000"), 1500);
+    }
+}
+styleComputerChoice();
+
 function computerChoice() {
     const computerDraws = ["rock", "paper", "scissors", "lizard", "spock"]
-    const randomNumber = Math.floor(Math.random() * 5);
+    const randomNumber = Math.floor(Math.random() * computerDraws.length);
 
     if (randomNumber == "0") {
-        document.getElementById("path-rock").style.stroke = "#ffd700";
-        setTimeout (()=> (document.getElementById("path-rock").style.stroke = "#000"), 1500);
-   
+        styleComputerChoice("rock")
+        //document.getElementById("path-rock").style.stroke = "#ffd700";
+        //setTimeout(() => (document.getElementById("path-rock").style.stroke = "#000"), 1500);
+
     } else if (randomNumber == "1") {
-        document.getElementById("path-paper").style.stroke= "#ffd700";
-        setTimeout (()=> (document.getElementById("path-paper").style.stroke = "#000"), 1500);
+        styleComputerChoice("paper")
+        //document.getElementById("path-paper").style.stroke = "#ffd700";
+        //setTimeout(() => (document.getElementById("path-paper").style.stroke = "#000"), 1500);
 
     } else if (randomNumber == "2") {
-        document.getElementById("path-scissors").style.stroke = "#ffd700";
-        setTimeout (()=> (document.getElementById("path-scissors").style.stroke = "#000"), 1500);
+        styleComputerChoice("scissors")
+        //document.getElementById("path-scissors").style.stroke = "#ffd700";
+        //setTimeout(() => (document.getElementById("path-scissors").style.stroke = "#000"), 1500);
 
     } else if (randomNumber == "3") {
-        document.getElementById("path-lizard").style.stroke = "#ffd700";
-        setTimeout (()=> (document.getElementById("path-lizard").style.stroke = "#000"), 1500);
+        styleComputerChoice("lizard")
+        //document.getElementById("path-lizard").style.stroke = "#ffd700";
+        //setTimeout(() => (document.getElementById("path-lizard").style.stroke = "#000"), 1500);
 
     } else if (randomNumber == "4") {
-        document.getElementById("path-spock").style.stroke = "#ffd700";
-        setTimeout (()=> (document.getElementById("path-spock").style.stroke = "#000"), 1500);
+        styleComputerChoice("spock")
+        //document.getElementById("path-spock").style.stroke = "#ffd700";
+        //setTimeout(() => (document.getElementById("path-spock").style.stroke = "#000"), 1500);
     }
     return computerDraws[randomNumber];
 }
 
-
-
-
-const selectWinner = (user, computer) => {
-    let result = null;
-
-    const ifVal = (a, b, w) =>
-        user.choice === a && computer.choice === b ? (result = w) : null;
-
-
-
-    return result;
-};
