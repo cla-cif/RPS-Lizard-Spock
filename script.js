@@ -110,23 +110,23 @@ function computerChoice() {
     const computerDraws = ["rock", "paper", "scissors", "lizard", "spock"]
     const randomNumber = Math.floor(Math.random() * 5);
 
-    if (randomNumber == "1") {
+    if (randomNumber == "0") {
         document.getElementById("path-rock").style.stroke = "#ffd700";
         setTimeout (()=> (document.getElementById("path-rock").style.stroke = "#000"), 1500);
    
-    } else if (randomNumber == "2") {
+    } else if (randomNumber == "1") {
         document.getElementById("path-paper").style.stroke= "#ffd700";
         setTimeout (()=> (document.getElementById("path-paper").style.stroke = "#000"), 1500);
 
-    } else if (randomNumber == "3") {
+    } else if (randomNumber == "2") {
         document.getElementById("path-scissors").style.stroke = "#ffd700";
         setTimeout (()=> (document.getElementById("path-scissors").style.stroke = "#000"), 1500);
 
-    } else if (randomNumber == "4") {
+    } else if (randomNumber == "3") {
         document.getElementById("path-lizard").style.stroke = "#ffd700";
         setTimeout (()=> (document.getElementById("path-lizard").style.stroke = "#000"), 1500);
 
-    } else if (randomNumber == "5") {
+    } else if (randomNumber == "4") {
         document.getElementById("path-spock").style.stroke = "#ffd700";
         setTimeout (()=> (document.getElementById("path-spock").style.stroke = "#000"), 1500);
     }
