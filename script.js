@@ -70,7 +70,6 @@ function game(uChoice) {
         case "lizardscissors":
         case "spocklizard":
         case "spockpaper":
-
             incrementComputerScore()
             break;
         case "rockrock":
@@ -78,7 +77,8 @@ function game(uChoice) {
         case "scissorsscissors":
         case "lizardlizard":
         case "spockspock":
-        result_p.innerHTML ="IT'S A DRAW!"
+        result_p.innerHTML ="IT'S A TIE!"
+        setTimeout (()=> (result_p.style.visibility="hidden"), 1500);
     }
 }
 
@@ -87,42 +87,48 @@ function incrementComputerScore() {
     computerScore++;
     computerScore_span.innerHTML = computerScore;
     result_p.innerHTML= "COMPUTER WON!";
+    setTimeout (()=> (result_p.style.visibility="hidden"), 1500);
 }
 
 function incrementUserScore() {
     userScore++;
     userScore_span.innerHTML = userScore;
     result_p.innerHTML= "YOU WON!";
+    setTimeout (()=> (result_p.style.visibility="hidden"), 1500);
 }
 
 function resetScore() {
     reset_btn.addEventListener("click", function () {
         computerScore_span.innerHTML = 0;
         userScore_span.innerHTML = 0;
-        result_p.style.display="none";
+        result_p.style.visibility="hidden";
     });
 }
 resetScore();
 
 function computerChoice() {
     const computerDraws = ["rock", "paper", "scissors", "lizard", "spock"]
-    const randomNumber = Math.floor(Math.random() * 5) + 1;
+    const randomNumber = Math.floor(Math.random() * 5);
 
     if (randomNumber == "1") {
         document.getElementById("path-rock").style.stroke = "#ffd700";
-        document.getElementById("path-rock").style.stroke.transition = "all 1s";
-
+        setTimeout (()=> (document.getElementById("path-rock").style.stroke = "#000"), 1500);
+   
     } else if (randomNumber == "2") {
         document.getElementById("path-paper").style.stroke= "#ffd700";
+        setTimeout (()=> (document.getElementById("path-paper").style.stroke = "#000"), 1500);
 
     } else if (randomNumber == "3") {
         document.getElementById("path-scissors").style.stroke = "#ffd700";
+        setTimeout (()=> (document.getElementById("path-scissors").style.stroke = "#000"), 1500);
 
     } else if (randomNumber == "4") {
         document.getElementById("path-lizard").style.stroke = "#ffd700";
+        setTimeout (()=> (document.getElementById("path-lizard").style.stroke = "#000"), 1500);
 
     } else if (randomNumber == "5") {
         document.getElementById("path-spock").style.stroke = "#ffd700";
+        setTimeout (()=> (document.getElementById("path-spock").style.stroke = "#000"), 1500);
     }
     return computerDraws[randomNumber];
 }
