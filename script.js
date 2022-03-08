@@ -10,17 +10,10 @@ const lizard_div = document.getElementById("ulizard");
 const spock_div = document.getElementById("uspock");
 const result_p = document.getElementById("result-message");
 
-/*document.addEventListener("DOMContentLoaded", function () {
-    let choices = document.getElementsByClassName("uchoice");
-    for (let choice of choices) {
-        choice.addEventListener("click", function () {
-            computerChoice();
-            incrementComputerScore();
-            incrementUserScore();
-        });
-    }
-});*/
+/*document.addEventListener("DOMContentLoaded", function () {}); NOT SURE HOW TO USE THIS*/
+
 function main() {
+    //pass to the game funcion the user's choice on click
     rock_div.addEventListener("click", function () {
         game("rock");
         result_p.style.visibility = "visible";
@@ -45,6 +38,7 @@ function main() {
 main();
 
 function game(uChoice) {
+    //takes as an argument the user's choice and compares it with the random computer choice
     const cChoice = computerChoice();
     switch (uChoice + cChoice) {
         case "rockscissors":
@@ -70,7 +64,7 @@ function game(uChoice) {
         case "lizardscissors":
         case "spocklizard":
         case "spockpaper":
-            incrementComputerScore()
+            incrementComputerScore();
             break;
 
         case "rockrock":
@@ -78,20 +72,27 @@ function game(uChoice) {
         case "scissorsscissors":
         case "lizardlizard":
         case "spockspock":
-            result_p.innerHTML = "IT'S A TIE!"
-            setTimeout(() => (result_p.style.visibility = "hidden"), 1500);
+           tie();
+           break;
     }
 }
 
+function tie() {
+    //displays a temporary message with the outcome of the game function
+    result_p.innerHTML = "IT'S A TIE!"
+    setTimeout(() => (result_p.style.visibility = "hidden"), 1500);
+}
 
 function incrementComputerScore() {
+    //displays a temporary message with the outcome of the game function and increments the score
     computerScore++;
-        computerScore_span.innerHTML = computerScore;
+    computerScore_span.innerHTML = computerScore;
     result_p.innerHTML = "COMPUTER WON!";
     setTimeout(() => (result_p.style.visibility = "hidden"), 1500);
 }
 
 function incrementUserScore() {
+    //displays a temporary message with the outcome of the game function and increments the score
     userScore++;
     userScore_span.innerHTML = userScore;
     result_p.innerHTML = "YOU WON!";
@@ -99,6 +100,7 @@ function incrementUserScore() {
 }
 
 function winMatch(userScore, computerScore) {
+    // IT DOESN'T WORK! - displays the winner and resets the game
     if (computerScore == "10") {
         result_p.innerHTML = "COMPUTER WON THE MATCH!";
         setTimeout(() => (result_p.style.visibility = "hidden"), 1500);
@@ -111,6 +113,7 @@ function winMatch(userScore, computerScore) {
 winMatch();
 
 function resetScore() {
+    //reset the score variables on click and displays the updated value
     reset_btn.addEventListener("click", function () {
         userScore = 0;
         computerScore = 0;
@@ -121,20 +124,18 @@ function resetScore() {
 }
 resetScore();
 
-function styleComputerChoice(styles){
-    let styleme = document.getElementsByClassName(".styleme");
-    for (let stile of styleme) {
-        stile.style.stroke="#ffd700"
-        setTimeout(() => (stile.style.stroke = "#000"), 1500);
-    }
+function styleComputerChoice(cchoice){
+    //IT DOESN'T WORK! - 
+    document.getElementById(cchoice).classList.add("glow");
 }
-styleComputerChoice();
 
 function computerChoice() {
+    //generates a random number associated with 
     const computerDraws = ["rock", "paper", "scissors", "lizard", "spock"]
     const randomNumber = Math.floor(Math.random() * computerDraws.length);
 
     if (randomNumber == "0") {
+        let rock= document.getElementById("path-rock");
         styleComputerChoice("rock")
         //document.getElementById("path-rock").style.stroke = "#ffd700";
         //setTimeout(() => (document.getElementById("path-rock").style.stroke = "#000"), 1500);

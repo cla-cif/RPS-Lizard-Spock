@@ -137,6 +137,9 @@ svg {
     padding: 0.5rem;
 }
 
+.glow {
+    stroke: var(--color-footer);
+}
 .user-choices,
 .computer-choices {
     display: flex;
