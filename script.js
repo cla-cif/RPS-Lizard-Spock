@@ -96,11 +96,26 @@ function incrementUserScore() {
     result_p.innerHTML= "YOU WON!";
     setTimeout (()=> (result_p.style.visibility="hidden"), 1500);
 }
+function winMatch () {
+    if (userScore==10) {
+        alert("you reached 10");
+        result_p.innerHTML= "COMPUTER WON THE MATCH!";
+        setTimeout (()=> (result_p.style.visibility="hidden"), 1500);
+        resetScore()
+    }
+    if (userScore==10) {
+        alert("you reached 10");
+        result_p.innerHTML= "YOU WON THE MATCH!";
+        setTimeout (()=> (result_p.style.visibility="hidden"), 1500);
+        resetScore()
+    }
+}
+winMatch();
 
 function resetScore() {
     reset_btn.addEventListener("click", function () {
-        computerScore_span.innerHTML = 0;
-        userScore_span.innerHTML = 0;
+        computerScore_span.innerHTML = "";
+        userScore_span.innerHTML = "";
         result_p.style.visibility="hidden";
     });
 }
