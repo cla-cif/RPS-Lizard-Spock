@@ -23,23 +23,23 @@ const result_p = document.getElementById("result-message");
 function main() {
     rock_div.addEventListener("click", function () {
         game("rock");
-        result_p.style.display="block";
+        result_p.style.visibility="visible";
     })
     paper_div.addEventListener("click", function () {
         game("paper");
-        result_p.style.display="block";
+        result_p.style.visibility="visible";
     })
     scissors_div.addEventListener("click", function () {
         game("scissors");
-        result_p.style.display="block";
+        result_p.style.visibility="visible";
     })
     lizard_div.addEventListener("click", function () {
         game("lizard");
-        result_p.style.display="block";
+        result_p.style.visibility="visible";
     })
     spock_div.addEventListener("click", function () {
         game("spock");
-        result_p.style.display="block";
+        result_p.style.visibility="visible";
     })
 };
 main();

@@ -88,24 +88,30 @@ a {
     align-items: center;
 }
 
-.scores-area > p {
+.scores-area > * {
     color: var(--color-dark);
     font-weight: 400;
     font-size: 8vh;
     text-align: center;
 }
-
-.scores {
-    width: 33.33%;
-    justify-content: center;
+.left {
+    flex: 0 1 33.33%;
+    left:0;
+    float:left;
+}
+.right {
+    flex: 0 1 33.33%;
+    right:0;
+    float:right;
 }
 #result-message{
     color: white;
+    flex: 0 1 33.33%;
     font-weight: 700;
     font-size: 7vh;
     background: var(--color-header);
     padding: .3rem 1rem;
-    display:none;
+    visibility:hidden;
     text-align:center;
 }
 
