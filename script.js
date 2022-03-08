@@ -13,7 +13,7 @@ const result_p = document.getElementById("result-message");
 /*document.addEventListener("DOMContentLoaded", function () {}); NOT SURE HOW TO USE THIS*/
 
 function main() {
-    //pass to the game funcion the user's choice on click
+    //pass to the game funcion the user's choice on click and makes the result message visible
     rock_div.addEventListener("click", function () {
         game("rock");
         result_p.style.visibility = "visible";
@@ -99,7 +99,7 @@ function incrementUserScore() {
     setTimeout(() => (result_p.style.visibility = "hidden"), 1500);
 }
 
-function winMatch(userScore, computerScore) {
+function winner(userScore, computerScore) {
     // IT DOESN'T WORK! - displays the winner and resets the game
     if (computerScore == "10") {
         result_p.innerHTML = "COMPUTER WON THE MATCH!";
@@ -110,7 +110,7 @@ function winMatch(userScore, computerScore) {
         setTimeout(() => (result_p.style.visibility = "hidden"), 1500);
     }
 }
-winMatch();
+winer();
 
 function resetScore() {
     //reset the score variables on click and displays the updated value
@@ -125,7 +125,7 @@ function resetScore() {
 resetScore();
 
 function styleComputerChoice(cchoice){
-    //IT DOESN'T WORK! - 
+    //IT DOESN'T WORK! - add temporary style to the computer's choice
     document.getElementById(cchoice).classList.add("glow");
 }
 
