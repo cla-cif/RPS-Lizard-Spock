@@ -14,6 +14,7 @@ const lizard_div = document.getElementById("ulizard");
 const spock_div = document.getElementById("uspock");
 
 document.addEventListener("DOMContentLoaded", function () {
+    /*after the DOM content is loaded, the main function runs triggered by the user's choice*/
     rock_div.addEventListener("click", function () {
         game("rock");
     })
@@ -32,7 +33,8 @@ document.addEventListener("DOMContentLoaded", function () {
 }); 
 
 function game(uChoice) {
-    //takes as an argument the user's choice and compares it with the random computer choice
+    /*makes the result message visible, 
+    takes as an argument the user's choice and compares it with the random computer choice*/
     result_p.style.visibility = "visible";
     const cChoice = computerChoice();
     switch (uChoice + cChoice) {
@@ -146,6 +148,24 @@ function computerChoice() {
     //generates a random number associated with 
     const computerDraws = ["rock", "paper", "scissors", "lizard", "spock"]
     const randomNumber = Math.floor(Math.random() * computerDraws.length);
+    let reference_object = {
+        "0": document.getElementById("path-rock"),
+        "1": document.getElementById("path-paper"),
+        "2": document.getElementById("path-scissors"),
+        "3": document.getElementById("path-lizard"),
+        "4": document.getElementById("path-spock"),
+    }
+    let element = reference_object[randomNumber];
+    element.style.stroke= "#ffd700";
+    setTimeout(() => (element.style.stroke = "#000"), 1500);
+
+    return computerDraws[randomNumber];
+}
+
+/*function computerChoice() {
+    //generates a random number associated with 
+    const computerDraws = ["rock", "paper", "scissors", "lizard", "spock"]
+    const randomNumber = Math.floor(Math.random() * computerDraws.length);
     
     const rock = document.getElementById("path-rock");
     const paper = document.getElementById("path-paper");
@@ -176,6 +196,5 @@ function computerChoice() {
         
     }
     return computerDraws[randomNumber];
- 
-}
+}*/
 
