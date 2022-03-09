@@ -15,15 +15,15 @@
     margin: 0;
     max-width: 100%;
     font-family: var(--ff-body);
-    overflow-y: hidden;
+    overflow-y: hidden;}
 
-}
 
 header {
     height: 10rem;
     background-color: var(--color-header);
     color: var(color-light);
     display: flex;
+    height:auto;
     justify-content: space-around;
     align-items: center;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -36,46 +36,45 @@ header {
 .support {
     display:flex;
 }
-#btn-clickme {
+
+#btn-clickme:hover {
+    background: var(--color-footer);
+}
+.btn {
     background: var(--color-light);
     color: var(--color-header);
     text-align:center;
     font-weight:600;
     font-size:5vh;
-    padding: 1rem;
+    padding: .5rem;
+    border-radius: .1rem;
+  
 }
-#btn-clickme:hover {
-    background: var(--color-footer);
+.btn-div {
+    display:flex;
+    bottom: 2rem;
 }
-.btn {
-    text-align: center;
-    display:block;
-    justify-content: center;
-    padding-bottom: 1rem;
-}
-#reset {
-    background-color: var(--color-light);
+#btn-reset {
+    background-color: var(--color-main);
     border: none;
-    color: var(--color-header);
-    padding: .8rem 1rem;
-    font-size: 4vh;
-    font-weight: 500;
-    cursor: pointer;
-    border-radius: .3rem;
-    transition: all .5s ease;
+    font-size: 5vh;
 }
 
 a {
     text-decoration: none;
 }
 
-#reset:hover {
+#btn-reset:hover {
     background-color: var(--color-footer);
+    transition: all .5s ease;
 }
 
 .main {
     display: flex;
     flex-direction: column;
+    align-items:center;
+    height:100%;
+
 }
 
 .scores-area,
@@ -128,13 +127,14 @@ a {
 }
 
 .game-area {
-    height: 40vh;
+    align-items:stretch;
 }
 
 svg {
     width: 9vw;
     height: auto;
     padding: 0.5rem;
+    display:flex;
 }
 
 .user-choices,
