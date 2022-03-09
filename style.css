@@ -22,7 +22,7 @@
     color: var(--color-blue);
     text-align: center;
     font-weight: 600;
-    font-size: 5vh;
+    font-size: 2.5vw;
     padding: .5rem;
     border-radius: .1rem;
 
@@ -46,18 +46,25 @@ a {
 header {
     height: 25vh;
     background-color: var(--color-blue);
-    color: var(color-light);
     display: flex;
     justify-content: space-around;
     align-items: center;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
-
 .title {
-    font-weight: 600;
-    font-size: 5vh;
+    display:flex;
+    flex-direction: column;
 }
-
+.title >h1 {
+    display:flex;
+    font-weight: 700;
+    font-size: 5vmax;
+}
+.title > p {
+    display:flex;
+    font-size: 2.5vmax;
+    font-weight: 500;
+}
 .div-support {
     display: flex;
 }
@@ -99,7 +106,7 @@ header {
 }
 
 #result-message {
-    color: white;
+    color: var(--color-light);
     flex: 0 1 33.33%;
     font-weight: 700;
     font-size: 7vh;
@@ -153,9 +160,8 @@ svg {
 }
 
 #btn-reset {
-    background-color: var(--color-main);
     border: none;
-    font-size: 5vh;
+    font-size: 2.5vw;
 }
 /*footer: credits paragraph*/
 
