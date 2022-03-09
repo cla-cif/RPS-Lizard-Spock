@@ -1,14 +1,17 @@
+/* JS score counters */
 let userScore = 0;
 let computerScore = 0;
+/*score area and reset*/
 const userScore_span = document.getElementById("user-score");
 const computerScore_span = document.getElementById("computer-score");
+const result_p = document.getElementById("result-message");
 const reset_btn = document.getElementById("btn-reset");
+/*user choices images*/
 const rock_div = document.getElementById("urock");
 const paper_div = document.getElementById("upaper");
 const scissors_div = document.getElementById("uscissors");
 const lizard_div = document.getElementById("ulizard");
 const spock_div = document.getElementById("uspock");
-const result_p = document.getElementById("result-message");
 
 /*document.addEventListener("DOMContentLoaded", function () {}); NOT SURE HOW TO USE THIS*/
 
@@ -111,6 +114,20 @@ function winner(userScore, computerScore) {
     }
 }
 winner();
+/* WHAT I'M WORKING ON*/
+/*function incrementComputerScore() {
+    //displays a temporary message with the outcome of the game function and increments the score
+    while (computerScore<10)  {
+        computerScore++;
+        computerScore_span.innerHTML = computerScore;
+        result_p.innerHTML = "COMPUTER WON!";
+        setTimeout(() => (result_p.style.visibility = "hidden"), 1500);
+        if (computerScore = 10) {
+            result_p.innerHTML = "COMPUTER WON THE MATCH!"; 
+            //or better call win and reset functions//
+        }
+    };
+}*/
 
 function resetScore() {
     //reset the score variables on click and displays the updated value
@@ -120,7 +137,8 @@ function resetScore() {
         userScore_span.innerHTML = 0;
         computerScore_span.innerHTML = 0;
         result_p.style.visibility = "hidden";
-    });
+    }); 
+    // I want the scores to reset at 10 after displaying the winner message//
 }
 resetScore();
 
