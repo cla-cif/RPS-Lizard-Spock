@@ -1,6 +1,7 @@
 /* JS score counters */
 let userScore = 0;
 let computerScore = 0;
+let timer;
 /*score area and reset*/
 const userScore_span = document.getElementById("user-score");
 const computerScore_span = document.getElementById("computer-score");
@@ -31,11 +32,13 @@ document.addEventListener("DOMContentLoaded", function () {
         game("spock");
     })
     reset_btn.addEventListener("click", resetScore);
+    document.addEventListener("click", clearTimeout(timer));
 });
 
 function game(uChoice) {
-    /*makes the result message visible, 
-    takes as an argument the user's choice and compares it with the random computer choice*/
+    /*makes the result message visible when user click on icon and starts the game, 
+    takes as an argument the user's choice (uChoice) 
+    and compares it with the random computer choice(cChoice)*/
     result_p.style.visibility = "visible";
     const cChoice = computerChoice();
     switch (uChoice + cChoice) {
@@ -75,13 +78,11 @@ function game(uChoice) {
     }
 }
 
+
 function tie() {
     //displays a temporary message with the outcome of the game function
     result_p.innerHTML = "IT'S A TIE!"
     setTimeout(() => (result_p.style.visibility = "hidden"), 1500);
-    /* IF CLICK AGAIN I WANT TO END TIMEOUT
-     $(document).on("click",function(){
-    clearTimeout(timer);*/
 }
 
 
@@ -109,23 +110,6 @@ function incrementComputerScore() {
     }
 };
 
-/*function winner() {
-    setTimeout(() => (result_p.style.visibility = "hidden"), (resetScore()), 5000);
-}*/
-
-
-/*function resetScore(w) {
-    //reset the score variables on click and displays the updated value
-    reset_btn.addEventListener("click", function () {
-        userScore = 0;
-        computerScore = 0;
-        userScore_span.innerHTML = 0;
-        computerScore_span.innerHTML = 0;
-        result_p.style.visibility = "hidden";
-    });
-    // I want the scores to reset at 10 after displaying the winner message//
-}*/
-
 function resetScore() {
     userScore = 0;
     computerScore = 0;
@@ -134,8 +118,7 @@ function resetScore() {
     result_p.style.visibility = "hidden";
 }
 
-
-function computerChoice() {
+function computerChoice() { 
     //generates a random number associated with computer options 
     const computerDraws = ["rock", "paper", "scissors", "lizard", "spock"]
     const randomNumber = Math.floor(Math.random() * computerDraws.length);
@@ -149,6 +132,5 @@ function computerChoice() {
     let element = reference_object[randomNumber];
     element.style.stroke = "#ffd700";
     setTimeout(() => (element.style.stroke = "#000"), 1500);
-
     return computerDraws[randomNumber];
 }
