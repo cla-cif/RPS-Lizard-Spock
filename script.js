@@ -30,7 +30,8 @@ document.addEventListener("DOMContentLoaded", function () {
     spock_div.addEventListener("click", function () {
         game("spock");
     })
-}); 
+    reset_btn.addEventListener("click", resetScore);
+});
 
 function game(uChoice) {
     /*makes the result message visible, 
@@ -69,18 +70,31 @@ function game(uChoice) {
         case "scissorsscissors":
         case "lizardlizard":
         case "spockspock":
-           tie();
-           break;
+            tie();
+            break;
     }
 }
 
 function tie() {
     //displays a temporary message with the outcome of the game function
     result_p.innerHTML = "IT'S A TIE!"
-    setTimeout(() => (result_p.style.visibility = "hidden"), 1500); 
+    setTimeout(() => (result_p.style.visibility = "hidden"), 1500);
     /* IF CLICK AGAIN I WANT TO END TIMEOUT
      $(document).on("click",function(){
     clearTimeout(timer);*/
+}
+
+
+function incrementUserScore() {
+    //displays a temporary message with the outcome of the game function and increments the score
+    userScore++;
+    userScore_span.innerHTML = userScore;
+    result_p.innerHTML = "YOU WON!";
+    setTimeout(() => (result_p.style.visibility = "hidden"), 1500);
+    if (userScore == 10) {
+        result_p.innerHTML = "YOU WON THE MATCH!";
+        resetScore();
+    }
 }
 
 function incrementComputerScore() {
@@ -89,45 +103,18 @@ function incrementComputerScore() {
     computerScore_span.innerHTML = computerScore;
     result_p.innerHTML = "COMPUTER WON!";
     setTimeout(() => (result_p.style.visibility = "hidden"), 1500);
-}
-
-function incrementUserScore() {
-    //displays a temporary message with the outcome of the game function and increments the score
-    userScore++;
-    userScore_span.innerHTML = userScore;
-    result_p.innerHTML = "YOU WON!";
-    setTimeout(() => (result_p.style.visibility = "hidden"), 1500);
-}
-
-/* WHAT I'M WORKING ON*/
-/*function incrementComputerScore() {
-    //displays a temporary message with the outcome of the game function and increments the score
-        computerScore++;
-        computerScore_span.innerHTML = computerScore;
-        result_p.innerHTML = "COMPUTER WON!";
-        setTimeout(() => (result_p.style.visibility = "hidden"), 1500);
-        if (computerScore == 10) {
-            result_p.innerHTML = "COMPUTER WON THE MATCH!"; 
-            //or better call win and reset functions//
-        }
-    };
-}*/
-
-function winner(userScore, computerScore) {
-    // IT DOESN'T WORK! - displays the winner and resets the game
     if (computerScore == 10) {
         result_p.innerHTML = "COMPUTER WON THE MATCH!";
-        setTimeout(() => (result_p.style.visibility = "hidden"), 1500);
+        setTimeout(resetScore, 5000)
     }
-    if (userScore == 10) {
-        result_p.innerHTML = "YOU WON THE MATCH!";
-        setTimeout(() => (result_p.style.visibility = "hidden"), 1500);
-    }
-    resetScore();
-}
-winner();
+};
 
-function resetScore() {
+/*function winner() {
+    setTimeout(() => (result_p.style.visibility = "hidden"), (resetScore()), 5000);
+}*/
+
+
+/*function resetScore(w) {
     //reset the score variables on click and displays the updated value
     reset_btn.addEventListener("click", function () {
         userScore = 0;
@@ -135,17 +122,21 @@ function resetScore() {
         userScore_span.innerHTML = 0;
         computerScore_span.innerHTML = 0;
         result_p.style.visibility = "hidden";
-    }); 
+    });
     // I want the scores to reset at 10 after displaying the winner message//
-}
-resetScore();
+}*/
 
-function styleComputerChoice(){
-    //instead of repeating the same 
+function resetScore() {
+    userScore = 0;
+    computerScore = 0;
+    userScore_span.innerHTML = 0;
+    computerScore_span.innerHTML = 0;
+    result_p.style.visibility = "hidden";
 }
+
 
 function computerChoice() {
-    //generates a random number associated with 
+    //generates a random number associated with computer options 
     const computerDraws = ["rock", "paper", "scissors", "lizard", "spock"]
     const randomNumber = Math.floor(Math.random() * computerDraws.length);
     let reference_object = {
@@ -156,45 +147,8 @@ function computerChoice() {
         "4": document.getElementById("path-spock"),
     }
     let element = reference_object[randomNumber];
-    element.style.stroke= "#ffd700";
+    element.style.stroke = "#ffd700";
     setTimeout(() => (element.style.stroke = "#000"), 1500);
 
     return computerDraws[randomNumber];
 }
-
-/*function computerChoice() {
-    //generates a random number associated with 
-    const computerDraws = ["rock", "paper", "scissors", "lizard", "spock"]
-    const randomNumber = Math.floor(Math.random() * computerDraws.length);
-    
-    const rock = document.getElementById("path-rock");
-    const paper = document.getElementById("path-paper");
-    const scissors = document.getElementById("path-scissors");
-    const lizard = document.getElementById("path-lizard");
-    const spock = document.getElementById("path-spock");
-
-    if (randomNumber == "0") {
-        rock.style.stroke="#ffd700";
-        setTimeout(() => (rock.style.stroke = "#000"), 1500);
-
-    } else if (randomNumber == "1") {
-        paper.style.stroke="#ffd700";
-        setTimeout(() => (paper.style.stroke = "#000"), 1500);
-
-    } else if (randomNumber == "2") {
-        scissors.style.stroke="#ffd700";
-        setTimeout(() => (scissors.style.stroke = "#000"), 1500);
-
-
-    } else if (randomNumber == "3") {
-        lizard.style.stroke="#ffd700";
-        setTimeout(() => (lizard.style.stroke = "#000"), 1500);
-
-    } else if (randomNumber == "4") {
-        spock.style.stroke="#ffd700";
-        setTimeout(() => (spock.style.stroke = "#000"), 1500);
-        
-    }
-    return computerDraws[randomNumber];
-}*/
-
