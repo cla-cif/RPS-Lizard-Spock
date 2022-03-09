@@ -30,8 +30,8 @@ document.addEventListener("DOMContentLoaded", function () {
     })
     spock_div.addEventListener("click", function () {
         game("spock");
-    }) 
-    setTimeout(() => (result_p.style.visibility = "hidden"), timer);
+    })
+    reset_btn.addEventListener("click", resetScore);
 });
 
 function computerChoice() {
@@ -100,7 +100,7 @@ function incrementUserScore() {
     userScore++;
     userScore_span.innerHTML = userScore;
     result_p.innerHTML = "YOU WON!";
-    //setTimeout(() => (result_p.style.visibility = "hidden"), timer);
+    setTimeout(() => (result_p.style.visibility = "hidden"), timer);
     if (userScore == 10) {
         winner("user")
     }
@@ -108,33 +108,31 @@ function incrementUserScore() {
 
 function incrementComputerScore() {
     //displays a temporary message with the outcome of the game function and increments the score
-        computerScore++;
-        computerScore_span.innerHTML = computerScore;
-        result_p.innerHTML = "COMPUTER WON!";
-        //setTimeout(() => (result_p.style.visibility = "hidden"), timer);
-        if (computerScore == 10) {
-            winner("computer")
-    }
+    computerScore++;
+    computerScore_span.innerHTML = computerScore;
+    result_p.innerHTML = "COMPUTER WON!";
+    setTimeout(() => (result_p.style.visibility = "hidden"), timer);
+    if (computerScore == 10) {
+        winner("computer")
+    } 
 };
 
 function tie() {
     //displays a temporary message with the outcome of the game function
     result_p.innerHTML = "IT'S A TIE!"
-    //setTimeout(() => (result_p.style.visibility = "hidden"), timer);
+    setTimeout(() => (result_p.style.visibility = "hidden"), timer);
 }
 
 function winner(win) {
     /*show a message with the winner, 
-    stop execution of the main game, 
-    resets automatically on timer*/
-    if (win="computer") { 
-        result_p.innerHTML = "COMPUTER WON THE MATCH!" 
-        window.game=function(){return false;};
+    resets score*/
+    if (win === "computer") {
+        result_p.innerHTML = "COMPUTER WON THE MATCH!";
+        resetScore();
     } else {
-        result_p.innerHTML = "YOU WON THE MATCH!"
-        window.game=function(){return false;};
+        result_p.innerHTML = "YOU WON THE MATCH!";
+        resetScore();
     }
-    setTimeout(resetScore, 4000);
 }
 
 function resetScore() {
@@ -142,6 +140,4 @@ function resetScore() {
     computerScore = 0;
     userScore_span.innerHTML = 0;
     computerScore_span.innerHTML = 0;
-    result_p.style.visibility = "hidden";
 }
-
