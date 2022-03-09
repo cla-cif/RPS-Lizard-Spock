@@ -1,7 +1,7 @@
 /* JS score counters */
 let userScore = 0;
 let computerScore = 0;
-let timer;
+timer = 1500;
 /*score area and reset*/
 const userScore_span = document.getElementById("user-score");
 const computerScore_span = document.getElementById("computer-score");
@@ -30,10 +30,27 @@ document.addEventListener("DOMContentLoaded", function () {
     })
     spock_div.addEventListener("click", function () {
         game("spock");
-    })
-    reset_btn.addEventListener("click", resetScore);
-    document.addEventListener("click", clearTimeout(timer));
+    }) 
+    setTimeout(() => (result_p.style.visibility = "hidden"), timer);
 });
+
+function computerChoice() {
+    /*generates a random number paired with the array of computer options, 
+    temporary highlits the correspondant computer choice*/
+    const computerDraws = ["rock", "paper", "scissors", "lizard", "spock"]
+    const randomNumber = Math.floor(Math.random() * computerDraws.length);
+    let reference_object = {
+        "0": document.getElementById("path-rock"),
+        "1": document.getElementById("path-paper"),
+        "2": document.getElementById("path-scissors"),
+        "3": document.getElementById("path-lizard"),
+        "4": document.getElementById("path-spock"),
+    }
+    let element = reference_object[randomNumber];
+    element.style.stroke = "#ffd700";
+    setTimeout(() => (element.style.stroke = "#000"), timer);
+    return computerDraws[randomNumber];
+}
 
 function game(uChoice) {
     /*makes the result message visible when user click on icon and starts the game, 
@@ -78,37 +95,47 @@ function game(uChoice) {
     }
 }
 
-
-function tie() {
-    //displays a temporary message with the outcome of the game function
-    result_p.innerHTML = "IT'S A TIE!"
-    setTimeout(() => (result_p.style.visibility = "hidden"), 1500);
-}
-
-
 function incrementUserScore() {
     //displays a temporary message with the outcome of the game function and increments the score
     userScore++;
     userScore_span.innerHTML = userScore;
     result_p.innerHTML = "YOU WON!";
-    setTimeout(() => (result_p.style.visibility = "hidden"), 1500);
+    //setTimeout(() => (result_p.style.visibility = "hidden"), timer);
     if (userScore == 10) {
-        result_p.innerHTML = "YOU WON THE MATCH!";
-        resetScore();
+        winner("user")
     }
 }
 
 function incrementComputerScore() {
     //displays a temporary message with the outcome of the game function and increments the score
-    computerScore++;
-    computerScore_span.innerHTML = computerScore;
-    result_p.innerHTML = "COMPUTER WON!";
-    setTimeout(() => (result_p.style.visibility = "hidden"), 1500);
-    if (computerScore == 10) {
-        result_p.innerHTML = "COMPUTER WON THE MATCH!";
-        setTimeout(resetScore, 5000)
+        computerScore++;
+        computerScore_span.innerHTML = computerScore;
+        result_p.innerHTML = "COMPUTER WON!";
+        //setTimeout(() => (result_p.style.visibility = "hidden"), timer);
+        if (computerScore == 10) {
+            winner("computer")
     }
 };
+
+function tie() {
+    //displays a temporary message with the outcome of the game function
+    result_p.innerHTML = "IT'S A TIE!"
+    //setTimeout(() => (result_p.style.visibility = "hidden"), timer);
+}
+
+function winner(win) {
+    /*show a message with the winner, 
+    stop execution of the main game, 
+    resets automatically on timer*/
+    if (win="computer") { 
+        result_p.innerHTML = "COMPUTER WON THE MATCH!" 
+        window.game=function(){return false;};
+    } else {
+        result_p.innerHTML = "YOU WON THE MATCH!"
+        window.game=function(){return false;};
+    }
+    setTimeout(resetScore, 4000);
+}
 
 function resetScore() {
     userScore = 0;
@@ -118,19 +145,3 @@ function resetScore() {
     result_p.style.visibility = "hidden";
 }
 
-function computerChoice() { 
-    //generates a random number associated with computer options 
-    const computerDraws = ["rock", "paper", "scissors", "lizard", "spock"]
-    const randomNumber = Math.floor(Math.random() * computerDraws.length);
-    let reference_object = {
-        "0": document.getElementById("path-rock"),
-        "1": document.getElementById("path-paper"),
-        "2": document.getElementById("path-scissors"),
-        "3": document.getElementById("path-lizard"),
-        "4": document.getElementById("path-spock"),
-    }
-    let element = reference_object[randomNumber];
-    element.style.stroke = "#ffd700";
-    setTimeout(() => (element.style.stroke = "#000"), 1500);
-    return computerDraws[randomNumber];
-}
