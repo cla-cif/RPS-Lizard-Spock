@@ -1,29 +1,53 @@
 :root {
-    --color-main: #f1f0eb;
-    --color-header: #0057b7;
-    --color-footer: #ffd700;
+    --color-blue: #0057b7;
+    --color-yellow: #ffd700;
     --color-dark: #000;
     --color-light: #fafafa;
-    --color-shadow: #8e8d8a;
     --ff-body: 'Smooch Sans', sans-serif;
 }
 
 * {
     box-sizing: border-box;
-    color: var(--color-main);
+    color: var(--color-light);
     letter-spacing: .03em;
     margin: 0;
     max-width: 100%;
     font-family: var(--ff-body);
-    overflow-y: hidden;}
+    overflow-y: hidden;
+}
 
+/* common parameters*/
+.btn {
+    background: var(--color-light);
+    color: var(--color-blue);
+    text-align: center;
+    font-weight: 600;
+    font-size: 5vh;
+    padding: .5rem;
+    border-radius: .1rem;
 
+}
+
+a {
+    text-decoration: none;
+}
+
+/*animations*/
+#btn-clickme:hover {
+    background: var(--color-yellow);
+}
+
+#btn-reset:hover {
+    background-color: var(--color-yellow);
+    transition: all .5s ease;
+}
+
+/*header: title, click me button (support)*/
 header {
-    height: 10rem;
-    background-color: var(--color-header);
+    height: 25vh;
+    background-color: var(--color-blue);
     color: var(color-light);
     display: flex;
-    height:auto;
     justify-content: space-around;
     align-items: center;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -33,87 +57,39 @@ header {
     font-weight: 600;
     font-size: 5vh;
 }
-.support {
-    display:flex;
+
+.div-support {
+    display: flex;
 }
 
-#btn-clickme:hover {
-    background: var(--color-footer);
-}
-.btn {
-    background: var(--color-light);
-    color: var(--color-header);
-    text-align:center;
-    font-weight:600;
-    font-size:5vh;
-    padding: .5rem;
-    border-radius: .1rem;
-  
-}
-.btn-div {
-    display:flex;
-    bottom: 2rem;
-}
-#btn-reset {
-    background-color: var(--color-main);
-    border: none;
-    font-size: 5vh;
-}
-
-a {
-    text-decoration: none;
-}
-
-#btn-reset:hover {
-    background-color: var(--color-footer);
-    transition: all .5s ease;
-}
-
+/*main: scores-area, game-area, reset-area*/
 .main {
     display: flex;
     flex-direction: column;
-    align-items:center;
-    height:100%;
-
+    align-items: center;
+    height: 100%;
 }
 
 .scores-area,
 .game-area {
     display: flex;
-    flex-direction: row;
     width: 100%;
-    height:auto;
     justify-content: space-around;
     align-items: center;
 }
 
-.scores-area > * {
+/*scores-area: left(user score), middle(result), right(computer score)*/
+
+.scores-area>* {
     color: var(--color-dark);
     font-weight: 400;
     font-size: 8vh;
     text-align: center;
 }
-.left {
-    flex: 0 1 33.33%;
-    left:0;
-    float:left;
-}
-.right {
-    flex: 0 1 33.33%;
-    right:0;
-    float:right;
-}
-#result-message{
-    color: white;
-    flex: 0 1 33.33%;
-    font-weight: 700;
-    font-size: 7vh;
-    background: var(--color-header);
-    padding: .3rem 1rem;
-    visibility:hidden;
-    text-align:center;
-}
 
+.scores-area {
+    height: 20vh;
+}
 
 #user-score,
 #computer-score {
@@ -122,43 +98,73 @@ a {
     font-size: 6vh;
 }
 
-.scores-area {
-    height: 20vh;
+#result-message {
+    color: white;
+    flex: 0 1 33.33%;
+    font-weight: 700;
+    font-size: 7vh;
+    background: var(--color-blue);
+    visibility: hidden;
+    text-align: center;
 }
 
+.left {
+    flex: 0 1 33.33%;
+    left: 0;
+    float: left;
+}
+
+.right {
+    flex: 0 1 33.33%;
+    right: 0;
+    float: right;
+}
+
+/*game-area: user choices (left), computer choices(right), svg images*/
 .game-area {
-    align-items:stretch;
+    height: 35vh;
 }
-
-svg {
-    width: 9vw;
-    height: auto;
-    padding: 0.5rem;
-    display:flex;
-}
-
 .user-choices,
 .computer-choices {
     display: flex;
+    flex-direction:row;
+}
+/*game-area single choices, svg images*/
+svg {
+    width: 9vw;
+    padding: 0.5rem;
+    height:auto;
 }
 
 .uchoice,
 .cchoice {
     display: flex;
     flex-direction: column;
-    cursor: pointer; 
+    cursor: pointer;
 }
 
-.uchoice:hover > svg > path {
-    stroke: var(--color-header);
+.uchoice:hover>svg>path {
+    stroke: var(--color-blue);
 }
+/*reset-area: reset button*/
+.reset-area {
+    display: flex;
+    height: 15vh
+}
+
+#btn-reset {
+    background-color: var(--color-main);
+    border: none;
+    font-size: 5vh;
+}
+/*footer: credits paragraph*/
 
 footer {
     height: 5vh;
-    background-color: var(--color-footer);
+    background-color: var(--color-yellow);
     position: fixed;
     width: 100%;
-    bottom:0;
+    bottom: 0;
 }
 
 footer>p {
