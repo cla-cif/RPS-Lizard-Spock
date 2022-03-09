@@ -102,18 +102,6 @@ function incrementUserScore() {
     setTimeout(() => (result_p.style.visibility = "hidden"), 1500);
 }
 
-function winner(userScore, computerScore) {
-    // IT DOESN'T WORK! - displays the winner and resets the game
-    if (computerScore == "10") {
-        result_p.innerHTML = "COMPUTER WON THE MATCH!";
-        setTimeout(() => (result_p.style.visibility = "hidden"), 1500);
-    }
-    if (userScore == "10") {
-        result_p.innerHTML = "YOU WON THE MATCH!";
-        setTimeout(() => (result_p.style.visibility = "hidden"), 1500);
-    }
-}
-winner();
 /* WHAT I'M WORKING ON*/
 /*function incrementComputerScore() {
     //displays a temporary message with the outcome of the game function and increments the score
@@ -128,6 +116,19 @@ winner();
         }
     };
 }*/
+
+function winner(userScore, computerScore) {
+    // IT DOESN'T WORK! - displays the winner and resets the game
+    if (computerScore == "10") {
+        result_p.innerHTML = "COMPUTER WON THE MATCH!";
+        setTimeout(() => (result_p.style.visibility = "hidden"), 1500);
+    }
+    if (userScore == "10") {
+        result_p.innerHTML = "YOU WON THE MATCH!";
+        setTimeout(() => (result_p.style.visibility = "hidden"), 1500);
+    }
+}
+winner();
 
 function resetScore() {
     //reset the score variables on click and displays the updated value
