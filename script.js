@@ -2,7 +2,7 @@ let userScore = 0;
 let computerScore = 0;
 const userScore_span = document.getElementById("user-score");
 const computerScore_span = document.getElementById("computer-score");
-const reset_btn = document.getElementById("reset");
+const reset_btn = document.getElementById("btn-reset");
 const rock_div = document.getElementById("urock");
 const paper_div = document.getElementById("upaper");
 const scissors_div = document.getElementById("uscissors");
@@ -110,7 +110,7 @@ function winner(userScore, computerScore) {
         setTimeout(() => (result_p.style.visibility = "hidden"), 1500);
     }
 }
-winer();
+winner();
 
 function resetScore() {
     //reset the score variables on click and displays the updated value
