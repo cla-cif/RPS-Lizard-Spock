@@ -51,14 +51,15 @@ header {
     height: 25vh;
     background-color: var(--color-blue);
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
     box-shadow: var(--shadow-default);
-    position:relative;
+    padding-inline: 3rem;
     
 }
 .title {
     display:flex;
+    justify-content: flex-end;
     flex-direction: column;
 }
 .title >h1 {
@@ -70,6 +71,14 @@ header {
     display:flex;
     font-size: 2.5vmax;
     font-weight: 500;
+}
+.div-support {
+    display:flex;
+    justify-content: flex-end;
+}
+a#btn-clickme.btn {
+    display:flex;
+    border-radius: 0;
 }
 
 /*main: scores-area, game-area, reset-area*/
@@ -89,7 +98,6 @@ header {
 .scores-area {
     height: 20vh;
     display: flex;
-    flex-direction: row;
     align-items: center;
 }
 .scores-area>* {
@@ -134,8 +142,9 @@ header {
     height: 35vh;
     display:flex;
     width:100%;
-    flex-direction:column;
+    flex-direction:row;
     justify-content: space-evenly;
+    align-items: center;
 }
 .user-choices,
 .computer-choices {
@@ -144,17 +153,22 @@ header {
 }
 .user-choices {
     justify-content: flex-start;
+
 }
 .computer-choices {
     justify-content: flex-end;
+
 }
 /*game-area single choices, svg images*/
 svg {
-    display:flex;
-    flex-direction: row;
-    width: 9vmax;
-    padding: 0.5rem;
+    width: 9vw;
+    padding: .2rem;
     height:auto;
+}
+.user-choices, 
+.computer-choices {
+    display:flex;
+    flex-wrap: wrap;
 }
 
 .uchoice,
@@ -201,4 +215,29 @@ footer>p {
     color: var(--color-dark);
     text-align: center;
     align-items: center;
+}
+/* media queries*/
+@media only screen and (max-width: 768px) {
+    .computer-choices, 
+    .user-choices{
+        flex-direction: column;
+    }
+    .main {
+        display:flex;
+        flex-direction: column;
+    }
+    .game-area{
+        height: 45vh;
+    }
+    .reset-area {
+        height: 5vh;
+    }
+    svg {
+        width:18vw;
+        height:auto;
+    }
+    .scores-area {
+        font-size: 3vmax;
+    }
+
 }
