@@ -1,9 +1,10 @@
 :root {
-    --color-blue: #0057b7; 
+    --color-blue: #0057b7;
     --color-yellow: #ffd700;
-    --color-grey: #f5f5f5;
+    --color-dark: #000;
+    --color-light: #f5f5f5;
     --ff-body: 'Smooch Sans', sans-serif;
-    --ff-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    --shadow-default: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 * {
@@ -11,11 +12,11 @@
     font-family: var(--ff-body);
     letter-spacing: .03em;
     margin: 0;
+    overflow: hidden;
 }
+
 /* header, home button */
 header {
-    display: block;
-    position: fixed;
     top: 0;
     background: var(--color-blue);
     height: 5vh;
@@ -24,66 +25,74 @@ header {
 }
 
 #home {
-    font-size: 5vh;
     padding-left: 5vw;
 }
 
 i {
-    color: white;
+    color: var(--color-light);
 }
 
 i:hover {
     color: var(--color-yellow);
 }
+
 /* main, paragraph and its elements*/
 main {
     display: flex;
-    position: relative;
     justify-content: center;
-    top: 10vh;
-    bottom: 10vh;
+    align-items: center;
+    height: 90vh;
+    background: var(--color-light);
+
 }
 
-#main-par {
-    font-size: 2vw;
+#par-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 50vh;
+    padding-inline: 1rem;
+    box-shadow: 0px 6px 10px -3px var(--color-yellow), 0px -6px 10px -3px var(--color-blue);
+}
+#par-wrapper > div {
+    display:flex;
+}
+p {
+    font-size: 3vh;
     font-weight: 600;
-    background: var(--color-grey);
-    border: 1px solid rgba(99, 99, 99, 0.2);
-    width: 30vw;
-    padding: 2rem;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    position: absolute;
-    justify-content: center;
 }
 
 #support {
     padding: .5rem 1rem;
     background: var(--color-yellow);
-    color: var(--color-blue);
-    font-weight: 600;
-    font-size: 5vh;
-    text-decoration: none;
-    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    box-shadow: 0px 6px 10px -3px var(--color-yellow), 0px -6px 10px -3px var(--color-blue);
     border-radius: 4px;
 }
-#support:hover {
-
+#support >* {
+    color: var(--color-blue);
     text-decoration: none;
-    color: var(--color-yellow);
-    background: var(--color-blue);
-    transition: .5s;
-
-    /*text-shadow: 2px 2px black;
-    background: linear-gradient(to bottom, #0057b7 50%, #ffd700 50%);*/
-
+    font-weight: 700;
+    font-size: 3vh;
 }
 
+#support:hover {
+    text-decoration: none;
+
+    background: var(--color-blue);
+    transition: .5s ease-in-out;
+    /*text-shadow: 2px 2px black;
+    background: linear-gradient(to bottom, #0057b7 50%, #ffd700 50%);*/
+}
+#support>*:hover {
+    color: var(--color-yellow);
+    transition: .5s ease-in-out;
+}
 
 footer {
     height: 5vh;
     background-color: var(--color-yellow);
     position: fixed;
-    display: block;
     width: 100%;
     bottom: 0;
     box-shadow: var(--ff-shadow);
