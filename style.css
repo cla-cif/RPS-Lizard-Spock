@@ -15,6 +15,7 @@
     max-width: 100%;
     font-family: var(--ff-body);
     overflow-y: hidden;
+    line-height: .9em;
 }
 
 /* common parameters*/
@@ -51,16 +52,18 @@ header {
     height: 25vh;
     background-color: var(--color-blue);
     display: flex;
+    position:relative;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
     box-shadow: var(--shadow-default);
-    padding-inline: 3rem;
+    padding: 3rem 3rem 0 3rem;
     
 }
 .title {
     display:flex;
     justify-content: flex-end;
     flex-direction: column;
+
 }
 .title >h1 {
     display:flex;
@@ -73,7 +76,9 @@ header {
     font-weight: 500;
 }
 .div-support {
-    display:flex;
+    position:absolute;
+    bottom:0;
+    right:0;
     justify-content: flex-end;
 }
 a#btn-clickme.btn {
@@ -218,26 +223,45 @@ footer>p {
 }
 /* media queries*/
 @media only screen and (max-width: 768px) {
+    /*scores area*/
+    .scores-area {
+        height: 15vh;
+        display: grid;
+        grid-template-areas: 
+        "left right"
+        "middle middle";
+        grid-template-columns: 50vw 50vw;
+        grid-template-rows: auto;
+    }
+    .left {
+        grid-area:left;
+        align-self: end;
+    }
+    #result-message {
+        grid-area: middle;
+        align-self: end;
+    }
+    .right {
+        grid-area:right;
+        align-self: end;
+    }
+    
+    /*game area*/
+    .game-area{
+        height: 50vh;
+        justify-content: space-around;
+    }
     .computer-choices, 
     .user-choices{
         flex-direction: column;
     }
-    .main {
-        display:flex;
-        flex-direction: column;
+   
+    svg {
+        width:20vw;
+        height:auto;
     }
-    .game-area{
-        height: 45vh;
-    }
+    /*reset area*/
     .reset-area {
         height: 5vh;
     }
-    svg {
-        width:18vw;
-        height:auto;
-    }
-    .scores-area {
-        font-size: 3vmax;
-    }
-
 }
