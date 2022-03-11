@@ -1,12 +1,10 @@
 :root {
     --color-blue: #0057b7;
     --color-yellow: #ffd700;
-    --color-dark: #000;
     --color-light: #f5f5f5;
     --ff-body: 'Smooch Sans', sans-serif;
-    --shadow-default: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    --shadow-default: 0px 6px 10px -3px var(--color-yellow), 0px -6px 10px -3px var(--color-blue);
 }
-
 * {
     box-sizing: border-box;
     font-family: var(--ff-body);
@@ -22,18 +20,25 @@ header {
     height: 5vh;
     width: 100%;
     box-shadow: var(--ff-shadow);
+    display: flex;
+    align-items: center;
 }
 
 #home {
     padding-left: 5vw;
+    font-size: 4vh;
+    display:flex;
+    text-decoration: none;
 }
 
 i {
     color: var(--color-light);
+ 
 }
 
 i:hover {
     color: var(--color-yellow);
+    transition: .5s ease-in-out;
 }
 
 /* main, paragraph and its elements*/
@@ -50,11 +55,11 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
-    height: 50vh;
+    justify-content: space-around;
+    height: 60vh;
     padding-inline: 1rem;
-    box-shadow: 0px 6px 10px -3px var(--color-yellow), 0px -6px 10px -3px var(--color-blue);
 }
+
 #par-wrapper > div {
     display:flex;
 }
@@ -66,23 +71,20 @@ p {
 #support {
     padding: .5rem 1rem;
     background: var(--color-yellow);
-    box-shadow: 0px 6px 10px -3px var(--color-yellow), 0px -6px 10px -3px var(--color-blue);
+    box-shadow: var(--shadow-default);
     border-radius: 4px;
 }
 #support >* {
     color: var(--color-blue);
     text-decoration: none;
     font-weight: 700;
-    font-size: 3vh;
+    font-size: 4vh;
 }
 
 #support:hover {
     text-decoration: none;
-
     background: var(--color-blue);
     transition: .5s ease-in-out;
-    /*text-shadow: 2px 2px black;
-    background: linear-gradient(to bottom, #0057b7 50%, #ffd700 50%);*/
 }
 #support>*:hover {
     color: var(--color-yellow);
@@ -90,19 +92,21 @@ p {
 }
 
 footer {
+    display: flex;
     height: 5vh;
+    justify-content: center;
     background-color: var(--color-yellow);
     position: fixed;
     width: 100%;
     bottom: 0;
-    box-shadow: var(--ff-shadow);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
 }
 
-#footer-par {
+footer>p {
+    display: flex;
     font-weight: 500;
-    font-size: 3vh;
-    color: black;
+    font-size: 1.5vmax;
     text-align: center;
-    display: block;
-
+    align-items: center;
 }

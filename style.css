@@ -24,9 +24,9 @@
     color: var(--color-blue);
     text-align: center;
     font-weight: 600;
-    font-size: 2.5vmax;
-    padding: .5rem;
-    border-radius: .1rem;
+ 
+    
+    
     cursor: pointer;
     display: flex;
     box-shadow: var(--shadow-default);
@@ -39,12 +39,14 @@ a {
 
 /*animations*/
 #btn-clickme:hover {
-    background: var(--color-yellow);
+    background: var(--color-blue);
+    color:var(--color-yellow);
+
 }
 
 #btn-reset:hover {
     background-color: var(--color-yellow);
-    transition: all .5s ease;
+    transition: .5s ease-in-out;
 }
 
 /*header: title, click me button (support)*/
@@ -54,7 +56,7 @@ header {
     display: flex;
     position: relative;
     flex-direction: column;
-    box-shadow: var(--shadow-default);
+    box-shadow: 0 10px 10px -5px;
     padding: 3rem 3rem 0 3rem;
 
 }
@@ -87,12 +89,15 @@ header {
 a#btn-clickme.btn {
     display: flex;
     border-radius: 0;
+    font-size: 2vmax;
+    padding: .5rem;
 }
 
 /*main: scores-area, game-area, reset-area*/
 .main {
     position: relative;
     height: 100%;
+    background-color: var(--color-light);
 }
 
 .scores-area,
@@ -136,6 +141,7 @@ a#btn-clickme.btn {
     text-align: center;
     box-shadow: var(--shadow-default);
     border-radius: .1rem;
+    padding: .3rem 0;
 }
 
 .left {
@@ -209,6 +215,9 @@ svg {
     border: none;
     background: var(--color-light);
     align-items: center;
+    font-size: 2.5vmax;
+    border-radius: .1rem;
+    padding: .8rem 1.2rem;
 }
 
 /*footer: credits paragraph*/
