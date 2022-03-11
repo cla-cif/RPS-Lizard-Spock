@@ -169,14 +169,17 @@ a#btn-clickme.btn {
 }
 
 .user-choices {
-    justify-content: flex-start;
-
+    justify-content: flex-end;
 }
 
 .computer-choices {
     justify-content: flex-end;
 
 }
+#path-rock, #path-paper, #path-scissors, #path-lizard, #path-spock {
+    display:none;
+}
+
 
 /*game-area single choices, svg images*/
 svg {
