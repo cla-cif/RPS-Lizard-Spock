@@ -37,17 +37,21 @@ header {
 #home {
 	padding-left: 5vw;
 	font-size: 4vh;
+	font-weight: 500;
 	display: flex;
 	text-decoration: none;
 	background-color: var(--color-blue);
+	color: var(--color-light);
 }
 
 i {
 	color: var(--color-light);
 	background-color: var(--color-blue);
+	margin-right: .5rem;
+	display:flex;
 }
 
-i:hover {
+header>a>*:hover {
 	color: var(--color-yellow);
 	transition: .5s ease-in-out;
 }
