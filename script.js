@@ -48,8 +48,6 @@ function computerChoice() {
 	};
 	let element = reference_object[randomNumber];
 	element.style.display="block";
-	element.style.stroke = "#ffd700";
-	//setTimeout(() => (element.style.stroke = "#000"), timer);
 	setTimeout(() => (element.style.display="none"), timer);
 	return computerDraws[randomNumber];
 }
