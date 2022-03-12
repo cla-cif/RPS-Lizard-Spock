@@ -21,8 +21,6 @@
 /* common parameters*/
 
 .btn {
-	background: var(--color-light);
-	color: var(--color-blue);
 	text-align: center;
 	font-weight: 600;
 	cursor: pointer;
@@ -222,7 +220,8 @@ svg {
 
 #btn-reset {
 	border: none;
-	background: var(--color-light);
+	background: var(--color-blue);
+	color: var(--color-light);
 	align-items: center;
 	font-size: 2.5vmax;
 	border-radius: .1rem;
@@ -232,6 +231,7 @@ svg {
 #btn-reset:hover {
 	background-color: var(--color-yellow);
 	transition: .5s ease-in-out;
+	color: var(--color-blue);
 }
 
 /*footer: credits paragraph*/
