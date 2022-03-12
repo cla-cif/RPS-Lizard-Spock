@@ -9,7 +9,7 @@
 
 * {
 	box-sizing: border-box;
-	color: var(--color-light);
+	background-color: var(--color-light);
 	letter-spacing: .03em;
 	margin: 0;
 	max-width: 100%;
@@ -32,6 +32,15 @@ a {
 	text-decoration: none;
 }
 
+@media screen and (prefers-reduced-motion) {
+	a#btn-clickme:hover,
+	#btn-reset:hover,
+	.uchoice:hover>svg>path {
+		  transform: none;
+		  transition: none;
+	  }
+}
+
 /*header: title, click me button (support)*/
 
 header {
@@ -51,12 +60,16 @@ header {
 
 .title>h1 {
 	display: flex;
+	color: var(--color-light);
+	background-color: var(--color-blue);
 	font-weight: 700;
 	font-size: 5vmax;
 }
 
 .title>h2 {
 	display: flex;
+	color: var(--color-light);
+	background-color: var(--color-blue);
 	font-size: 2vmax;
 	font-weight: 500;
 }
@@ -69,6 +82,8 @@ header {
 }
 
 a#btn-clickme.btn {
+	color: var(--color-light);
+	background-color: var(--color-blue);
 	display: flex;
 	border-radius: 0;
 	font-size: 2vmax;
@@ -76,8 +91,7 @@ a#btn-clickme.btn {
 	padding: .5rem;
 }
 
-#btn-clickme:hover {
-	background: var(--color-blue);
+a#btn-clickme:hover {
 	color: var(--color-yellow);
 	transition: .5s ease-in-out;
 }
@@ -254,6 +268,7 @@ footer>p {
 	font-weight: 500;
 	font-size: 1.5vmax;
 	color: var(--color-dark);
+	background: var(--color-yellow);
 	text-align: center;
 	align-items: center;
 }
