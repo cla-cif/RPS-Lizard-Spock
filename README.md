@@ -2,7 +2,7 @@
 
 __You can find the live link here: [RPS LIZARD SPOCK](https://cla-cif.github.io/RPS-Lizard-Spock/)__
 
-A light rock-paper-scissor game, Big Bang Theory edition - extended to include Lizard and Spock choices. The user plays against the computer, which randomly selects his choices. Whoever reaches 10 first wins the game. 
+A light extention of the classic rock-paper-scissors game: [The Big Bang Theory](https://the-big-bang-theory.com/rock-paper-scissors-lizard-spock/) edition - extention includes Lizard and Spock choices. The user plays against the computer, which randomly selects his choices. Whoever reaches 10 first wins the game. 
 
 As this project was developed during the Russian aggression against Ukraine, the colours of the [Ukrainian flag](https://en.wikipedia.org/wiki/Flag_of_Ukraine) have been chosen as a sign of support. On the homepage there's a [Click me](https://cla-cif.github.io/ RPS -Lizard-Spock/support.html) link that leads to a support page with some details and useful links to support Ukraine and not the developer of the website. 
 
@@ -66,33 +66,33 @@ Layouts: [Desktop](https://github.com/cla-cif/english-with-claudia/blob/main/scr
 
   - The Header contains the name of the game (Rock Paper Scissors Lizard Spock), the challenge (Who gets to 10 first?) and the links to the 'Support' page, called by the message "Psst! Click me". The header bar is fixed to the top, the page is not scrollable and intended to fit the viewheight. The header's text is white on a blue background.
  
-![Header](https://github.com/cla-cif/english-with-claudia/blob/main/screenshot/nav.jpeg)
+![Header](https://github.com/cla-cif/RPS-Lizard-Spock/blob/main/assets/screenshots/header.png)
 
 - __Main section__
 
   - The main section contains the score area, the game area split in two (user's and computer's) and the reset button. 
 
-![Main](https://github.com/cla-cif/english-with-claudia/blob/main/screenshot/hero.jpeg)
+![Main](https://github.com/cla-cif/RPS-Lizard-Spock/blob/main/assets/screenshots/main.png)
 
 - __Scores area__
 
-  - The 'Score area' is split in three equally sized section. In this area is tracked the user's score on the left and the computer's on the right. In the middle a message with the result of the game ("You won! or "Computer won!") and of the match as soon as 10 points are reached by one of the two opponents ("You won the match!", "Computer won the match!");
+  - The 'Scores area' is split in three equally sized section. In this area is tracked the user's score on the left and the computer's on the right. In the middle a message with the result of the game ("You won! or "Computer won!") and of the match as soon as 10 points are reached by one of the two opponents ("You won the match!", "Computer won the match!");
 
-![Scores Area](https://github.com/cla-cif/english-with-claudia/blob/main/screenshot/aboutme.jpeg)
+![Scores area](https://github.com/cla-cif/RPS-Lizard-Spock/blob/main/assets/screenshots/score-area.png)
 
 - __Game area__
 
   - The 'Game area' is split in two: the user's choices are presented on the left and highlighted in blue on hover. Computer's choices are on the right but initially are not visible. 
   - The game starts with the user clicking on one of the five icons. The click will generate a random number associated with the computer's choice. The computer choiche will ve visible for 1.5 seconds. The winner of the game is calculated based on the game's rules, the winner is announced by a temporary message appearing between the two scoreboards. One point is assigned to the winner and visible on the respective scoreboard. 
   
-![Game area](https://github.com/cla-cif/english-with-claudia/blob/main/screenshot/services.jpeg)
+![Game area](https://github.com/cla-cif/RPS-Lizard-Spock/blob/main/assets/screenshots/game-area.png)
 
 - __Reset area__ 
 
   - The 'Reset area' section presents a minimalistic 'Reset' button, consistent in style with the rest of the page's objects. 
   - The game can be restarted by the user at any point clicking the reset button but it's automatically reset once one of the two opponents reaches 10 points. 
 
-![Reset area](https://github.com/cla-cif/english-with-claudia/blob/main/screenshot/form.jpeg)
+![Reset area](https://github.com/cla-cif/RPS-Lizard-Spock/blob/main/assets/screenshots/reset-area.png)
 
 - __The Footer__ 
 
@@ -100,18 +100,19 @@ Layouts: [Desktop](https://github.com/cla-cif/english-with-claudia/blob/main/scr
   -The footer sticks to the bottom
   - The footer serves to invite the user to learn more about the teaching method and the teacher's biography.
   
-![Footer](https://github.com/cla-cif/english-with-claudia/blob/main/screenshot/footer.jpg)
+![Footer](https://github.com/cla-cif/RPS-Lizard-Spock/blob/main/assets/screenshots/footer.png)
 
 - __Other features__ 
-    - The website has an [apple-touch-icon](https://github.com/cla-cif/english-with-claudia/blob/main/assets/images/apple-touch-icon.png) to make the page stand out from other bookmarks, with an orange "C" as a reminder of Claudia (the teacher) and (English) Course. 
-    - The website has a [Union Jack Favicon](https://github.com/cla-cif/english-with-claudia/blob/main/assets/images/favicon.ico) to make the page easy to find among the many open tabs. 
-    - The website has a "Google site verification" to verify the website's ownership as shown [here](https://search.google.com/search-console/ownership?resource_id=https%3A%2F%2Fcla-cif.github.io%2Fenglish-with-claudia%2F).
+    - The website has an [apple-touch-icon](https://github.com/cla-cif/RPS-Lizard-Spock/blob/main/assets/icons/apple-touch-icon.png) to make the page stand out from other bookmarks, with a representation of an atom: a tribute to The Big Bang Theory TV series. 
+    - The website has an [Atomic representation Favicon](https://github.com/cla-cif/RPS-Lizard-Spock/blob/main/assets/icons/game-favicon.ico) to make the home page easy to find among the many open tabs.
+    - The website has two hands embracing a [hearth with Ukranian colors favicon](https://github.com/cla-cif/RPS-Lizard-Spock/blob/main/assets/icons/support-favicon.ico) to make the support page easy to find among the many opens tabs and to spread a support message in favor of the Ukraninan people. 
+    - The website has a "Google site verification" to verify the website's ownership as shown [here](https://search.google.com/search-console/ownership?resource_id=https%3A%2F%2Fcla-cif.github.io%2FRPS-Lizard-Spock%2F).
     - The site has keywords and a description of appropriate length to give the user a brief impression of the site on the browser results page.
 
 ### Features to implement
 
-- Make the Submit button functional. 
-- Implement an efficient cache policy. 
+- Add options to increase complexity. 
+- Add levels. 
 - Add privacy policy and copyright information. 
 - Get the website a domain name. 
 
@@ -121,19 +122,20 @@ Layouts: [Desktop](https://github.com/cla-cif/english-with-claudia/blob/main/scr
 
 -   [HTML5](https://en.wikipedia.org/wiki/HTML5)
 -   [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
+-   [JAVASCRIPT](https://en.wikipedia.org/wiki/JavaScript)
 
 ### Frameworks, Libraries & Programs Used
 
 - [Google Fonts:](https://fonts.google.com/)
-    - Google Fonts were used to import the 'Oswald' and 'Nunito' font into the HTML page. 
+    - Google Fonts were used to import the 'Smooch Sans' font into the HTML pages (home and suppor). 
 - [Font Awesome:](https://fontawesome.com/)
-    - Font Awesome was used for the social media links in the footer section.
+    - Font Awesome was used for the home icon of the 'support page' header.
 - [Gitpod](https://www.gitpod.io/)
     - Gitpod Dashboard was used to write the code and its terminal to 'commit' to Git and 'push' to GitHub.
 - [GitHub:](https://github.com/)
     - GitHub is used to store the projects code after being pushed from Git.
-- [JPEGMiniPRo](https://www.jpegmini.com/creators)
-    - JPEG Mini Pro was used to compress the image and ensure minimal quality loss.
+- [Iconfinder](https://www.iconfinder.com/)
+    - Favicons (.ico) and apple touch icons (.png) are from Iconfinder.
 - [Balsamiq:](https://balsamiq.com/)
     - Balsamiq was used to create the [wireframe](https://github.com/cla-cif/english-with-claudia/blob/main/screenshot/index-wireframe.png) before the deployment process began.
  
