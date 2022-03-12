@@ -1,14 +1,16 @@
-<h1 align="center" id="top">English with Claudia</h1>
+<h1 align="center" id="top">ROCK PAPER SCISSORS LIZARD SPOCK</h1>
 
-__You can find the live link here: [English with Claudia](https://cla-cif.github.io/english-with-claudia/)__
+__You can find the live link here: [RPS LIZARD SPOCK](https://cla-cif.github.io/RPS-Lizard-Spock/)__
 
-English with Claudia is the landing pad website for English learners. The website is aimed at learners of all ages and levels who want to improve or maintain their language skills thanks to the tailor-made and flexible teaching method of teacher Claudia. English with Claudia is a clear and easy-to-navigate website: The aim is to arouse curiosity and lead the student effortlessly to the "Contact me" form.
+A light rock-paper-scissor game, Big Bang Theory edition - extended to include Lizard and Spock choices. The user plays against the computer, which randomly selects his choices. Whoever reaches 10 first wins the game. 
 
-Considering the educational purpose of the website, special attention was paid to accessibility in order to welcome every student. Therefore, high-contrast colours, minimalist animations and light graphics, among others, were preferred.
+As this project was developed during the Russian aggression against Ukraine, the colours of the [Ukrainian flag](https://en.wikipedia.org/wiki/Flag_of_Ukraine) have been chosen as a sign of support. On the homepage there's a [Click me](https://cla-cif.github.io/ RPS -Lizard-Spock/support.html) link that leads to a support page with some details and useful links to support Ukraine and not the developer of the website. 
 
-The text was tested against common [readability indices](https://www.analyzemywriting.com/readability_indices.html#:~:text=A%20readability%20index%20is%20an,the%20complexity%20of%20a%20text.) and refined to be easily understood by most users. The text presenting the English lessons should not be difficult to read, as the intended users are indeed learners.
+The game has a simple interface, it's intuitive and easy to use. 
+The support page conveys a short but effective message.
 
 ![Landing page](https://github.com/cla-cif/english-with-claudia/blob/main/screenshot/landing-page.jpeg)
+![Support page]()
 
 ## Content
 - [User Experience](#User-Experience-(UX))
