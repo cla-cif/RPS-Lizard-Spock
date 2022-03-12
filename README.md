@@ -114,6 +114,7 @@ Layouts: [Desktop](https://github.com/cla-cif/english-with-claudia/blob/main/scr
 - Add options to increase complexity. 
 - Add levels. 
 - Add privacy policy and copyright information. 
+- Add robot.txt file. 
 - Get the website a domain name. 
 
 ## Technologies used
@@ -146,16 +147,15 @@ Layouts: [Desktop](https://github.com/cla-cif/english-with-claudia/blob/main/scr
 The website's features were thoroughly tested using some well-known free web testers. Particular attention was paid to SEO and accessibility as the website offers educational resources.
 
 - __Web Responsive__
-    - The responsive feature has been tested using Chrome DevTools and an online Web [Design checker](https://responsivedesignchecker.com/checker.php?url=https%3A%2F%2Fcla-cif.github.io%2Fenglish-with-claudia%2F&width=1400&height=700). 
+    - The responsive feature has been tested using Chrome DevTools and an online Web [Design checker](https://responsivedesignchecker.com/checker.php?url=https%3A%2F%2Fcla-cif.github.io%2FRPS-Lizard-Spock%2F&width=1400&height=700). 
 The website's layout has been tested on a range of different screen sizes, from small 320x480 screens (e.g. Apple iPhone 3) to widescreen 24" and their landscape view providing a good user experience. 
-The website has passed the [Google mobile-friendly test](https://search.google.com/test/mobile-friendly/result?id=a6mUE2LpdV19X1xP-L4ljA).
-    - Note: Images and the submit form have been removed from the small screen layout for better readability and a warning message is displayed instead.
+The website has passed the [Google mobile-friendly test](https://search.google.com/test/mobile-friendly/result?id=OPXjC51ESN7aQgtAmaf9Uw).
 
 - __Accessibility__
 
-  - __Colours:__ All colours checked with [WebAim](https://webaim.org/resources/contrastchecker/) have an optimal contrast ratio. 
+  - __Colours:__ All colours checked with [WebAim](https://webaim.org/resources/contrastchecker/) have an optimal contrast ratio(6.32:1 (blue/white), 4.91:1(blue/yellow), 14.97:1 (yellow/black))
   - __Reduced motion:__ All animations are disabled when "Show animation in Windows" is disabled from settings in Win10. 
-  - __Colour blindness:__ Colour-blind webpage filters have been taken into account with [Toptal](https://www.toptal.com/designers/colorfilter/).
+  - __Colour blindness:__ Colour-blind webpage filters have been taken into account with [Toptal](https://www.toptal.com/designers/colorfilter/) e.g. for [Tritanopia](https://www.toptal.com/designers/colorfilter?orig_uri=https://cla-cif.github.io/RPS-Lizard-Spock/&process_type=tritan)
   - __Screen Reader:__ Texts, links and images' 'alt text' were read with the Google Chrome extension Screen Reader (version 53.0.2784.13). 
   - __Presbiopia:__ All fonts are 'sans serif' and have a sufficient size so that the text can be easily read without glasses.
   - __Readability:__ As the main target audience is English language learners, the text was rated 'easy to understand', as tested with [WebFX](https://www.webfx.com/tools/read-able/check.php?uri=https%3A%2F%2Fcla-cif.github.io%2Fenglish-with-claudia%2F&tab=Test+By+Url&imahuman=16749697).
