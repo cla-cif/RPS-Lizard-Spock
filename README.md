@@ -9,8 +9,8 @@ As this project was developed during the Russian aggression against Ukraine, the
 The game has a simple interface, it's intuitive and easy to use. 
 The support page conveys a short but effective message.
 
-![Landing page](https://github.com/cla-cif/english-with-claudia/blob/main/screenshot/landing-page.jpeg)
-![Support page]()
+![Landing page](https://github.com/cla-cif/RPS-Lizard-Spock/blob/main/assets/screenshots/home.png)
+![Support page](https://github.com/cla-cif/RPS-Lizard-Spock/blob/main/assets/screenshots/support.png)
 
 ## Content
 - [User Experience](#User-Experience-(UX))
@@ -26,17 +26,14 @@ The support page conveys a short but effective message.
 
     -   #### First-time Visitor Goals
 
-        1. As a First-time visitor, I want to understand if the services are suitable for me. 
-        2. As a First-time visitor and a learner, I want the text to be easy to decipher, short and written in a rather casual language. 
-        3. As a First-time first-time visitor with an impairment, I want to be able to navigate the website easily to find information, read all the text by myself or with a screen reader, find colours that are not misleading, and find animations disabled if so set.
-        4. As a First-time visitor, I may want to learn more about the service on social media.
-        5. As a First-time visitor, I want to engage with the organisation easily, quickly and effectively.
+        1. As a First-time visitor, I want to play a simple and intuitive game. 
+        2. As a First-time visitor, I want to learn more about the project and its developer. 
+        3. As a First-time first-time visitor with an impairment, I want to be able to read all the text by myself or with a screen reader and find colours that are not misleading.
         
     -   #### Returning Visitor Goals
 
-        1. As a returning visitor, I would like to find information, prices, conditions and timetables that are always up to date.
-        2. As a returning visitor, I want to find the best way to contact the organisation when I have questions.
-        3. As a returning visitor with a disability, I want to find the same or even better accessibility than before.
+        1. As a returning visitor, I want to find the same game but with less bugs. 
+        2. As a returning visitor with a disability, I want to find the same or even better accessibility than before.
         
 -   ### Wireframes
 
@@ -48,27 +45,28 @@ Layouts: [Desktop](https://github.com/cla-cif/english-with-claudia/blob/main/scr
 -  ### Design
 
     - __Colours__
-        -   The two main colours used are orange and white. Orange was chosen because is an energetic and attention-grabbing colour, as psychologists recommend [here](https://www.verywellmind.com/the-color-psychology-of-orange-2795818). White was chosen for an optimal contrast ratio between background and text. 
+        -   The three main colours used are a shade of white, yellow and blue. Yellow and blue were chosen as a tribute to the Ukrainian, which was ravaged by war at the time this project was created. White was chosen to achieve an optimal contrast ratio between the background and the text. 
     - __Typography__
-        -   'Oswald' for headings and 'Nunito' for paragraphs and other elements, paired as suggested by Google Fonts. 
+        -   The font "Smooch Sans" from Google Fonts was chosen for its modern, captivating and playful style. 
     - __Images__
-        -   The images are simple and inviting. All images have alt text to maximise accessibility.
-
+        -   The svg files for user and computer choice are clear, simple and display optimally on all screens.
+        
 ## Features 
 
 -   Responsive on all device sizes
 -   Accessible for users with hearing and visual impairments
 -   Interactive elements
 
-![Screenshot from Am I Responsive webpage](https://github.com/cla-cif/english-with-claudia/blob/main/screenshot/responsive.jpg)
+![Home page screenshot from Am I Responsive webpage](https://github.com/cla-cif/RPS-Lizard-Spock/blob/main/assets/screenshots/responsive-home.png)
+![Support page screenshot from Am I Responsive webpage](https://github.com/cla-cif/RPS-Lizard-Spock/blob/main/assets/screenshots/responsive-support.png)
 
 ### Existing Features
 
-- __Navigation bar__
+- __Header__
 
-  - The navigation bar contains links to the 'About me' section and the 'Contact me" form, the core of the website. The navigation bar is intentionally fixed to the top to avoid distractions and to convey the message of each section as clearly and directly as possible.
+  - The Header contains the name of the game (Rock Paper Scissors Lizard Spock), the challenge (Who gets to 10 first?) and the links to the 'Support' page, called by the message "Psst! Click me". The header bar is fixed to the top, the page is not scrollable and intended to fit the viewheight. 
  
-![Nav Bar](https://github.com/cla-cif/english-with-claudia/blob/main/screenshot/nav.jpeg)
+![Header](https://github.com/cla-cif/english-with-claudia/blob/main/screenshot/nav.jpeg)
 
 - __The landing page image__
 
