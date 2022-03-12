@@ -1,112 +1,117 @@
 :root {
-    --color-blue: #0057b7;
-    --color-yellow: #ffd700;
-    --color-light: #f5f5f5;
-    --ff-body: 'Smooch Sans', sans-serif;
-    --shadow-default: 0px 6px 10px -3px var(--color-yellow), 0px -6px 10px -3px var(--color-blue);
+	--color-blue: #0057b7;
+	--color-yellow: #ffd700;
+	--color-light: #f5f5f5;
+	--ff-body: 'Smooch Sans', sans-serif;
+	--shadow-default: 0px 6px 10px -3px var(--color-yellow), 0px -6px 10px -3px var(--color-blue);
 }
+
 * {
-    box-sizing: border-box;
-    font-family: var(--ff-body);
-    letter-spacing: .03em;
-    margin: 0;
-    overflow: hidden;
+	box-sizing: border-box;
+	font-family: var(--ff-body);
+	letter-spacing: .03em;
+	margin: 0;
+	overflow: hidden;
 }
 
 /* header, home button */
+
 header {
-    top: 0;
-    background: var(--color-blue);
-    height: 5vh;
-    width: 100%;
-    box-shadow: var(--ff-shadow);
-    display: flex;
-    align-items: center;
+	top: 0;
+	background: var(--color-blue);
+	height: 5vh;
+	width: 100%;
+	box-shadow: var(--ff-shadow);
+	display: flex;
+	align-items: center;
 }
 
 #home {
-    padding-left: 5vw;
-    font-size: 4vh;
-    display:flex;
-    text-decoration: none;
+	padding-left: 5vw;
+	font-size: 4vh;
+	display: flex;
+	text-decoration: none;
 }
 
 i {
-    color: var(--color-light);
- 
+	color: var(--color-light);
 }
 
 i:hover {
-    color: var(--color-yellow);
-    transition: .5s ease-in-out;
+	color: var(--color-yellow);
+	transition: .5s ease-in-out;
 }
 
 /* main, paragraph and its elements*/
-main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 90vh;
-    background: var(--color-light);
 
+main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 90vh;
+	background: var(--color-light);
 }
 
 #par-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    height: 60vh;
-    padding-inline: 1rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	height: 60vh;
+	padding-inline: 1rem;
 }
 
-#par-wrapper > div {
-    display:flex;
+#par-wrapper>div {
+	display: flex;
 }
+
 p {
-    font-size: 3vh;
-    font-weight: 600;
+	font-size: 3vh;
+	font-weight: 600;
+}
+/*link to SUPPORT UKRAINE NOW page*/
+#support {
+	padding: .5rem 1rem;
+	background: var(--color-yellow);
+	box-shadow: var(--shadow-default);
+	border-radius: 4px;
 }
 
-#support {
-    padding: .5rem 1rem;
-    background: var(--color-yellow);
-    box-shadow: var(--shadow-default);
-    border-radius: 4px;
-}
-#support >* {
-    color: var(--color-blue);
-    text-decoration: none;
-    font-weight: 700;
-    font-size: 4vh;
+#support>* {
+	color: var(--color-blue);
+	text-decoration: none;
+	font-weight: 700;
+	font-size: 4vh;
 }
 
 #support:hover {
-    text-decoration: none;
-    background: var(--color-blue);
-    transition: .5s ease-in-out;
+	text-decoration: none;
+	background: var(--color-blue);
+	transition: .5s ease-in-out;
 }
+
 #support>*:hover {
-    color: var(--color-yellow);
-    transition: .5s ease-in-out;
+	color: var(--color-yellow);
+	transition: .5s ease-in-out;
 }
+
+/*footer*/
 
 footer {
-    display: flex;
-    height: 5vh;
-    justify-content: center;
-    background-color: var(--color-yellow);
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-
+	display: flex;
+	height: 5vh;
+	justify-content: center;
+	background-color: var(--color-yellow);
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 footer>p {
-    display: flex;
-    font-weight: 500;
-    font-size: 1.5vmax;
-    text-align: center;
-    align-items: center;
+	display: flex;
+	font-weight: 500;
+	font-size: 1.5vmax;
+	text-align: center;
+	align-items: center;
 }

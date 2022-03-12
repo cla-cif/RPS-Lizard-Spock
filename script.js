@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 function computerChoice() {
 	/*generates a random number paired with the array of computer options, 
-	temporary highlits the correspondant computer choice*/
+	temporary shows the correspondant computer choice*/
 	const computerDraws = ["rock", "paper", "scissors", "lizard", "spock"];
 	const randomNumber = Math.floor(Math.random() * computerDraws.length);
 	let reference_object = {
