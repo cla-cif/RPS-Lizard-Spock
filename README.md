@@ -64,41 +64,40 @@ Layouts: [Desktop](https://github.com/cla-cif/english-with-claudia/blob/main/scr
 
 - __Header__
 
-  - The Header contains the name of the game (Rock Paper Scissors Lizard Spock), the challenge (Who gets to 10 first?) and the links to the 'Support' page, called by the message "Psst! Click me". The header bar is fixed to the top, the page is not scrollable and intended to fit the viewheight. 
+  - The Header contains the name of the game (Rock Paper Scissors Lizard Spock), the challenge (Who gets to 10 first?) and the links to the 'Support' page, called by the message "Psst! Click me". The header bar is fixed to the top, the page is not scrollable and intended to fit the viewheight. The header's text is white on a blue background.
  
 ![Header](https://github.com/cla-cif/english-with-claudia/blob/main/screenshot/nav.jpeg)
 
-- __The landing page image__
+- __Main section__
 
-  - The landing page contains a photo with a high-contrast text overlay that allows the user to immediately identify the three main services the teacher offers. 
+  - The main section contains the score area, the game area split in two (user's and computer's) and the reset button. 
 
-![Hero](https://github.com/cla-cif/english-with-claudia/blob/main/screenshot/hero.jpeg)
+![Main](https://github.com/cla-cif/english-with-claudia/blob/main/screenshot/hero.jpeg)
 
-- __About me section__
+- __Scores area__
 
-  - The 'About me' section includes a picture of the teacher, a welcome message and a brief description of the teacher's professional experience and goals. The picture was chosen to inspire confidence and the welcome message is intended to reassure the users and encourage them to read on. The biography has been deliberately kept short so that it does not become boring. At the end of the bio, there is a prompt to learn more and a link to the social media buttons in the footer.
+  - The 'Score area' is split in three equally sized section. In this area is tracked the user's score on the left and the computer's on the right. In the middle a message with the result of the game ("You won! or "Computer won!") and of the match as soon as 10 points are reached by one of the two opponents ("You won the match!", "Computer won the match!");
 
-![About me](https://github.com/cla-cif/english-with-claudia/blob/main/screenshot/aboutme.jpeg)
+![Scores Area](https://github.com/cla-cif/english-with-claudia/blob/main/screenshot/aboutme.jpeg)
 
-- __Services section__
+- __Game area__
 
-  - This section answers the question that most users/students will ask at some point: "are these lessons right for me?". The section introduces in a few concise sentences the three main features of the teaching service: "tailored", "strategic" and "flexible".
-  - Each feature is accompanied by an image that matches the page message and website colours. The images are simple, easy to understand and convey a message that is aligned with the website's objectives.
-  - The times, hours and conditions will be updated whenever necessary.
+  - The 'Game area' is split in two: the user's choices are presented on the left and highlighted in blue on hover. Computer's choices are on the right but initially are not visible. 
+  - The game starts with the user clicking on one of the five icons. The click will generate a random number associated with the computer's choice. The computer choiche will ve visible for 1.5 seconds. The winner of the game is calculated based on the game's rules, the winner is announced by a temporary message appearing between the two scoreboards. One point is assigned to the winner and visible on the respective scoreboard. 
   
-![Service](https://github.com/cla-cif/english-with-claudia/blob/main/screenshot/services.jpeg)
+![Game area](https://github.com/cla-cif/english-with-claudia/blob/main/screenshot/services.jpeg)
 
-- __Contact me section__ 
+- __Reset area__ 
 
-  - The 'Contact me' section is intuitive with the promise of a response within 24 hours. The form is on the right hand side to facilitate the natural eye movement of western readers from left to right.
-  - The form's field are mandatory to fill in and an alert warns the user if some fields are left blank before submission.
+  - The 'Reset area' section presents a minimalistic 'Reset' button, consistent in style with the rest of the page's objects. 
+  - The game can be restarted by the user at any point clicking the reset button but it's automatically reset once one of the two opponents reaches 10 points. 
 
-![Contact me](https://github.com/cla-cif/english-with-claudia/blob/main/screenshot/form.jpeg)
+![Reset area](https://github.com/cla-cif/english-with-claudia/blob/main/screenshot/form.jpeg)
 
 - __The Footer__ 
 
-  - The right section of the footer contains links to the corresponding social media pages of English with Claudia and the teacher. The links open in a new tab to allow users to navigate easily.
-  -The left area of the footer contains links to the "About" and "Top of page" pages, which are anchored in the header. This area is intentionally located directly below the "Submit" button in case the user wants to return to the relevant information before submitting the form.
+  - The 'Footer' shows the name of the developer and the year the project was created. The text is black on a yellow background. 
+  -The footer sticks to the bottom
   - The footer serves to invite the user to learn more about the teaching method and the teacher's biography.
   
 ![Footer](https://github.com/cla-cif/english-with-claudia/blob/main/screenshot/footer.jpg)
