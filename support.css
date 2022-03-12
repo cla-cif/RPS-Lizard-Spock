@@ -14,6 +14,7 @@
 	overflow: hidden;
 }
 @media screen and (prefers-reduced-motion) {
+	#home>*:hover, 
 	i:hover,
 	#support:hover,
 	#support>*:hover {
@@ -36,22 +37,25 @@ header {
 
 #home {
 	padding-left: 5vw;
+
+}
+#home>a {
 	font-size: 4vh;
 	font-weight: 500;
 	display: flex;
 	text-decoration: none;
 	background-color: var(--color-blue);
 	color: var(--color-light);
+	align-items: baseline;
 }
-
 i {
 	color: var(--color-light);
 	background-color: var(--color-blue);
 	margin-right: .5rem;
-	display:flex;
 }
 
-header>a>*:hover {
+#home>*:hover, 
+i:hover {
 	color: var(--color-yellow);
 	transition: .5s ease-in-out;
 }
