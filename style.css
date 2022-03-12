@@ -289,8 +289,9 @@ footer>p {
 		flex-direction: column;
 	}
 	svg {
-		width: 15vw;
-		height: auto;
+		height: 9vh;
+		width: auto;
+		margin-bottom: 0.1rem;
 	}
 	/*reset area*/
 	.reset-area {
