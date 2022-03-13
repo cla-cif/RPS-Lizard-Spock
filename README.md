@@ -53,14 +53,18 @@ Layouts: [Desktop](https://github.com/cla-cif/english-with-claudia/blob/main/scr
         
 ## Features 
 
--   Responsive on all device sizes
--   Accessible for users with hearing and visual impairments
--   Interactive elements
+-   Responsive on all device sizes.
+-   Accessible for users with hearing and visual impairments.
+-   Interactive elements.
 
 ![Home page screenshot from Am I Responsive webpage](https://github.com/cla-cif/RPS-Lizard-Spock/blob/main/assets/screenshots/responsive-home.png)
 ![Support page screenshot from Am I Responsive webpage](https://github.com/cla-cif/RPS-Lizard-Spock/blob/main/assets/screenshots/responsive-support.png)
 
-### Existing Features
+- Note:
+    - Given the recreative/social purpose of the project, links to the developer's social media were not deemed necessary. 
+    - Given the size of the project, a sitemap was not deemed necessary. 
+
+### Existing Features - Home page
 
 - __Header__
 
@@ -97,8 +101,7 @@ Layouts: [Desktop](https://github.com/cla-cif/english-with-claudia/blob/main/scr
 - __The Footer__ 
 
   - The 'Footer' shows the name of the developer and the year the project was created. The text is black on a yellow background. 
-  -The footer sticks to the bottom
-  - The footer serves to invite the user to learn more about the teaching method and the teacher's biography.
+  - The footer sticks to the bottom.
   
 ![Footer](https://github.com/cla-cif/RPS-Lizard-Spock/blob/main/assets/screenshots/footer.png)
 
@@ -109,12 +112,31 @@ Layouts: [Desktop](https://github.com/cla-cif/english-with-claudia/blob/main/scr
     - The website has a "Google site verification" to verify the website's ownership as shown [here](https://search.google.com/search-console/ownership?resource_id=https%3A%2F%2Fcla-cif.github.io%2FRPS-Lizard-Spock%2F).
     - The site has keywords and a description of appropriate length to give the user a brief impression of the site on the browser results page.
 
+### Existing Features - Support page
+
+- __Header__
+
+  - The Header is minimalistic, matches the color of the home page and the size of the footer. It has one home icon and the label 'Home' on the top left area. The label has been added for a better accessibility. 
+ 
+![Header](https://github.com/cla-cif/RPS-Lizard-Spock/blob/main/assets/screenshots/header-support.png)
+
+- __Main section__
+
+  - The main section contains the developer's message to the user and a link to [support Ukraine](https://supportukrainenow.org/). The message is brief, simple but effective. The link, styled as a button, matches the Ukranian flag on default and on hover.  
+
+![Main](https://github.com/cla-cif/RPS-Lizard-Spock/blob/main/assets/screenshots/main-support.png)
+
+- __The Footer__ 
+
+  - The 'Footer' shows the name of the developer and the year the project was created. The text is black on a yellow background. 
+  - The footer sticks to the bottom.
+  
+![Footer](https://github.com/cla-cif/RPS-Lizard-Spock/blob/main/assets/screenshots/footer.png)
+
 ### Features to implement
 
-- Add options to increase complexity. 
-- Add levels. 
+- Add choices and levels to increase complexity. 
 - Add privacy policy and copyright information. 
-- Add robot.txt file. 
 - Get the website a domain name. 
 
 ## Technologies used
@@ -123,7 +145,7 @@ Layouts: [Desktop](https://github.com/cla-cif/english-with-claudia/blob/main/scr
 
 -   [HTML5](https://en.wikipedia.org/wiki/HTML5)
 -   [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
--   [JAVASCRIPT](https://en.wikipedia.org/wiki/JavaScript)
+-   [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
 
 ### Frameworks, Libraries & Programs Used
 
