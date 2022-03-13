@@ -22,7 +22,6 @@
 
 .btn {
 	text-align: center;
-	font-weight: 600;
 	cursor: pointer;
 	display: flex;
 	box-shadow: var(--shadow-default);
@@ -33,12 +32,13 @@ a {
 }
 
 @media screen and (prefers-reduced-motion) {
+
 	a#btn-clickme:hover,
 	#btn-reset:hover,
 	.uchoice:hover>svg>path {
-		  transform: none;
-		  transition: none;
-	  }
+		transform: none;
+		transition: none;
+	}
 }
 
 /*header: title, click me button (support)*/
@@ -275,49 +275,69 @@ footer>p {
 /* media queries*/
 
 @media only screen and (max-width: 768px) {
+
 	/*header*/
 	header {
 		height: 20vh;
 		padding: 2rem 2rem 0 2rem;
 	}
+
+	.title>h2,
+	a#btn-clickme.btn {
+		font-size: 2.5vmax;
+	}
+
 	/*scores area*/
 	.scores-area {
 		height: 15vh;
 		display: grid;
-		grid-template-areas: "left right" "middle middle";
+		grid-template-areas: "left right""middle middle";
 		grid-template-columns: 50vw 50vw;
 		grid-template-rows: auto;
 	}
+
 	.left {
 		grid-area: left;
 		align-self: end;
 	}
+
 	#result-message {
 		grid-area: middle;
 		align-self: end;
 	}
+
 	.right {
 		grid-area: right;
 		align-self: end;
 	}
+
 	/*game area*/
 	.game-area {
 		height: 50vh;
 		justify-content: space-around;
 	}
+
 	.computer-choices,
 	.user-choices {
 		flex-direction: column;
 	}
+
 	svg {
 		height: 9vh;
 		width: auto;
 		margin-bottom: .1rem;
 	}
+
 	/*reset area*/
 	.reset-area {
-		height: 5vh;
+		height: 10vh;
 	}
+
+	#btn-reset {
+		font-size: 3vmax;
+
+	}
+
 	/*footer*/
 	footer>p {
 		font-size: 2vh;

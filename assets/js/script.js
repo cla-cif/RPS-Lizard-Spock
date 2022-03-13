@@ -151,7 +151,7 @@ function resetScore() {
 
 /* JQUERY */
 
-/* simulates :hover effect for mouse and touch screen*/
+// simulates :hover effect for mouse and touch screen
 $(".uchoice").on('mouseover touchstart', function () {
 	$(this).find('svg').children().css({
 		'stroke': '#0057b7',
@@ -163,14 +163,25 @@ $(".uchoice").on('mouseleave touchend', function () {
 	$(this).find('svg').children().css({
 		'stroke': '#000'
 	});
+	//touch screen only: if no option is selected, user choiche style is back to default after timeout
 	setTimeout(function () {
 		$(".uchoice").find('svg').children().css({
 			'stroke': '#000'
-		})
+		});
 	}, 1500);
 });
 
-/*when user selects another option, the computer choice disappears before timeout*/
+// touch screen only: reset button back to default after timeout
+$("#btn-reset").on('touchend', function () {
+	setTimeout(function () {
+		$("#btn-reset").css({
+			'background-color': '#0057b7',
+			'color': '#f5f5f5'
+		});
+	}, 1500);
+});
+
+//when user selects another option, the computer choice disappears before timeout
 $(".uchoice").on('click', function () {
 	$(".cchoice").find('svg').children().css({
 		'display': 'none'
