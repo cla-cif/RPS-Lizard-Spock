@@ -79,7 +79,7 @@ header {
 	display: flex;
 	color: var(--color-light);
 	background-color: var(--color-blue);
-	font-size: 2vmax;
+	font-size: 3.5vmin;
 	font-weight: 500;
 }
 
@@ -95,7 +95,7 @@ a#btn-clickme.btn {
 	background-color: var(--color-blue);
 	display: flex;
 	border-radius: 0;
-	font-size: 2vmax;
+	font-size: 3.5vmin;
 	font-weight: 500;
 	padding: .5rem;
 }
@@ -275,7 +275,7 @@ footer {
 footer>p {
 	display: flex;
 	font-weight: 500;
-	font-size: 1.5vmax;
+	font-size: 3vmin;
 	color: var(--color-dark);
 	background-color: var(--color-yellow);
 	text-align: center;
@@ -310,7 +310,7 @@ footer>p {
 	}
 	/*game area*/
 	.game-area {
-		height: 40vh;
+		height: 50vh;
 		justify-content: space-around;
 	}
 	.computer-choices,
