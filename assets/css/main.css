@@ -79,7 +79,7 @@ header {
 	display: flex;
 	color: var(--color-light);
 	background-color: var(--color-blue);
-	font-size: 3.5vmin;
+	font-size: 2vmax;
 	font-weight: 500;
 }
 
@@ -95,7 +95,7 @@ a#btn-clickme.btn {
 	background-color: var(--color-blue);
 	display: flex;
 	border-radius: 0;
-	font-size: 3.5vmin;
+	font-size: 2vmax;
 	font-weight: 500;
 	padding: .5rem;
 }
@@ -275,7 +275,7 @@ footer {
 footer>p {
 	display: flex;
 	font-weight: 500;
-	font-size: 3vmin;
+	font-size: 3vh;
 	color: var(--color-dark);
 	background-color: var(--color-yellow);
 	text-align: center;
@@ -285,8 +285,10 @@ footer>p {
 /* media queries*/
 
 @media only screen and (max-width: 768px) {
+	/*header*/
 	header {
 		height: 20vh;
+		padding: 2rem 2rem 0 2rem;
 	}
 	/*scores area*/
 	.scores-area {
@@ -318,12 +320,16 @@ footer>p {
 		flex-direction: column;
 	}
 	svg {
-		height: 8vh;
+		height: 9vh;
 		width: auto;
-		margin-bottom: 0.1rem;
+		margin-bottom: .1rem;
 	}
 	/*reset area*/
 	.reset-area {
 		height: 5vh;
+	}
+	/*footer*/
+	footer>p {
+		font-size: 2vh;
 	}
 }
