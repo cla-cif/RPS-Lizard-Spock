@@ -175,8 +175,8 @@ $(".uchoice").on('mouseleave touchend', function () {
 $("#btn-reset").on('touchend', function () {
 	setTimeout(function () {
 		$("#btn-reset").css({
-			'background-color': '#0057b7',
-			'color': '#f5f5f5'
+			'background-color': '#ffd700',
+			'color': '#0057b7'
 		});
 	}, 1500);
 });

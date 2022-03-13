@@ -56,6 +56,7 @@ header {
 .title {
 	display: flex;
 	flex-direction: column;
+	height:fit-content;
 }
 
 .title>h1 {
@@ -279,12 +280,12 @@ footer>p {
 	/*header*/
 	header {
 		height: 20vh;
-		padding: 2rem 2rem 0 2rem;
+		padding: 1.5rem 2rem 0 2rem;
 	}
 
 	.title>h2,
 	a#btn-clickme.btn {
-		font-size: 2.5vmax;
+		font-size: 2.4vmax;
 	}
 
 	/*scores area*/
@@ -334,7 +335,7 @@ footer>p {
 	}
 
 	#btn-reset {
-		font-size: 3vmax;
+		font-size: 3.5vmax;
 
 	}
 
