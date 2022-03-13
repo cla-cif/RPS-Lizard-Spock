@@ -99,7 +99,9 @@ function game(uChoice) {
 }
 
 function incrementUserScore() {
-	//displays a temporary message with the outcome of the game function and increments the score
+	/* displays a temporary message when user wins according to the game function,
+	increments the score,
+	at 10 points calls the winner function*/
 	userScore++;
 	userScore_span.innerHTML = userScore;
 	result_p.innerHTML = "YOU WON!";
@@ -110,7 +112,9 @@ function incrementUserScore() {
 }
 
 function incrementComputerScore() {
-	//displays a temporary message with the outcome of the game function and increments the score
+	/* displays a temporary message when computer wins according to the game function,
+	increments the score,
+	at 10 points calls the winner function*/
 	computerScore++;
 	computerScore_span.innerHTML = computerScore;
 	result_p.innerHTML = "COMPUTER WON!";
@@ -121,14 +125,13 @@ function incrementComputerScore() {
 }
 
 function tie() {
-	//displays a temporary message with the outcome of the game function
+	//displays a temporary message when computer and user made the same choiche according to the game function
 	result_p.innerHTML = "IT'S A TIE!";
 	setTimeout(() => (result_p.style.visibility = "hidden"), timer);
 }
 
 function winner(win) {
-	/*show a message with the winner, 
-	resets score*/
+	//show a message with the winner, resets the score 
 	if (win === "computer") {
 		result_p.innerHTML = "COMPUTER WON THE MATCH!";
 		resetScore();
@@ -139,28 +142,29 @@ function winner(win) {
 }
 
 function resetScore() {
-	/*set js variables and relative HTML elements to 0*/
+	/*set js variables and relative HTML elements in the score-area to 0*/
 	userScore = 0;
 	computerScore = 0;
 	userScore_span.innerHTML = 0;
 	computerScore_span.innerHTML = 0;
 }
+
 /* JQUERY */
 
-/* simulate :hover with jquery to avoid hover triggered on mobile*/
-$(".uchoice").on('mouseover touchenter', function() {
+/* simulates :hover effect for mouse and touch screen*/
+$(".uchoice").on('mouseover touchstart', function() {
 	$(this).find('svg').children().css({
 	  'stroke': '#0057b7',
 	  'filter': 'drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4))'
 	});
   });
-  $(".uchoice").on('mouseleave touchleave', function() {
+  $(".uchoice").on('mouseleave touchend', function() {
 	$(this).find('svg').children().css({
-	  'stroke': 'black'
+	  'stroke': '#000'
 	});
   });
 
-/*when user selects another option, the computer choice disappears*/
+/*when user selects another option, the computer choice disappears before timeout*/
 $(".uchoice").on('click', function() {
 	$(".cchoice").find('svg').children().css({
 		'display': 'none'
