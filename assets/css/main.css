@@ -41,12 +41,14 @@ a {
 	  }
 }
 
-@media (hover: none) {
-	a#btn-clickme:hover,
-	#btn-reset:hover,
+@media (hover: hover) and (pointer: fine) {
+	a#btn-clickme:hover, 
+	#btn-reset:hover {
+		color:var(--color-light);
+		background-color: var(--color-blue);
+	}
 	.uchoice:hover>svg>path {
-		  color:inherit;
-		  background-color: inherit;
+		  color:var(--color-blue);
 	  }
 }
 

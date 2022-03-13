@@ -22,9 +22,12 @@
 		  transition: none;
 	  }
 }
-@media (hover: none) {
+@media (hover: hover) and (pointer: fine) {
 	#home>*:hover, 
-	i:hover,
+	i:hover {
+		color:var(--color-yellow);
+		background-color: inherit;
+	}
 	#support:hover,
 	#support>*:hover {
 		  color:inherit;
