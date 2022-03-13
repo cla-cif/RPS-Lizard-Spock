@@ -47,9 +47,6 @@ a {
 		color:var(--color-light);
 		background-color: var(--color-blue);
 	}
-	.uchoice:hover>svg>path {
-		  color:var(--color-blue);
-	  }
 }
 
 /*header: title, click me button (support)*/
@@ -228,7 +225,6 @@ svg {
 	cursor: pointer;
 }
 
-/*.uchoice:hover>svg>path,*/
 .cchoice svg>path {
 	stroke: var(--color-blue);
 	filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));

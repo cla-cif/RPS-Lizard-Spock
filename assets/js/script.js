@@ -51,6 +51,7 @@ function computerChoice() {
 	let element = reference_object[randomNumber];
 	element.style.display="block";
 	setTimeout(() => (element.style.display="none"), timer);
+
 	return computerDraws[randomNumber];
 }
 
@@ -144,15 +145,13 @@ function resetScore() {
 	userScore_span.innerHTML = 0;
 	computerScore_span.innerHTML = 0;
 }
+/* JQUERY */
 
-
-$(function() {
-    console.log("JQUERY IS READY!");
-});
 /* simulate :hover with jquery to avoid hover triggered on mobile*/
 $(".uchoice").on('mouseover touchenter', function() {
 	$(this).find('svg').children().css({
-	  'stroke': '#0057b7'
+	  'stroke': '#0057b7',
+	  'filter': 'drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4))'
 	});
   });
   $(".uchoice").on('mouseleave touchleave', function() {
@@ -161,3 +160,11 @@ $(".uchoice").on('mouseover touchenter', function() {
 	});
   });
 
+/*when user selects another option, the computer choice disappears*/
+$(".uchoice").on('click', function() {
+	$(".cchoice").find('svg').children().css({
+		'display': 'none'
+	  });
+});
+
+ 
