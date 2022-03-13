@@ -32,6 +32,8 @@ document.addEventListener("DOMContentLoaded", function() {
 		game("spock");
 	});
 	reset_btn.addEventListener("click", resetScore);
+
+	
 });
 
 function computerChoice() {
@@ -142,3 +144,10 @@ function resetScore() {
 	userScore_span.innerHTML = 0;
 	computerScore_span.innerHTML = 0;
 }
+
+$(".upath").on("touchenter mouseover", function() {
+    $(this).css({fill: #0057b7});
+}).on("touchleave mouseleave", function() {
+	$(this).setAttribute("stroke","000");
+});
+
