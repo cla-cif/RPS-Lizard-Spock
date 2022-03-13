@@ -55,6 +55,7 @@ i {
 }
 
 #home>*:hover, 
+#home.hover_effect,
 i:hover {
 	color: var(--color-yellow);
 	transition: .5s ease-in-out;
@@ -102,7 +103,8 @@ p {
 	font-size: 4vh;
 }
 
-#support:hover {
+#support:hover,
+#support.hover_effect {
 	text-decoration: none;
 	background-color: var(--color-blue);
 	transition: .5s ease-in-out;

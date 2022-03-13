@@ -136,8 +136,16 @@ function winner(win) {
 }
 
 function resetScore() {
+	/*set js variables and relative HTML elements to 0*/
 	userScore = 0;
 	computerScore = 0;
 	userScore_span.innerHTML = 0;
 	computerScore_span.innerHTML = 0;
 }
+
+$(document).ready(function() {
+    $('.hover').on('touchstart touchend', function(e) {
+        e.preventDefault();
+        $(this).toggleClass('hover_effect');
+    });
+});

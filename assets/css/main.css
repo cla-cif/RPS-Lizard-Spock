@@ -91,7 +91,8 @@ a#btn-clickme.btn {
 	padding: .5rem;
 }
 
-a#btn-clickme:hover {
+a#btn-clickme:hover, 
+a#btn-clickme.hover_effect {
 	color: var(--color-yellow);
 	transition: .5s ease-in-out;
 }
@@ -244,7 +245,8 @@ svg {
 	padding: .3rem 1.2rem;
 }
 
-#btn-reset:hover {
+#btn-reset:hover, 
+#btn-reset.hover_effect {
 	background-color: var(--color-yellow);
 	transition: .5s ease-in-out;
 	color: var(--color-blue);
@@ -298,7 +300,7 @@ footer>p {
 	}
 	/*game area*/
 	.game-area {
-		height: 50vh;
+		height: 45vh;
 		justify-content: space-around;
 	}
 	.computer-choices,
@@ -306,7 +308,7 @@ footer>p {
 		flex-direction: column;
 	}
 	svg {
-		height: 9vh;
+		height: 8vh;
 		width: auto;
 		margin-bottom: 0.1rem;
 	}
