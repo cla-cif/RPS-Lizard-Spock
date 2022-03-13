@@ -153,22 +153,31 @@ function resetScore() {
 
 /* simulates :hover effect for mouse and touch screen*/
 $(".uchoice").on('mouseover touchstart', function() {
-	$(this).find('svg').children().css({
-	  'stroke': '#0057b7',
-	  'filter': 'drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4))'
-	});
+	$(".uchoice").on('mouseover touchstart', function() {
+		$(this).find('svg').children().css({
+		  'stroke': '#0057b7',
+		  'filter': 'drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4))'
+		});
+	  });
   });
   $(".uchoice").on('mouseleave touchend', function() {
 	$(this).find('svg').children().css({
 	  'stroke': '#000'
 	});
   });
-
+/*if no events, user choice goes to default after timeout*/
+$(".uchoice").click(function () {
+    setTimeout(function() { 
+        $(this).find('svg').children().css({
+			'stroke': '#000'
+    }, 1500);
+}); 
 /*when user selects another option, the computer choice disappears before timeout*/
 $(".uchoice").on('click', function() {
 	$(".cchoice").find('svg').children().css({
 		'display': 'none'
 	  });
 });
+
 
  
