@@ -22,18 +22,7 @@
 		  transition: none;
 	  }
 }
-@media (hover: hover) and (pointer: fine) {
-	#home>*:hover, 
-	i:hover {
-		color:var(--color-yellow);
-		background-color: inherit;
-	}
-	#support:hover,
-	#support>*:hover {
-		  color:inherit;
-		  background-color: inherit;
-	  }
-}
+
 
 /* header, home button */
 

@@ -41,14 +41,6 @@ a {
 	  }
 }
 
-@media (hover: hover) and (pointer: fine) {
-	a#btn-clickme:hover, 
-	#btn-reset:hover {
-		color:var(--color-light);
-		background-color: var(--color-blue);
-	}
-}
-
 /*header: title, click me button (support)*/
 
 header {
