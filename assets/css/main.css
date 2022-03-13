@@ -41,6 +41,15 @@ a {
 	  }
 }
 
+@media (hover: none) {
+	a#btn-clickme:hover,
+	#btn-reset:hover,
+	.uchoice:hover>svg>path {
+		  color:inherit;
+		  background-color: inherit;
+	  }
+}
+
 /*header: title, click me button (support)*/
 
 header {
@@ -91,8 +100,7 @@ a#btn-clickme.btn {
 	padding: .5rem;
 }
 
-a#btn-clickme:hover, 
-a#btn-clickme.hover_effect {
+a#btn-clickme:hover {
 	color: var(--color-yellow);
 	transition: .5s ease-in-out;
 }
@@ -141,7 +149,7 @@ a#btn-clickme.hover_effect {
 	flex: 0 1 33.33%;
 	font-weight: 700;
 	font-size: 4vmax;
-	background: var(--color-blue);
+	background-color: var(--color-blue);
 	visibility: hidden;
 	text-align: center;
 	box-shadow: var(--shadow-default);
@@ -193,7 +201,7 @@ a#btn-clickme.hover_effect {
 hr {
 	height: 35vh;
 	width: 1px;
-	background: var(--color-yellow);
+	background-color: var(--color-yellow);
 	border: none;
 }
 
@@ -236,7 +244,7 @@ svg {
 
 #btn-reset {
 	border: none;
-	background: var(--color-blue);
+	background-color: var(--color-blue);
 	color: var(--color-light);
 	align-items: center;
 	font-size: 2.5vmax;
@@ -245,8 +253,7 @@ svg {
 	padding: .3rem 1.2rem;
 }
 
-#btn-reset:hover, 
-#btn-reset.hover_effect {
+#btn-reset:hover {
 	background-color: var(--color-yellow);
 	transition: .5s ease-in-out;
 	color: var(--color-blue);
@@ -270,7 +277,7 @@ footer>p {
 	font-weight: 500;
 	font-size: 1.5vmax;
 	color: var(--color-dark);
-	background: var(--color-yellow);
+	background-color: var(--color-yellow);
 	text-align: center;
 	align-items: center;
 }

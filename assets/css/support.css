@@ -22,12 +22,21 @@
 		  transition: none;
 	  }
 }
+@media (hover: none) {
+	#home>*:hover, 
+	i:hover,
+	#support:hover,
+	#support>*:hover {
+		  color:inherit;
+		  background-color: inherit;
+	  }
+}
 
 /* header, home button */
 
 header {
 	top: 0;
-	background: var(--color-blue);
+	background-color: var(--color-blue);
 	height: 5vh;
 	width: 100%;
 	box-shadow: var(--ff-shadow);
@@ -55,7 +64,6 @@ i {
 }
 
 #home>*:hover, 
-#home.hover_effect,
 i:hover {
 	color: var(--color-yellow);
 	transition: .5s ease-in-out;
@@ -68,7 +76,7 @@ main {
 	justify-content: center;
 	align-items: center;
 	height: 90vh;
-	background: var(--color-light);
+	background-color: var(--color-light);
 }
 
 #par-wrapper {
@@ -103,8 +111,7 @@ p {
 	font-size: 4vh;
 }
 
-#support:hover,
-#support.hover_effect {
+#support:hover {
 	text-decoration: none;
 	background-color: var(--color-blue);
 	transition: .5s ease-in-out;
