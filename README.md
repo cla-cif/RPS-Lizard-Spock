@@ -199,16 +199,19 @@ The website has passed the [Google mobile-friendly test](https://search.google.c
 
 ### Bugs and problems
 
-- __Known problems__
-    - Can not prevent user by clicking the available choices in rapid sequence. The next computer choice will be displayed before the previous one disappears. 
-      
 - __Fixed bugs__
-    - °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°à
 
+   1. -__Description__ : The message showing the result of the game and the image corresponding to the computer choiche are set to disappear after 1.5s. 
+      -__Bug__: If the user selects another choiche before timeout, two (or more) computer choices will be visible at the same time. 
+      -__Fix__: The events are handled with JQuery. on click of the user on another choiche, previous computer's choiche disappears.
+      
+   2. -__Description__: On mouse :hover user's choiches are coloured in blue. Default setting is black. 
+      -__Bug__: :hover property is not available on touch screen. Once clicked, the user choiches didn't go back to their default style.
+      -__Fix__: The events are handled with JQuery. on click of the user on another choiche, previous user's choiche is back to default.
+   
 - __Unfixed bugs__
-    - Webiste performance analysis show a considerable loss of usability on IE 11 because some of CSS3 properties are not supported. In particular grid layout and viewport units, used extensively in the project are not supported as showned by [CanIUse](https://caniuse.com/viewport-units).  
+    - Webiste performance analysis show a considerable loss of usability on IE 11 because some of CSS3 properties are not supported. In particular grid layout and viewport units, used extensively in the project, are not supported as showned by [CanIUse](https://caniuse.com/viewport-units).  
 Note: The issue has not yet been fixed as Microsoft will soon be phasing out IE 11 as stated [here](https://blogs.windows.com/windowsexperience/2021/05/19/the-future-of-internet-explorer-on-windows-10-is-in-microsoft-edge/#:~:text=With%20Microsoft%20Edge%20capable%20of,certain%20versions%20of%20Windows%2010.). 
-    - The :hover property remains activated on touch-screen devices. The issue is well-known and documented [here](https://medium.com/@mezoistvan/finally-a-css-only-solution-to-hover-on-touchscreens-c498af39c31c) and it's believed that the best solution is to use JS to detect whether the screen has touch capabilities and style the properties accordingly. 
 
 ### Testing User Stories from User Experience (UX) Section
 
