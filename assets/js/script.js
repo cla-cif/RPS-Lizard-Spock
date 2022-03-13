@@ -145,9 +145,19 @@ function resetScore() {
 	computerScore_span.innerHTML = 0;
 }
 
-$(".upath").on("touchenter mouseover", function() {
-    $(this).css({fill: #0057b7});
-}).on("touchleave mouseleave", function() {
-	$(this).setAttribute("stroke","000");
+
+$(function() {
+    console.log("JQUERY IS READY!");
 });
+/* simulate :hover with jquery to avoid hover triggered on mobile*/
+$(".uchoice").on('mouseover touchenter', function() {
+	$(this).find('svg').children().css({
+	  'stroke': '#0057b7'
+	});
+  });
+  $(".uchoice").on('mouseleave touchleave', function() {
+	$(this).find('svg').children().css({
+	  'stroke': 'black'
+	});
+  });
 
