@@ -278,6 +278,9 @@ footer>p {
 /* media queries*/
 
 @media only screen and (max-width: 768px) {
+	header {
+		height: 20vh;
+	}
 	/*scores area*/
 	.scores-area {
 		height: 15vh;
@@ -300,7 +303,7 @@ footer>p {
 	}
 	/*game area*/
 	.game-area {
-		height: 45vh;
+		height: 40vh;
 		justify-content: space-around;
 	}
 	.computer-choices,
