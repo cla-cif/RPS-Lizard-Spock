@@ -40,8 +40,9 @@ The support page conveys a short but effective message.
 The site is designed with an intuitive layout, it is accessible, easy to browse, with the absolutely necessary information and less invasive images.
 [Balsamiq](https://balsamiq.com/) was used to put "ideas on paper". 
 
-Layouts: [Desktop](https://github.com/cla-cif/english-with-claudia/blob/main/screenshot/index-wireframe.png) / [Mobile](https://github.com/cla-cif/english-with-claudia/blob/main/screenshot/index-wireframe-mobile.png) / [Extra small screen](https://github.com/cla-cif/english-with-claudia/blob/main/screenshot/index-wireframe-small.png).
+Home page: [Desktop](https://github.com/cla-cif/RPS-Lizard-Spock/blob/main/assets/screenshots/Main%20desktop.png) / [Mobile](https://github.com/cla-cif/RPS-Lizard-Spock/blob/main/assets/screenshots/Main%20mobile.png) 
 
+Support page: [Desktop](https://github.com/cla-cif/RPS-Lizard-Spock/blob/main/assets/screenshots/Support%20desktop.png) / [Mobile](https://github.com/cla-cif/RPS-Lizard-Spock/blob/main/assets/screenshots/Support%20mobile.png) 
 -  ### Design
 
     - __Colours__
@@ -62,7 +63,7 @@ Layouts: [Desktop](https://github.com/cla-cif/english-with-claudia/blob/main/scr
 
 - Note:
     - Given the recreative/social purpose of the project, links to the developer's social media were not deemed necessary. 
-    - Given the size of the project, a sitemap was not deemed necessary. 
+    - Given the size of the project, a .xml sitemap was not deemed necessary. 
 
 ### Existing Features - Home page
 
@@ -205,7 +206,8 @@ The website has passed the [Google mobile-friendly test](https://search.google.c
     - °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°à
 
 - __Unfixed bugs__
-    - Note: The issue has not yet been fixed as Microsoft will soon be phasing out IE 11 as stated [here](https://blogs.windows.com/windowsexperience/2021/05/19/the-future-of-internet-explorer-on-windows-10-is-in-microsoft-edge/#:~:text=With%20Microsoft%20Edge%20capable%20of,certain%20versions%20of%20Windows%2010.). 
+    - Webiste performance analysis show a considerable loss of usability on IE 11 because some of CSS3 properties are not supported. In particular grid layout and viewport units, used extensively in the project are not supported as showned by [CanIUse](https://caniuse.com/viewport-units).  
+Note: The issue has not yet been fixed as Microsoft will soon be phasing out IE 11 as stated [here](https://blogs.windows.com/windowsexperience/2021/05/19/the-future-of-internet-explorer-on-windows-10-is-in-microsoft-edge/#:~:text=With%20Microsoft%20Edge%20capable%20of,certain%20versions%20of%20Windows%2010.). 
     - The :hover property remains activated on touch-screen devices. The issue is well-known and documented [here](https://medium.com/@mezoistvan/finally-a-css-only-solution-to-hover-on-touchscreens-c498af39c31c) and it's believed that the best solution is to use JS to detect whether the screen has touch capabilities and style the properties accordingly. 
 
 ### Testing User Stories from User Experience (UX) Section
