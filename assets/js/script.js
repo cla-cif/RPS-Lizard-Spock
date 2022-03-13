@@ -14,26 +14,26 @@ const scissors_div = document.getElementById("uscissors");
 const lizard_div = document.getElementById("ulizard");
 const spock_div = document.getElementById("uspock");
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
 	/*after the DOM content is loaded, the main function runs triggered by the user's choice*/
-	rock_div.addEventListener("click", function() {
+	rock_div.addEventListener("click", function () {
 		game("rock");
 	});
-	paper_div.addEventListener("click", function() {
+	paper_div.addEventListener("click", function () {
 		game("paper");
 	});
-	scissors_div.addEventListener("click", function() {
+	scissors_div.addEventListener("click", function () {
 		game("scissors");
 	});
-	lizard_div.addEventListener("click", function() {
+	lizard_div.addEventListener("click", function () {
 		game("lizard");
 	});
-	spock_div.addEventListener("click", function() {
+	spock_div.addEventListener("click", function () {
 		game("spock");
 	});
 	reset_btn.addEventListener("click", resetScore);
 
-	
+
 });
 
 function computerChoice() {
@@ -49,8 +49,8 @@ function computerChoice() {
 		"4": document.getElementById("path-spock"),
 	};
 	let element = reference_object[randomNumber];
-	element.style.display="block";
-	setTimeout(() => (element.style.display="none"), timer);
+	element.style.display = "block";
+	setTimeout(() => (element.style.display = "none"), timer);
 
 	return computerDraws[randomNumber];
 }
@@ -152,32 +152,30 @@ function resetScore() {
 /* JQUERY */
 
 /* simulates :hover effect for mouse and touch screen*/
-$(".uchoice").on('mouseover touchstart', function() {
-	$(".uchoice").on('mouseover touchstart', function() {
+$(".uchoice").on('mouseover touchstart', function () {
+	$(".uchoice").on('mouseover touchstart', function () {
 		$(this).find('svg').children().css({
-		  'stroke': '#0057b7',
-		  'filter': 'drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4))'
+			'stroke': '#0057b7',
+			'filter': 'drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4))'
 		});
-	  });
-  });
-  $(".uchoice").on('mouseleave touchend', function() {
-	$(this).find('svg').children().css({
-	  'stroke': '#000'
 	});
-  });
+});
+$(".uchoice").on('mouseleave touchend', function () {
+	$(this).find('svg').children().css({
+		'stroke': '#000'
+	});
+});
 /*if no events, user choice goes to default after timeout*/
-$(".uchoice").click(function () {
-    setTimeout(function() { 
-        $(this).find('svg').children().css({
+$(".uchoice").on('touchend', function () {
+	setTimeout(function () {
+		$(".uchoiche").find('svg').children().css({
 			'stroke': '#000'
-    }, 1500);
-}); 
+		}, 1500);
+	})
+});
 /*when user selects another option, the computer choice disappears before timeout*/
-$(".uchoice").on('click', function() {
+$(".uchoice").on('click', function () {
 	$(".cchoice").find('svg').children().css({
 		'display': 'none'
-	  });
+	});
 });
-
-
- 
