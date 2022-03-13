@@ -206,12 +206,15 @@ The website has passed the [Google mobile-friendly test](https://search.google.c
       -__Fix__: The events are handled with JQuery. on click of the user on another choiche, previous computer's choiche disappears.
       
    2. -__Description__: On mouse :hover user's choiches are coloured in blue. Default setting is black. 
-      -__Bug__: :hover property is not available on touch screen. Once clicked, the user choiches didn't go back to their default style.
-      -__Fix__: The events are handled with JQuery. on click of the user on another choiche, previous user's choiche is back to default.
+      -__Bug__: :hover property is not available on touch screen. Once clicked, the user choiches do not go back to their default style.
+      -__Fix__: The events are handled with JQuery. on click of the user on another choiche, previous user's choiche is back to default. In case of no events, the user's choiches are back to default after 1.5s.
+
    
 - __Unfixed bugs__
     - Webiste performance analysis show a considerable loss of usability on IE 11 because some of CSS3 properties are not supported. In particular grid layout and viewport units, used extensively in the project, are not supported as showned by [CanIUse](https://caniuse.com/viewport-units).  
 Note: The issue has not yet been fixed as Microsoft will soon be phasing out IE 11 as stated [here](https://blogs.windows.com/windowsexperience/2021/05/19/the-future-of-internet-explorer-on-windows-10-is-in-microsoft-edge/#:~:text=With%20Microsoft%20Edge%20capable%20of,certain%20versions%20of%20Windows%2010.). 
+   - On iOS, a quick series of "taps" isn't handled well and may result in loss of information (e.g. winning message and computer selection) and animations (e.g. user selection). 
+   - In addition, the problems mentioned above can sometimes occur.
 
 ### Testing User Stories from User Experience (UX) Section
 
@@ -240,12 +243,11 @@ Note: The issue has not yet been fixed as Microsoft will soon be phasing out IE 
 ### Validator Testing 
 
 - HTML
-  - No errors were returned when running the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcla-cif.github.io%2Fenglish-with-claudia%2F).
+  - No errors were returned when running the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcla-cif.github.io%2FRPS-Lizard-Spock%2F).
 - CSS
-  - No errors were found when running the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fcla-cif.github.io%2Fenglish-with-claudia%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en).
-  - [Support page](https://jigsaw.w3.org/css-validator/validator)
+  - No errors were found when running the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fcla-cif.github.io%2FRPS-Lizard-Spock%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en).
 - JavaScript
-  - 
+  - The code passed through [JSHint](https://jshint.com/) with no significant issues. 
 
 ## Deployment
 
