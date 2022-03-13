@@ -158,15 +158,16 @@ $(".uchoice").on('mouseover touchstart', function () {
 		'filter': 'drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4))'
 	});
 });
+
 $(".uchoice").on('mouseleave touchend', function () {
 	$(this).find('svg').children().css({
 		'stroke': '#000'
 	});
 	setTimeout(function () {
-		$(this).find('svg').children().css({
+		$(".uchoice").find('svg').children().css({
 			'stroke': '#000'
-		}, 1500);
-	})
+		})
+	}, 1500);
 });
 
 /*when user selects another option, the computer choice disappears before timeout*/
