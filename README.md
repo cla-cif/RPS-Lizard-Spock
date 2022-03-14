@@ -167,7 +167,7 @@ Support page: [Desktop](https://github.com/cla-cif/RPS-Lizard-Spock/blob/main/as
 
 ### General Testing 
 
-The website's features were thoroughly tested using some well-known free web testers. Particular attention was paid to SEO and accessibility as the website offers educational resources.
+The website's features were thoroughly tested using some well-known free web testers. Both pages (home page and support page) were tested.
 
 - __Web Responsive__
     - The responsive feature has been tested using Chrome DevTools and an online Web [Design checker](https://responsivedesignchecker.com/checker.php?url=https%3A%2F%2Fcla-cif.github.io%2FRPS-Lizard-Spock%2F&width=1400&height=700). 
