@@ -170,9 +170,10 @@ Support page: [Desktop](https://github.com/cla-cif/RPS-Lizard-Spock/blob/main/as
 The website's features were thoroughly tested using some well-known free web testers. Both pages (home page and support page) were tested.
 
 - __Web Responsive__
-    - The responsive feature has been tested using Chrome DevTools and an online Web [Design checker](https://responsivedesignchecker.com/checker.php?url=https%3A%2F%2Fcla-cif.github.io%2FRPS-Lizard-Spock%2F&width=1400&height=700). 
+    - The responsive feature has been tested using Chrome DevTools and an online Web Design checker from [Media Genesis](https://responsivedesignchecker.com/). 
+Here is the result of the [Home page](https://responsivedesignchecker.com/checker.php?url=https%3A%2F%2Fcla-cif.github.io%2FRPS-Lizard-Spock%2F&width=1400&height=700) and here is the result of the [Support page](https://cla-cif.github.io/RPS-Lizard-Spock/support.html).
 The website's layout has been tested on a range of different screen sizes, from small 320x480 screens (e.g. Apple iPhone 3) to widescreen 24" and their landscape view providing a good user experience. 
-The website has passed the [Google mobile-friendly test](https://search.google.com/test/mobile-friendly/result?id=OPXjC51ESN7aQgtAmaf9Uw).
+    - The website has passed the [Google mobile-friendly test](https://search.google.com/test/mobile-friendly/result?id=OPXjC51ESN7aQgtAmaf9Uw).
 
 - __Accessibility__
 
@@ -183,15 +184,15 @@ The website has passed the [Google mobile-friendly test](https://search.google.c
   - __Presbiopia:__ All fonts are 'sans serif' and have a sufficient size so that the text can be easily read without glasses.
   - __General Accessibility:__ has been tested with satisfactory results on:
       1. Google Light House (mobile and desktop version). 
-      2. [Power Mapper](https://try.powermapper.com/demo/Report/06cd2a9f-7881-4034-ab93-d188bfbe9a91) shows minor issues. 
-      3. [Wave](https://wave.webaim.org/report#/https://cla-cif.github.io/RPS-Lizard-Spock/index.html).
+      2. [Power Mapper - Home page](https://try.powermapper.com/demo/Report/06cd2a9f-7881-4034-ab93-d188bfbe9a91) and [Power Mapper - support page](https://try.powermapper.com/demo/Report/ce53642e-2b2f-45d7-98ee-b6e796513e5d) showing minor issues. 
+      3. [Wave - Home and Support pages](https://wave.webaim.org/report#/https://cla-cif.github.io/RPS-Lizard-Spock/index.html).
 
 - __Browser Compatibility__
-    - The website was tested with [Power Mapper](https://try.powermapper.com/demo/Report/06cd2a9f-7881-4034-ab93-d188bfbe9a91) presenting issues with IE11 regarding CSS3 properties. Such choices were deemed necessary for a better user experience and devices compatibility. 
+    - The website's pages were tested with [Power Mapper](https://try.powermapper.com/demo/Report/06cd2a9f-7881-4034-ab93-d188bfbe9a91) presenting issues with IE11 regarding CSS3 properties. Such choices were deemed necessary for a better user experience and devices compatibility. 
 
 - __SEO__
-  - The website was tested on [Seobility](https://freetools.seobility.net/en/seocheck/check?url=https%3A%2F%2Fcla-cif.github.io%2FRPS-Lizard-Spock%2F&crawltype=1).
-  - Tests ran on Google Light House (mobile and desktop version) obtained a SEO score of 100%.
+  - The website's Home page was tested on [Seobility](https://freetools.seobility.net/en/seocheck/check?url=https%3A%2F%2Fcla-cif.github.io%2FRPS-Lizard-Spock%2F&crawltype=1) and similar results were obtained on the Support page..
+  - Tests ran with Google Light House (mobile and desktop version) on both pages obtained a SEO score of 100%.
 
 - __Performances__
   - The website was tested on [Power Mapper](https://try.powermapper.com/demo/Report/06cd2a9f-7881-4034-ab93-d188bfbe9a91).
