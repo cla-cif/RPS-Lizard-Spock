@@ -201,11 +201,12 @@ The website's layout has been tested on a range of different screen sizes, from 
 ### Bugs and problems
 
 - __Fixed bugs__
-
+   -  
     - __Description__ : The message showing the result of the game and the image corresponding to the computer choiche are set to disappear after 1.5s. 
     - __Bug__: If the user selects another choiche before timeout, two (or more) computer choices will be visible at the same time. 
     - __Fix__: The events are handled with JQuery. on click of the user on another choiche, previous computer's choiche disappears.
-      
+    
+   -   
     - __Description__: On mouse :hover user's choiches are coloured in blue. Default setting is black. 
     - __Bug__: :hover property is not available on touch screen. Once clicked, the user choiches do not go back to their default style.
     - __Fix__: The events are handled with JQuery. on click of the user on another choiche, previous user's choiche is back to default. In case of no events, the user's choiches are back to default after 1.5s.
