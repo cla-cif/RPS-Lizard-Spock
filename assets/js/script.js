@@ -152,14 +152,14 @@ function resetScore() {
 /* JQUERY */
 
 // simulates :hover effect for mouse and touch screen
-$(".uchoice").on('mouseover click', function () {
+$(".uchoice").on('mouseover touchstart', function () {
 	$(this).find('svg').children().css({
 		'stroke': '#0057b7',
 		'filter': 'drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4))'
 	});
 });
 
-$(".uchoice").on('mouseleave click', function () {
+$(".uchoice").on('mouseleave touchend', function () {
 	$(this).find('svg').children().css({
 		'stroke': '#000'
 	});
@@ -171,8 +171,8 @@ $(".uchoice").on('mouseleave click', function () {
 	}, 1500);
 });
 
-	// touch screen only: reset button back to default after timeout
-$("#btn-reset").on('click', function() {
+// touch screen only: reset button back to default after timeout
+$("#btn-reset").on('touchstart touchend', function() {
 	setTimeout(function () {
 		$("#btn-reset").css({
 			'background-color': '#ffd700',
