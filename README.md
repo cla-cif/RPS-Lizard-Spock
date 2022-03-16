@@ -1,3 +1,4 @@
+![Banner](https://github.com/cla-cif/RPS-Lizard-Spock/blob/main/assets/screenshots/RPSLS%20banner.png)
 <h1 align="center" id="top">ROCK PAPER SCISSORS LIZARD SPOCK</h1>
 
 __You can find the live link here: [RPS LIZARD SPOCK](https://cla-cif.github.io/RPS-Lizard-Spock/)__
