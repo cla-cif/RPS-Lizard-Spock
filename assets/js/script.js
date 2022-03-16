@@ -105,7 +105,9 @@ function incrementUserScore() {
 	userScore++;
 	userScore_span.innerHTML = userScore;
 	result_p.innerHTML = "YOU WON!";
-	result_p.ariaLabel = "You won!";
+	let msg = new SpeechSynthesisUtterance();
+	msg.text = "you won";
+	window.speechSynthesis.speak(msg);
 	setTimeout(() => (result_p.style.visibility = "hidden"), timer);
 	if (userScore == 10) {
 		winner("user");
@@ -119,7 +121,9 @@ function incrementComputerScore() {
 	computerScore++;
 	computerScore_span.innerHTML = computerScore;
 	result_p.innerHTML = "COMPUTER WON!";
-	result_p.ariaLabel = "Computer won!";
+	let msg = new SpeechSynthesisUtterance();
+	msg.text = "Computer won";
+	window.speechSynthesis.speak(msg);
 	setTimeout(() => (result_p.style.visibility = "hidden"), timer);
 	if (computerScore == 10) {
 		winner("computer");
@@ -129,7 +133,9 @@ function incrementComputerScore() {
 function tie() {
 	//displays a temporary message when computer and user made the same choiche according to the game function
 	result_p.innerHTML = "IT'S A TIE!";
-	result_p.ariaLabel = "it's a tie";
+	let msg = new SpeechSynthesisUtterance();
+	msg.text = "it's a tie";
+	window.speechSynthesis.speak(msg);
 	setTimeout(() => (result_p.style.visibility = "hidden"), timer);
 }
 
