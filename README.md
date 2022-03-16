@@ -2,7 +2,7 @@
 
 __You can find the live link here: [RPS LIZARD SPOCK](https://cla-cif.github.io/RPS-Lizard-Spock/)__
 
-A light extention of the classic rock-paper-scissors game: [The Big Bang Theory](https://the-big-bang-theory.com/rock-paper-scissors-lizard-spock/) edition - extention includes Lizard and Spock choices. The user plays against the computer, which randomly selects his choices. Whoever reaches 10 first wins the game. 
+An extended version of the classic rock-paper-scissors game: [The Big Bang Theory](https://bigbangtheory.fandom.com/wiki/Rock,_Paper,_Scissors,_Lizard,_Spock) edition. Extention includes Lizard and Spock choices. The user plays against the computer, which randomly selects his choices. Whoever reaches 10 first wins the game. 
 
 As this project was developed during the Russian aggression against Ukraine, the colours of the [Ukrainian flag](https://en.wikipedia.org/wiki/Flag_of_Ukraine) have been chosen as a sign of support. On the homepage there's a [Click me](https://cla-cif.github.io/RPS-Lizard-Spock/support.html) link that leads to a support page with some details and useful links to support Ukraine and not the developer of the website. 
 
@@ -23,7 +23,30 @@ The support page conveys a short but effective message.
 - [Extra](#Extra)
 
 ## About the game
+-   ### The rules:
+    - Pick one of the five hand signals and the computer will randomly make his choice from the same five hand signals. 
+    - 1 point is assigned to the winner. The one who gets to 10 first, wins the match. 
+    - If the two players make the same object, it's a tie. Play again to determine the winner.
+    - Remember who wins:
+        Scissors cuts paper.
+        Paper covers rock.
+        Rock crushes lizard.
+        Lizard poisons Spock.
+        Spock smashes scissors.
+        Scissors decapitates lizard.
+        Lizard eats paper.
+        Paper disproves Spock.
+        Spock vaporizes rock.
+        Rock crushes scissors.
+    - The rules explained by Sheldon from "The Big Bang Theory" in a [video](https://www.youtube.com/watch?v=Kov2G0GouBw) and by [WikiHow](https://www.wikihow.com/Play-Rock-Paper-Scissors-Lizard-Spock). 
 
+- ### Trivia about the game:
+
+    - [Sam Kass](http://www.samkass.com/theories/RPSSL.html) and Karen Bryla invented the game Rock, Paper, Scissors, Lizard, Spock as an extension of the world’s most famous hand game.  
+    - The first known mention of the game dates back to the time of the Chinese Han dynasty (206 BCE – 220 CE). [Wikipedia](https://en.wikipedia.org/wiki/Rock_paper_scissors#cite_note-9).
+    - Robots from the [University of Tokyo](http://ishikawa-vision.org/fusion/Janken/index-e.html) may have a 100% winning rate, but your computer doesn't. [Watch the video](https://www.youtube.com/watch?v=ZVNnoOcohaU&t=33s).
+    - Bacterias like to [play](https://ucsdnews.ucsd.edu/pressrelease/e.coli-play-rock-paper-scissors) too. 
+    - Play two rounds and you have (p/(p+q))2 [chanches](https://math.stackexchange.com/questions/376187/probability-game) to win! Let's [play!](https://cla-cif.github.io/RPS-Lizard-Spock/)
 
 
 ## User Experience (UX)
