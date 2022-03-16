@@ -13,6 +13,7 @@ The support page conveys a short but effective message.
 ![Support page](https://github.com/cla-cif/RPS-Lizard-Spock/blob/main/assets/screenshots/support.png)
 
 ## Content
+- [About the game](#About-the-game)
 - [User Experience](#User-Experience-(UX))
 - [Features](#Features)
 - [Technologies used](#Technologies-used)
@@ -20,6 +21,10 @@ The support page conveys a short but effective message.
 - [Deployment](#Deployment)
 - [Credits](#Credits)
 - [Extra](#Extra)
+
+## About the game
+
+
 
 ## User Experience (UX)
 
@@ -216,8 +221,8 @@ The website's layout has been tested on a range of different screen sizes, from 
 - __Unfixed bugs__
     - Webiste performance analysis show a considerable loss of usability on IE 11 because some of CSS3 properties are not supported. In particular grid layout and viewport units, used extensively in the project, are not supported as showned by [CanIUse](https://caniuse.com/viewport-units).  
 Note: The issue has not yet been fixed as Microsoft will soon be phasing out IE 11 as stated [here](https://blogs.windows.com/windowsexperience/2021/05/19/the-future-of-internet-explorer-on-windows-10-is-in-microsoft-edge/#:~:text=With%20Microsoft%20Edge%20capable%20of,certain%20versions%20of%20Windows%2010.). 
-   - On iOS, a quick series of "taps" isn't handled well and may result in loss of information (e.g. winning message and computer selection) and animations (e.g. user selection). 
-   - In addition, the problems mentioned above can sometimes occur.
+   - On iOS, a quick series of "taps" isn't handled well and may result in loss of information (e.g. winning message and computer selection) and animations (e.g. user selection). The bug is shown [here](https://github.com/cla-cif/RPS-Lizard-Spock/blob/main/assets/screenshots/Homepage%20bugs%20on%20iPhone%2012.mov).
+   - In addition, the problems mentioned above can sometimes occur even on slower "taps".
 
 ### Testing User Stories from User Experience (UX) Section
 
@@ -254,10 +259,23 @@ Note: The issue has not yet been fixed as Microsoft will soon be phasing out IE 
 
 ## Deployment
 
-- The site has been deployed on GitHub pages. The steps to deploy are as follows: 
-  - In the GitHub repository, navigate to the Settings tab. 
-  - On the GitHub Pages tab, select the main branch.
-  - Once the main branch is selected, the page will automatically refresh with a detailed ribbon display to indicate successful deployment.
+- The site has been deployed on GitHub pages. The steps to deploy and publish the repository are as follows: 
+- A video showing how a similar repository was deployed is available [here](https://github.com/cla-cif/RPS-Lizard-Spock/blob/main/assets/screenshots/create-publish-repository.mp4). 
+    - Create a new repository:
+        - Click on "New" button (top-right of the page). 
+        - Select the "Owner" (one's account for instance). 
+        - Chose a Repository name. Note: The name must be unique among all the user's repositories and words must be separated by hypen. 
+        - The repository will be "public" by default. Note: a "private" repository can't be hosted on [GitHub pages](https://pages.github.com/).
+        - Click on "Create Repository". 
+        - The page will refresh and the Repository is successfully created. 
+     - Host repository on GitHub Pages:
+        - Click on "Settings" (top-right of the page).
+        - Click on "Pages" (menu on the left). 
+        - Select branch > main from the "Source" section. (or any other if present). 
+        - Click on "Save", the page will refresh and the site, now hosted on GitHub Pages is ready to be published. 
+        - After a few minutes, the ribbon will turn green and the site is reachable at an address similar to your-username/.github.io/your-repository-name/. 
+        - Develop the project, commit, push and the changes will be visible on the page within a few minutes. 
+
 
 __You can find the live link here: [RPS Lizard Spock](https://cla-cif.github.io/RPS-Lizard-Spock/)__
 
