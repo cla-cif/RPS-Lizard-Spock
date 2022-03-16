@@ -1,4 +1,4 @@
-<h1 style="bold" text-align="center" color="blue">ROCK PAPER SCISSORS LIZARD SPOCK</h1>
+<h1 style="text-align:center; color:#0057b7;"><b>ROCK PAPER SCISSORS LIZARD SPOCK</b></h1>
 
 __You can find the live link here: [RPS LIZARD SPOCK](https://cla-cif.github.io/RPS-Lizard-Spock/)__
 
