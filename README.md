@@ -90,7 +90,7 @@ Support page: [Desktop](https://github.com/cla-cif/RPS-Lizard-Spock/blob/main/as
 
 ![Home page screenshot from Am I Responsive webpage](https://github.com/cla-cif/RPS-Lizard-Spock/blob/main/assets/screenshots/responsive-home.png)
 ![Support page screenshot from Am I Responsive webpage](https://github.com/cla-cif/RPS-Lizard-Spock/blob/main/assets/screenshots/responsive-support.png)
-![How home page looks like on iPhone 12](https://github.com/cla-cif/RPS-Lizard-Spock/blob/main/assets/screenshots/Homepage%20layout%20on%20iPhone%2012.jpg)
+How it looks like on iPhone 12: [Home page](https://github.com/cla-cif/RPS-Lizard-Spock/blob/main/assets/screenshots/Homepage%20layout%20on%20iPhone%2012.jpg) / [Support page](https://github.com/cla-cif/RPS-Lizard-Spock/blob/main/assets/screenshots/Support%20page%20layout%20on%20iPhone%2012.png)
 
 - Note:
     - Given the recreative/social purpose of the project, links to the developer's social media were not deemed necessary. 
@@ -167,9 +167,10 @@ Support page: [Desktop](https://github.com/cla-cif/RPS-Lizard-Spock/blob/main/as
 
 ### Features to implement
 
-- Add choices and levels to increase complexity. 
 - Add privacy policy and copyright information. 
 - Get the website a domain name. 
+- Add choices and levels to increase complexity. If users will like the project and ask for further development, here are some [ideas](https://www.naturphilosophie.co.uk/winning-rock-paper-scissors-lizard-spock/). 
+![Expansion](https://raw.githubusercontent.com/cla-cif/RPS-Lizard-Spock/main/assets/screenshots/Rock_Paper_Scissors_Lizard_Spock_Spider-Man_Batman_Wizard_Glock.webp)
 
 ## Technologies used
 
@@ -317,6 +318,7 @@ __You can find the live link here: [RPS Lizard Spock](https://cla-cif.github.io/
 - A fully functioning project was studied from  [FreeCodeCamp's tutorials](https://www.youtube.com/watch?v=jaVNP3nIAv0).
 - The icon in the Support page's header was taken from [Font Awesome](https://fontawesome.com/).
 - Fonts from [Google Fonts](https://fonts.google.com/).
+- The game was originally created by Sam Kass and Karen Bryla. 
 
 ### Media
 
