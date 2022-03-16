@@ -105,6 +105,7 @@ function incrementUserScore() {
 	userScore++;
 	userScore_span.innerHTML = userScore;
 	result_p.innerHTML = "YOU WON!";
+	result_p.ariaLabel = "You won!";
 	setTimeout(() => (result_p.style.visibility = "hidden"), timer);
 	if (userScore == 10) {
 		winner("user");
@@ -118,6 +119,7 @@ function incrementComputerScore() {
 	computerScore++;
 	computerScore_span.innerHTML = computerScore;
 	result_p.innerHTML = "COMPUTER WON!";
+	result_p.ariaLabel = "Computer won!";
 	setTimeout(() => (result_p.style.visibility = "hidden"), timer);
 	if (computerScore == 10) {
 		winner("computer");
@@ -127,6 +129,7 @@ function incrementComputerScore() {
 function tie() {
 	//displays a temporary message when computer and user made the same choiche according to the game function
 	result_p.innerHTML = "IT'S A TIE!";
+	result_p.ariaLabel = "it's a tie";
 	setTimeout(() => (result_p.style.visibility = "hidden"), timer);
 }
 
