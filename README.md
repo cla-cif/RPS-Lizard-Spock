@@ -28,16 +28,16 @@ The support page conveys a short but effective message.
     - 1 point is assigned to the winner. The one who gets to 10 first, wins the match. 
     - If the two players make the same object, it's a tie. Play again to determine the winner.
     - Remember who wins:
-        Scissors cuts paper.
-        Paper covers rock.
-        Rock crushes lizard.
-        Lizard poisons Spock.
-        Spock smashes scissors.
-        Scissors decapitates lizard.
-        Lizard eats paper.
-        Paper disproves Spock.
-        Spock vaporizes rock.
-        Rock crushes scissors.
+        - Scissors cuts paper.
+        - Paper covers rock.
+        - Rock crushes lizard.
+        - Lizard poisons Spock.
+        - Spock smashes scissors.
+        - Scissors decapitates lizard.
+        - Lizard eats paper.
+        - Paper disproves Spock.
+        - Spock vaporizes rock.
+        - Rock crushes scissors.
     - The rules explained by Sheldon from "The Big Bang Theory" in a [video](https://www.youtube.com/watch?v=Kov2G0GouBw) and by [WikiHow](https://www.wikihow.com/Play-Rock-Paper-Scissors-Lizard-Spock). 
 
 - ### Trivia about the game:
@@ -72,6 +72,7 @@ The site is designed with an intuitive layout, it is accessible, easy to browse,
 Home page: [Desktop](https://github.com/cla-cif/RPS-Lizard-Spock/blob/main/assets/screenshots/Main%20desktop.png) / [Mobile](https://github.com/cla-cif/RPS-Lizard-Spock/blob/main/assets/screenshots/Main%20mobile.png) 
 
 Support page: [Desktop](https://github.com/cla-cif/RPS-Lizard-Spock/blob/main/assets/screenshots/Support%20desktop.png) / [Mobile](https://github.com/cla-cif/RPS-Lizard-Spock/blob/main/assets/screenshots/Support%20mobile.png) 
+
 -  ### Design
 
     - __Colours__
@@ -89,6 +90,7 @@ Support page: [Desktop](https://github.com/cla-cif/RPS-Lizard-Spock/blob/main/as
 
 ![Home page screenshot from Am I Responsive webpage](https://github.com/cla-cif/RPS-Lizard-Spock/blob/main/assets/screenshots/responsive-home.png)
 ![Support page screenshot from Am I Responsive webpage](https://github.com/cla-cif/RPS-Lizard-Spock/blob/main/assets/screenshots/responsive-support.png)
+![How home page looks like on iPhone 12](https://github.com/cla-cif/RPS-Lizard-Spock/blob/main/assets/screenshots/Homepage%20layout%20on%20iPhone%2012.jpg)
 
 - Note:
     - Given the recreative/social purpose of the project, links to the developer's social media were not deemed necessary. 
@@ -230,12 +232,12 @@ The website's layout has been tested on a range of different screen sizes, from 
 ### Bugs and problems
 
 - __Fixed bugs__
--  
+- ##  
     - __Description__ : The message showing the result of the game and the image corresponding to the computer choiche are set to disappear after 1.5s. 
     - __Bug__: If the user selects another choiche before timeout, two (or more) computer choices will be visible at the same time. 
     - __Fix__: The events are handled with JQuery. on click of the user on another choiche, previous computer's choiche disappears.
     
--   
+- ##   
     - __Description__: On mouse :hover user's choiches are coloured in blue. Default setting is black. 
     - __Bug__: :hover property is not available on touch screen. Once clicked, the user choiches do not go back to their default style.
     - __Fix__: The events are handled with JQuery. on click of the user on another choiche, previous user's choiche is back to default. In case of no events, the user's choiches are back to default after 1.5s.
