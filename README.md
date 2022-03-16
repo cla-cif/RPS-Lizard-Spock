@@ -19,6 +19,7 @@ The support page conveys a short but effective message.
 - [Testing](#Testing)
 - [Deployment](#Deployment)
 - [Credits](#Credits)
+- [Extra](#Extra)
 
 ## User Experience (UX)
 
@@ -277,5 +278,13 @@ __You can find the live link here: [RPS Lizard Spock](https://cla-cif.github.io/
 ### Media
 
 - No media. 
+
+## Extra 
+
+### Links to people I like. 
+
+- [GitHub supporting Ukraine](https://github.blog/2022-03-02-our-response-to-the-war-in-ukraine/).
+- [GitHub repository by iimetra](https://github.com/stop-war-in-ukraine/stop-russia-it). 
+- [GitHub repository by AndrewStetsenko](https://github.com/AndrewStetsenko/Support-Ukraine).
 
 [Link to top](#top)
