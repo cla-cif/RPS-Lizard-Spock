@@ -1,5 +1,4 @@
 ![Banner](https://github.com/cla-cif/RPS-Lizard-Spock/blob/main/assets/screenshots/RPSLS%20banner.png)
-<h1 align="center" id="top">ROCK PAPER SCISSORS LIZARD SPOCK</h1>
 
 __You can find the live link here: [RPS LIZARD SPOCK](https://cla-cif.github.io/RPS-Lizard-Spock/)__
 
@@ -85,13 +84,13 @@ Support page: [Desktop](https://github.com/cla-cif/RPS-Lizard-Spock/blob/main/as
         
 ## Features 
 
--   Responsive on all device sizes.
+-   Responsive on all device sizes. How it looks like on iPhone 12: [Home page](https://github.com/cla-cif/RPS-Lizard-Spock/blob/main/assets/screenshots/Homepage%20layout%20on%20iPhone%2012.jpg) / [Support page](https://github.com/cla-cif/RPS-Lizard-Spock/blob/main/assets/screenshots/Support%20page%20layout%20on%20iPhone%2012.png)
+
 -   Accessible for users with hearing and visual impairments.
 -   Interactive elements.
 
 ![Home page screenshot from Am I Responsive webpage](https://github.com/cla-cif/RPS-Lizard-Spock/blob/main/assets/screenshots/responsive-home.png)
 ![Support page screenshot from Am I Responsive webpage](https://github.com/cla-cif/RPS-Lizard-Spock/blob/main/assets/screenshots/responsive-support.png)
-How it looks like on iPhone 12: [Home page](https://github.com/cla-cif/RPS-Lizard-Spock/blob/main/assets/screenshots/Homepage%20layout%20on%20iPhone%2012.jpg) / [Support page](https://github.com/cla-cif/RPS-Lizard-Spock/blob/main/assets/screenshots/Support%20page%20layout%20on%20iPhone%2012.png)
 
 - Note:
     - Given the recreative/social purpose of the project, links to the developer's social media were not deemed necessary. 
@@ -286,11 +285,13 @@ Note: The issue has not yet been fixed as Microsoft will soon be phasing out IE 
 
 ## Deployment
 
+- ### GitHub Pages
+
 - The site has been deployed on GitHub pages. The steps to deploy and publish the repository are as follows: 
 - A video showing how a similar repository was deployed is available [here](https://github.com/cla-cif/RPS-Lizard-Spock/blob/main/assets/screenshots/create-publish-repository.mp4). 
     - Create a new repository:
         - Click on "New" button (top-right of the page). 
-        - Select the "Owner" (one's account for instance). 
+        - Select the "Owner" (your account for instance). 
         - Chose a Repository name. Note: The name must be unique among all the user's repositories and words must be separated by hypen. 
         - The repository will be "public" by default. Note: a "private" repository can't be hosted on [GitHub pages](https://pages.github.com/).
         - Click on "Create Repository". 
@@ -303,9 +304,35 @@ Note: The issue has not yet been fixed as Microsoft will soon be phasing out IE 
         - After a few minutes, the ribbon will turn green and the site is reachable at an address similar to your-username/.github.io/your-repository-name/. 
         - Develop the project, commit, push and the changes will be visible on the page within a few minutes. 
 
+- ### Forking the Repository
+
+- By forking this GitHub Repository you make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original repository. The steps to fork the repository are as follows:
+    - Locate the [GitHub Repository](https://github.com/cla-cif/RPS-Lizard-Spock) of this project and log into your GitHub account. 
+    - Click on the "Fork" button, on the top right of the page, just above the "Settings". 
+    - Decide where to fork the repository (your account for instance)
+    - You now have a copy of the original repository in your GitHub account.
+
+- ### Making a local clone
+
+- Cloning a repository pulls down a full copy of all the repository data that GitHub.com has at that point in time, including all versions of every file and folder for the project. The steps to clone a repository are as follows:
+    - Locate the [GitHub Repository](https://github.com/cla-cif/RPS-Lizard-Spock) of this project and log into your GitHub account. 
+    - Click on the "Code" button, on the top right of the page, next to the green "Gitpod" button. 
+    - Chose one of the available options: Clone with HTTPS, Open with Git Hub desktop, Download ZIP. 
+    - To clone the repository using HTTPS, under "Clone with HTTPS", copy the link.
+    - Open Git Bash. 
+    - Chose the location where you want the repository to be created. 
+    - Type:
+    $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+    - Press Enter and your repository is now created. 
+    $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+> Cloning into `CI-Clone`...
+> remote: Counting objects: 10, done.
+> remote: Compressing objects: 100% (8/8), done.
+> remove: Total 10 (delta 1), reused 10 (delta 1)
+> Unpacking objects: 100% (10/10), done.
+
 
 __You can find the live link here: [RPS Lizard Spock](https://cla-cif.github.io/RPS-Lizard-Spock/)__
-
 
 ## Credits 
 
@@ -313,21 +340,18 @@ __You can find the live link here: [RPS Lizard Spock](https://cla-cif.github.io/
 
 -  All content written by developer Claudia Cifaldi - [cla-cif](https://github.com/cla-cif) on GitHub. 
 
-### Content 
+### Content and Media
 
 - The icons were taken from the developer JLChamberlain on [GitHub](https://github.com/cla-cif/RPSLS).
 - A fully functioning project was studied from  [FreeCodeCamp's tutorials](https://www.youtube.com/watch?v=jaVNP3nIAv0).
 - The icon in the Support page's header was taken from [Font Awesome](https://fontawesome.com/).
 - Fonts from [Google Fonts](https://fonts.google.com/).
 - The game was originally created by Sam Kass and Karen Bryla. 
-
-### Media
-
-- No media. 
+- Banner is designed by John Oakley. [Source](http://www.samkass.com/theories/RPSSL.html)
 
 ## Extra 
 
-### Links to people I like. 
+### Links to people we like. 
 
 - [GitHub supporting Ukraine](https://github.blog/2022-03-02-our-response-to-the-war-in-ukraine/).
 - [GitHub repository by iimetra](https://github.com/stop-war-in-ukraine/stop-russia-it). 
