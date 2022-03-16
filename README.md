@@ -1,4 +1,4 @@
-<h1 style="text-align:center; color:#0057b7;"><b>ROCK PAPER SCISSORS LIZARD SPOCK</b></h1>
+<h1 style="text-align:center color:#0057b7;"><b>ROCK PAPER SCISSORS LIZARD SPOCK</b></h1>
 
 __You can find the live link here: [RPS LIZARD SPOCK](https://cla-cif.github.io/RPS-Lizard-Spock/)__
 
@@ -38,14 +38,14 @@ The support page conveys a short but effective message.
         - Paper disproves Spock.
         - Spock vaporizes rock.
         - Rock crushes scissors.
-    - The rules explained by Sheldon from "The Big Bang Theory" in a [video](https://www.youtube.com/watch?v=Kov2G0GouBw) and by [WikiHow](https://www.wikihow.com/Play-Rock-Paper-Scissors-Lizard-Spock). 
+    - The rules are explained by Sheldon from "The Big Bang Theory" in a [video](https://www.youtube.com/watch?v=Kov2G0GouBw) and by [WikiHow](https://www.wikihow.com/Play-Rock-Paper-Scissors-Lizard-Spock). 
 
 - ### Trivia about the game:
 
     - [Sam Kass](http://www.samkass.com/theories/RPSSL.html) and Karen Bryla invented the game Rock, Paper, Scissors, Lizard, Spock as an extension of the world’s most famous hand game.  
-    - The first known mention of the game dates back to the time of the Chinese Han dynasty (206 BCE – 220 CE). [Wikipedia](https://en.wikipedia.org/wiki/Rock_paper_scissors#cite_note-9).
+    - The first known mention of the game dates back to the time of the Chinese Han dynasty (206 BCE – 220 CE). Source: [Wikipedia](https://en.wikipedia.org/wiki/Rock_paper_scissors#cite_note-9).
     - Robots from the [University of Tokyo](http://ishikawa-vision.org/fusion/Janken/index-e.html) may have a 100% winning rate, but your computer doesn't. [Watch the video](https://www.youtube.com/watch?v=ZVNnoOcohaU&t=33s).
-    - Bacterias like to [play](https://ucsdnews.ucsd.edu/pressrelease/e.coli-play-rock-paper-scissors) too. 
+    - Bacterias like to [play](https://ucsdnews.ucsd.edu/pressrelease/e.coli-play-rock-paper-scissors) this game too. 
     - Play two rounds and you have (p/(p+q))2 [chanches](https://math.stackexchange.com/questions/376187/probability-game) to win! Let's [play!](https://cla-cif.github.io/RPS-Lizard-Spock/)
 
 
@@ -100,7 +100,7 @@ Support page: [Desktop](https://github.com/cla-cif/RPS-Lizard-Spock/blob/main/as
 
 - __Header__
 
-  - The Header contains the name of the game (Rock Paper Scissors Lizard Spock), the challenge (Who gets to 10 first?) and the links to the 'Support' page, called by the message "Psst! Click me". The header bar is fixed to the top, the page is not scrollable and intended to fit the viewheight. The header's text is white on a blue background.
+  - The Header contains the name of the game (Rock Paper Scissors Lizard Spock), the challenge (Who gets to 10 first?) and the link to the 'Support' page, called by the message "Psst! Click me". The header bar is fixed to the top, the page is not scrollable and intended to fit the viewheight. The header's text is white on a blue background.
  
 ![Header](https://github.com/cla-cif/RPS-Lizard-Spock/blob/main/assets/screenshots/header.png)
 
@@ -138,8 +138,8 @@ Support page: [Desktop](https://github.com/cla-cif/RPS-Lizard-Spock/blob/main/as
 ![Footer](https://github.com/cla-cif/RPS-Lizard-Spock/blob/main/assets/screenshots/footer.png)
 
 - __Other features__ 
-    - The website has an [apple-touch-icon](https://github.com/cla-cif/RPS-Lizard-Spock/blob/main/assets/icons/apple-touch-icon.png) to make the page stand out from other bookmarks, with a representation of an atom: a tribute to The Big Bang Theory TV series. 
-    - The website has an [Atomic representation Favicon](https://github.com/cla-cif/RPS-Lizard-Spock/blob/main/assets/icons/game-favicon.ico) to make the home page easy to find among the many open tabs.
+    - The website has an [apple-touch-icon](https://github.com/cla-cif/RPS-Lizard-Spock/blob/main/assets/icons/apple-touch-icon.png) to make the page stand out from other bookmarks, with a representation of an atom: a tribute to "The Big Bang Theory" TV series. 
+    - The same [symbol](https://github.com/cla-cif/RPS-Lizard-Spock/blob/main/assets/icons/game-favicon.ico) was chosen to make the home page easy to find among the many open tabs.
     - The website has two hands embracing a [hearth with Ukranian colors favicon](https://github.com/cla-cif/RPS-Lizard-Spock/blob/main/assets/icons/support-favicon.ico) to make the support page easy to find among the many opens tabs and to spread a support message in favor of the Ukraninan people. 
     - The website has a "Google site verification" to verify the website's ownership as shown [here](https://search.google.com/search-console/ownership?resource_id=https%3A%2F%2Fcla-cif.github.io%2FRPS-Lizard-Spock%2F).
     - The site has keywords and a description of appropriate length to give the user a brief impression of the site on the browser results page.
@@ -169,8 +169,7 @@ Support page: [Desktop](https://github.com/cla-cif/RPS-Lizard-Spock/blob/main/as
 
 - Add privacy policy and copyright information. 
 - Get the website a domain name. 
-- Add choices and levels to increase complexity. If users will like the project and ask for further development, here are some [ideas](https://www.naturphilosophie.co.uk/winning-rock-paper-scissors-lizard-spock/). 
-![Expansion](https://raw.githubusercontent.com/cla-cif/RPS-Lizard-Spock/main/assets/screenshots/Rock_Paper_Scissors_Lizard_Spock_Spider-Man_Batman_Wizard_Glock.webp)
+- Add choices and levels to increase complexity. If users will like the project and ask for further development, here are some [ideas](https://www.naturphilosophie.co.uk/winning-rock-paper-scissors-lizard-spock/). And a visual schema of the potential [Expansion](https://raw.githubusercontent.com/cla-cif/RPS-Lizard-Spock/main/assets/screenshots/Rock_Paper_Scissors_Lizard_Spock_Spider-Man_Batman_Wizard_Glock.webp)
 
 ## Technologies used
 
@@ -187,7 +186,7 @@ Support page: [Desktop](https://github.com/cla-cif/RPS-Lizard-Spock/blob/main/as
 - [Font Awesome:](https://fontawesome.com/)
     - Font Awesome was used for the home icon of the 'support page' header.
 - [Gitpod](https://www.gitpod.io/)
-    - Gitpod Dashboard was used to write the code and its terminal to 'commit' to Git and 'push' to GitHub.
+    - Gitpod Dashboard was used to write the code and its terminal to 'commit' to GitHub and 'push' to GitHub Pages.
 - [GitHub:](https://github.com/)
     - GitHub is used to store the projects code after being pushed from Git.
 - [Iconfinder](https://www.iconfinder.com/)
@@ -234,12 +233,12 @@ The website's layout has been tested on a range of different screen sizes, from 
 
 - __Fixed bugs__
 
-##  
+- ##  
     - __Description__ : The message showing the result of the game and the image corresponding to the computer choiche are set to disappear after 1.5s. 
     - __Bug__: If the user selects another choiche before timeout, two (or more) computer choices will be visible at the same time. 
     - __Fix__: The events are handled with JQuery. on click of the user on another choiche, previous computer's choiche disappears.
     
-##   
+- ##   
     - __Description__: On mouse :hover user's choiches are coloured in blue. Default setting is black. 
     - __Bug__: :hover property is not available on touch screen. Once clicked, the user choiches do not go back to their default style.
     - __Fix__: The events are handled with JQuery. on click of the user on another choiche, previous user's choiche is back to default. In case of no events, the user's choiches are back to default after 1.5s.
@@ -287,9 +286,8 @@ Note: The issue has not yet been fixed as Microsoft will soon be phasing out IE 
 ## Deployment
 
 ### GitHub Pages
-
-- The site has been deployed on GitHub pages. The steps to deploy and publish the repository are as follows: 
 - A video showing how a similar repository was deployed is available [here](https://github.com/cla-cif/RPS-Lizard-Spock/blob/main/assets/screenshots/create-publish-repository.mp4). 
+- The site has been deployed on GitHub pages. The steps to deploy and publish the repository are as follows: 
     - Create a new repository:
         - Click on "New" button (top-right of the page). 
         - Select the "Owner" (your account for instance). 
@@ -339,7 +337,7 @@ Note: The issue has not yet been fixed as Microsoft will soon be phasing out IE 
     ```
     - Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository#cloning-a-repository-to-github-desktop) for a more detailed explaination. 
 
-__You can find the live link here: [RPS Lizard Spock](https://cla-cif.github.io/RPS-Lizard-Spock/)__
+__You can find the live link to the site here: [RPS Lizard Spock](https://cla-cif.github.io/RPS-Lizard-Spock/)__
 
 ## Credits 
 
@@ -354,7 +352,6 @@ __You can find the live link here: [RPS Lizard Spock](https://cla-cif.github.io/
 - The icon in the Support page's header was taken from [Font Awesome](https://fontawesome.com/).
 - Fonts from [Google Fonts](https://fonts.google.com/).
 - The game was originally created by Sam Kass and Karen Bryla. 
-- Banner is designed by John Oakley. [Source](http://www.samkass.com/theories/RPSSL.html)
 
 ## Extra 
 
