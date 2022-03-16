@@ -1,4 +1,4 @@
-![Banner](https://github.com/cla-cif/RPS-Lizard-Spock/blob/main/assets/screenshots/RPSLS%20banner.png)
+<h1 style="bold" text-align="center" color="blue">ROCK PAPER SCISSORS LIZARD SPOCK</h1>
 
 __You can find the live link here: [RPS LIZARD SPOCK](https://cla-cif.github.io/RPS-Lizard-Spock/)__
 
@@ -233,12 +233,13 @@ The website's layout has been tested on a range of different screen sizes, from 
 ### Bugs and problems
 
 - __Fixed bugs__
-- ##  
+
+##  
     - __Description__ : The message showing the result of the game and the image corresponding to the computer choiche are set to disappear after 1.5s. 
     - __Bug__: If the user selects another choiche before timeout, two (or more) computer choices will be visible at the same time. 
     - __Fix__: The events are handled with JQuery. on click of the user on another choiche, previous computer's choiche disappears.
     
-- ##   
+##   
     - __Description__: On mouse :hover user's choiches are coloured in blue. Default setting is black. 
     - __Bug__: :hover property is not available on touch screen. Once clicked, the user choiches do not go back to their default style.
     - __Fix__: The events are handled with JQuery. on click of the user on another choiche, previous user's choiche is back to default. In case of no events, the user's choiches are back to default after 1.5s.
@@ -285,7 +286,7 @@ Note: The issue has not yet been fixed as Microsoft will soon be phasing out IE 
 
 ## Deployment
 
-- ### GitHub Pages
+### GitHub Pages
 
 - The site has been deployed on GitHub pages. The steps to deploy and publish the repository are as follows: 
 - A video showing how a similar repository was deployed is available [here](https://github.com/cla-cif/RPS-Lizard-Spock/blob/main/assets/screenshots/create-publish-repository.mp4). 
@@ -304,7 +305,7 @@ Note: The issue has not yet been fixed as Microsoft will soon be phasing out IE 
         - After a few minutes, the ribbon will turn green and the site is reachable at an address similar to your-username/.github.io/your-repository-name/. 
         - Develop the project, commit, push and the changes will be visible on the page within a few minutes. 
 
-- ### Forking the Repository
+### Forking the Repository
 
 - By forking this GitHub Repository you make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original repository. The steps to fork the repository are as follows:
     - Locate the [GitHub Repository](https://github.com/cla-cif/RPS-Lizard-Spock) of this project and log into your GitHub account. 
@@ -312,25 +313,31 @@ Note: The issue has not yet been fixed as Microsoft will soon be phasing out IE 
     - Decide where to fork the repository (your account for instance)
     - You now have a copy of the original repository in your GitHub account.
 
-- ### Making a local clone
+### Making a local clone
 
 - Cloning a repository pulls down a full copy of all the repository data that GitHub.com has at that point in time, including all versions of every file and folder for the project. The steps to clone a repository are as follows:
     - Locate the [GitHub Repository](https://github.com/cla-cif/RPS-Lizard-Spock) of this project and log into your GitHub account. 
     - Click on the "Code" button, on the top right of the page, next to the green "Gitpod" button. 
     - Chose one of the available options: Clone with HTTPS, Open with Git Hub desktop, Download ZIP. 
     - To clone the repository using HTTPS, under "Clone with HTTPS", copy the link.
-    - Open Git Bash. 
+    - Open Git Bash. [How to download and install](https://phoenixnap.com/kb/how-to-install-git-windows).
     - Chose the location where you want the repository to be created. 
     - Type:
-    $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
-    - Press Enter and your repository is now created. 
-    $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
-> Cloning into `CI-Clone`...
-> remote: Counting objects: 10, done.
-> remote: Compressing objects: 100% (8/8), done.
-> remove: Total 10 (delta 1), reused 10 (delta 1)
-> Unpacking objects: 100% (10/10), done.
-
+    ```
+    $ git clone https://github.com/microsoft/RockPaperScissorsLizardSpock.git
+    ```
+    - Press Enter, the following lines will appear and your repository is now created.
+    ```
+   $ git clone https://github.com/cla-cif/RPS-Lizard-Spock.git
+   Cloning into 'RPS-Lizard-Spock'...
+    remote: Enumerating objects: 614, done.
+    remote: Counting objects: 100% (614/614), done.
+    remote: Compressing objects: 100% (450/450), done.
+    remote: Total 614 (delta 338), reused 352 (delta 143), pack-reused 0
+    Receiving objects: 100% (614/614), 6.50 MiB | 1.77 MiB/s, done.
+    Resolving deltas: 100% (338/338), done.
+    ```
+    - Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository#cloning-a-repository-to-github-desktop) for a more detailed explaination. 
 
 __You can find the live link here: [RPS Lizard Spock](https://cla-cif.github.io/RPS-Lizard-Spock/)__
 
