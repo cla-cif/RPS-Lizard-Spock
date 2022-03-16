@@ -181,7 +181,7 @@ $(".uchoice").on('mouseleave touchend', function () {
 });
 
 // touch screen only: reset button back to default after timeout
-$("#btn-reset").on('touchstart touchend', function() {
+$("#btn-reset").on('touchstart touchend', function () {
 	setTimeout(function () {
 		$("#btn-reset").css({
 			'background-color': '#ffd700',
