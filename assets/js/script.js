@@ -159,16 +159,14 @@ $(".uchoice").on('mouseover touchstart', function () {
 	});
 });
 
-$(".uchoice").on('mouseleave', function () {
+$(".uchoice").on('mouseleave touchend', function () {
 	$(this).find('svg').children().css({
 		'stroke': '#000'
 	});
-});
-
-$(".uchoice").on('touchend', function () {
+	//touch screen only: if no option is selected, user choiche style is back to default after timeout
 	setTimeout(function () {
 		$(".uchoice").find('svg').children().css({
-			'stroke': 'green'
+			'stroke': '#000'
 		});
 	}, 1500);
 });
@@ -189,4 +187,4 @@ $(".uchoice").on('click', function () {
 	$(".cchoice").find('svg').children().css({
 		'display': 'none'
 	});
-})
+});
