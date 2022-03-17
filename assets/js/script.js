@@ -157,19 +157,20 @@ $(".uchoice").on('mouseover touchstart', function () {
 		'stroke': '#0057b7',
 		'filter': 'drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4))'
 	});
-	setTimeout(function () {
-		$(".uchoice").find('svg').children().css({
-			'stroke': 'green'
-		});
-	}, 1500);
 });
 
 $(".uchoice").on('mouseleave', function () {
 	$(this).find('svg').children().css({
 		'stroke': '#000'
 	});
-	/*touch screen only: if no option is selected, user choiche style is back to default after timeout
-*/
+});
+
+$(".uchoice").on('touchend', function () {
+	setTimeout(function () {
+		$(".uchoice").find('svg').children().css({
+			'stroke': 'green'
+		});
+	}, 1500);
 });
 
 // touch screen only: reset button back to default after timeout
