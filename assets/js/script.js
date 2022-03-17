@@ -163,12 +163,12 @@ $(".uchoice").on('mouseleave touchend', function () {
 	$(this).find('svg').children().css({
 		'stroke': '#000'
 	});
-	//touch screen only: if no option is selected, user choiche style is back to default after timeout
+	/*touch screen only: if no option is selected, user choiche style is back to default after timeout
 	setTimeout(function () {
 		$(".uchoice").find('svg').children().css({
-			'stroke': '#000'
+			'stroke': 'green'
 		});
-	}, 1500);
+	}, 1500);*/
 });
 
 // touch screen only: reset button back to default after timeout
@@ -187,4 +187,4 @@ $(".uchoice").on('click', function () {
 	$(".cchoice").find('svg').children().css({
 		'display': 'none'
 	});
-});
+})
