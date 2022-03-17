@@ -159,7 +159,7 @@ $(".uchoice").on('mouseover touchstart', function () {
 	});
 });
 
-$(".uchoice").on('mouseleave touchend', function () {
+$(".uchoice").on('mouseleave', function () {
 	$(this).find('svg').children().css({
 		'stroke': '#000'
 	});
