@@ -129,7 +129,7 @@ function tie() {
 }
 
 function winner(win) {
-	//show a message with the winner, resets the score 
+	//show a message with the winner, resets the score
 	if (win === "computer") {
 		result_p.innerHTML = "COMPUTER WON THE MATCH!";
 		resetScore();
