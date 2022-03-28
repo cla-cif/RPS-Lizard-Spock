@@ -229,7 +229,7 @@ The website's layout has been tested on a range of different screen sizes, from 
   - The website was tested on [Power Mapper](https://try.powermapper.com/demo/Report/06cd2a9f-7881-4034-ab93-d188bfbe9a91).
   - The general performance was evaluated by [GTMetrix](https://gtmetrix.com/reports/cla-cif.github.io/KTcDefkf/).
 
-### Bugs and problems
+### Bugs and Future developments
 
 - __Fixed bugs__
 
@@ -249,6 +249,11 @@ The website's layout has been tested on a range of different screen sizes, from 
 Note: The issue has not yet been fixed as Microsoft will soon be phasing out IE 11 as stated [here](https://blogs.windows.com/windowsexperience/2021/05/19/the-future-of-internet-explorer-on-windows-10-is-in-microsoft-edge/#:~:text=With%20Microsoft%20Edge%20capable%20of,certain%20versions%20of%20Windows%2010.). 
    - On iOS, a quick series of "taps" isn't handled well and may result in loss of information (e.g. winning message and computer selection) and animations (e.g. user selection). The bug is shown [here](https://github.com/cla-cif/RPS-Lizard-Spock/blob/main/assets/screenshots/Homepage%20bugs%20on%20iPhone%2012.mov).
    - In addition, the problems mentioned above can sometimes occur even on slower "taps".
+
+- __Future developments__
+    - Improve mobile experience with better handling of touch events and better rendition of the :hover property. 
+    - Add more "playful events" (e.g. make it more clear when one of the two player wins, add "easter egg", music). 
+    - Fix or improve other issues highlighted by user. 
 
 ### Testing User Stories from User Experience (UX) Section
 
@@ -344,6 +349,7 @@ __You can find the live link to the site here: [RPS Lizard Spock](https://cla-ci
 ### Code
 
 -  All content written by developer Claudia Cifaldi - [cla-cif](https://github.com/cla-cif) on GitHub. 
+-  The template used for this project belongs to CodeInstitute - [GitHub](https://github.com/Code-Institute-Submissions) and [website](https://codeinstitute.net/global/).
 
 ### Content and Media
 
