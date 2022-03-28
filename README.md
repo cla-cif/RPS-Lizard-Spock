@@ -367,4 +367,4 @@ __You can find the live link to the site here: [RPS Lizard Spock](https://cla-ci
 - [GitHub repository by iimetra](https://github.com/stop-war-in-ukraine/stop-russia-it). 
 - [GitHub repository by AndrewStetsenko](https://github.com/AndrewStetsenko/Support-Ukraine).
 
-[Link to top](#top)
+[Link to top](#top) 
