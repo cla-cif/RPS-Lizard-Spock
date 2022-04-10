@@ -130,25 +130,27 @@ The steps needed to deploy this projects are as follows:
 ### Forking the Repository
 
 By forking this GitHub Repository you make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original repository. The steps to fork the repository are as follows:
-- Locate this [GitHub Repository](https://github.com/cla-cif/movie-DB-2000s) of this project and log into your GitHub account. 
-- Click on the "Fork" button, on the top right of the page, just above the _Settings_. 
-- Decide where to fork the repository (your account for instance)
-- You now have a copy of the original repository in your GitHub account.
+
+1. Locate this [GitHub Repository](https://github.com/cla-cif/movie-DB-2000s) of this project and log into your GitHub account. 
+2. Click on the "Fork" button, on the top right of the page, just above the _Settings_. 
+3. Decide where to fork the repository (your account for instance)
+4. You now have a copy of the original repository in your GitHub account.
 
 ### Making a local clone
 
 Cloning a repository pulls down a full copy of all the repository data that GitHub.com has at that point in time, including all versions of every file and folder for the project. The steps to clone a repository are as follows:
-- Locate this [GitHub Repository](https://github.com/cla-cif/movie-DB-2000s) of this project and log into your GitHub account. 
-- Click on the "Code" button, on the top right of the page, next to the green "Gitpod" button. 
-- Chose one of the available options: Clone with HTTPS, Open with Git Hub desktop, Download ZIP. 
-- To clone the repository using HTTPS, under "Clone with HTTPS", copy the link.
-- Open Git Bash. [How to download and install](https://phoenixnap.com/kb/how-to-install-git-windows).
-- Chose the location where you want the repository to be created. 
-- Type:
+
+1. Locate this [GitHub Repository](https://github.com/cla-cif/movie-DB-2000s) of this project and log into your GitHub account. 
+2. Click on the "Code" button, on the top right of the page, next to the green "Gitpod" button. 
+3. Chose one of the available options: Clone with HTTPS, Open with Git Hub desktop, Download ZIP. 
+4. To clone the repository using HTTPS, under "Clone with HTTPS", copy the link.
+5. Open Git Bash. [How to download and install](https://phoenixnap.com/kb/how-to-install-git-windows).
+6. Chose the location where you want the repository to be created. 
+7. Type:
     ```
     $ git clone https://github.com/cla-cif/movie-DB-2000s.git
     ```
-- Press Enter, the following lines will appear and your repository is now created.
+8. Press Enter, the following lines will appear and your repository is now created.
     ```
    Cloning into 'movie-DB-2000s'...
     remote: Enumerating objects: 257, done.
@@ -159,7 +161,7 @@ Cloning a repository pulls down a full copy of all the repository data that GitH
     Receiving objects: 100% (257/257), 54.76 KiB | 549.00 KiB/s, done.
     Resolving deltas: 100% (157/157), done.
     ```
-- Click [here](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository#cloning-a-repository-to-github-desktop) for a more detailed explaination. 
+9. Click [here](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository#cloning-a-repository-to-github-desktop) for a more detailed explaination. 
     
 ## Credits
 
