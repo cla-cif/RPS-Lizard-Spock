@@ -1,370 +1,172 @@
-<h1 align="center" id="top">ROCK PAPER SCISSORS LIZARD SPOCK</h1>
+#top
+-----
+Welcome to the 2000s Movie Database, the dataset contains 2100 films released between 2000 and 2009. Data points include title, genre, year, language and country of production, content rating, duration, aspect ratio, director, cast, budget, box office, number of reviews (by critics and users) and IMDB score. 
 
-__You can find the live link here: [RPS LIZARD SPOCK](https://cla-cif.github.io/RPS-Lizard-Spock/)__
+The Heroku-based command line interface (CLI) allows the user to browse the dataset and retrieve statistics, rankings and specific information.
+The instructions are extremely simply written and require only a minimum of interaction to achieve the desired result.
 
-An extended version of the classic rock-paper-scissors game: [The Big Bang Theory](https://bigbangtheory.fandom.com/wiki/Rock,_Paper,_Scissors,_Lizard,_Spock) edition. Extention includes Lizard and Spock choices. The user plays against the computer, which randomly selects his choices. Whoever reaches 10 first wins the game. 
-
-As this project was developed during the Russian aggression against Ukraine, the colours of the [Ukrainian flag](https://en.wikipedia.org/wiki/Flag_of_Ukraine) have been chosen as a sign of support. On the homepage there's a [Click me](https://cla-cif.github.io/RPS-Lizard-Spock/support.html) link that leads to a support page with some details and useful links to support Ukraine and not the developer of the website. 
-
-The game has a simple interface, it's intuitive and easy to use. 
-The support page conveys a short but effective message.
-
-![Landing page](https://github.com/cla-cif/RPS-Lizard-Spock/blob/main/assets/screenshots/home.png)
-![Support page](https://github.com/cla-cif/RPS-Lizard-Spock/blob/main/assets/screenshots/support.png)
+[Here is the live version](https://movie-db-2000s.herokuapp.com/)
 
 ## Content
-- [About the game](#About-the-game)
-- [User Experience](#User-Experience-(UX))
-- [Features](#Features)
-- [Technologies used](#Technologies-used)
-- [Testing](#Testing)
-- [Deployment](#Deployment)
-- [Credits](#Credits)
-- [Extra](#Extra)
+ [How to use](#How-to-use)
+ [Features](#Features)
+ [Data Model](#Data-model)
+ [Testing](#Testing)
+ [Technologies](#Technologies-used)
+ [Deployment](#Deployment)
+ [Credits](#Credits)
+ [Extra](#Extra)
 
-## About the game
--   ### The rules:
-    - Pick one of the five hand signals and the computer will randomly make his choice from the same five hand signals. 
-    - 1 point is assigned to the winner. The one who gets to 10 first, wins the match. 
-    - If the two players make the same object, it's a tie. Play again to determine the winner.
-    - Remember who wins:
-        - Scissors cuts paper.
-        - Paper covers rock.
-        - Rock crushes lizard.
-        - Lizard poisons Spock.
-        - Spock smashes scissors.
-        - Scissors decapitates lizard.
-        - Lizard eats paper.
-        - Paper disproves Spock.
-        - Spock vaporizes rock.
-        - Rock crushes scissors.
-    - The rules are explained by Sheldon from "The Big Bang Theory" in a [video](https://www.youtube.com/watch?v=Kov2G0GouBw) and by [WikiHow](https://www.wikihow.com/Play-Rock-Paper-Scissors-Lizard-Spock). 
+## How to use
+- The user is welcomed by a large title and a short welcome message explaining how to use the app. 
+- The app has two tasks: display processed data and perform queries. 
+- The app is based on an iterative process that the user can interrupt at any time when prompted for input. 
+- On the first iteration, the user is asked the question, "What do you want to do today, get data or search?"
+- Depending on whether they answer "data" or "search", they'll be prompted for further choices that will lead to the desired output. 
+- Each answer (input) from the user is verified. If the check fails, the user is prompted to provide a suitable input.
+- After each output, the user is returned to the beginning and can choose to perform a new search or retrieve data.
 
-- ### Trivia about the game:
+### Data option
+Users are offered ten options with pre-calculated statistics and rankings to choose from.
+1.  The average budget, score and duration of this films'decade.
+2.  Number of films in each language.
+3.  Number of films produced each year.
+4.  The most prolific directors of the decade and their scores.
+5.  Top 10 countries that produced films with the highest IMDB score.
+6.  The 10 best films of the decade.
+7.  The 10 worst films of the decade.
+8.  The most profitable films in terms of return of investment.
+9.  Top 10 box-office flops: the most unprofitable films.
+1.  The content ratings and their average IMDB Score.
+After the choice is validated and the output displayed, the user is asked whether he wants to retrieve the data again or perform a search.
 
-    - [Sam Kass](http://www.samkass.com/theories/RPSSL.html) and Karen Bryla invented the game Rock, Paper, Scissors, Lizard, Spock as an extension of the world’s most famous hand game.  
-    - The first known mention of the game dates back to the time of the Chinese Han dynasty (206 BCE – 220 CE). Source: [Wikipedia](https://en.wikipedia.org/wiki/Rock_paper_scissors#cite_note-9).
-    - Robots from the [University of Tokyo](http://ishikawa-vision.org/fusion/Janken/index-e.html) may have a 100% winning rate, but your computer doesn't. [Watch the video](https://www.youtube.com/watch?v=ZVNnoOcohaU&t=33s).
-    - Bacterias like to [play](https://ucsdnews.ucsd.edu/pressrelease/e.coli-play-rock-paper-scissors) this game too. 
-    - Play two rounds and you have (p/(p+q))2 [chanches](https://math.stackexchange.com/questions/376187/probability-game) to win! Let's [play!](https://cla-cif.github.io/RPS-Lizard-Spock/)
+### Search option
+- Users can search the dataset by title, genre, actor and director. 
+- Matching is also possible with partial text but limited to 10 results due to Heroku's terminal constraints (80 characters by 24 rows), so a targeted entry will yield accurate results. 
+- Searching by title is the only query that returns all available information (genre, year, language and country of production, content rating, duration, aspect ratio, director, cast, budget, box office, number of reviews and IMDB score). 
+- The other options, which are likely to find multiple matches, display only the most relevant information (title, genre, director, cast and IMDB score) to improve readability given the aforementioned Heroku constraints.
 
+## Features
+All functions have a general purpose and can be applied to a similar dataset or, for this particular project, allow the current dataset to be extended with minimal further implementation.
 
-## User Experience (UX)
+### Existing Features
+- The app is intuitive, the instructions are clear and simple, requiring minimal interaction from the user to achieve the result. 
+- The text displayed on the black background of Heroku's CLI is legible and bright. The four colours (blue, yellow, red, white) are chosen consistently to differentiate instructions, functions, error messages and outputs. 
+- Input isn't case-sensitive, but output is consistently presented with the first letter capitalised. 
+- The code is iterative so that users can perform multiple searches without restarting the program. 
+- The user can exit the program at any time by typing "exit". The CLI will be cleared after three seconds. The program can be restarted by clicking the red "Run Program" button on the Heroku app page. 
 
--   ### User stories
+### Future Features
+- Searches will be possible with two or more options at the same time (e.g.: search by genre AND actor, search by actor AND director). 
+- A collection of films from the 90s and 10s will be added to the dataset.
+- Additional statistics and lists will be provided. 
+- Further features may include deployment with [Jupyter Lab](https://jupyter.org/) to create meaningful istograms, distributions and charts.
+- Bug fixes.
 
-    -   #### First-time Visitor Goals
+## Data Model ?????
+??????
 
-        1. As a First-time visitor, I want to play a simple and intuitive game. 
-        2. As a First-time visitor, I want to learn more about the project and its developer. 
-        3. As a First-time first-time visitor with an impairment, I want to be able to read all the text by myself or with a screen reader and find colours that are not misleading.
-        
-    -   #### Returning Visitor Goals
+## Testing
+I manually tested this project throughout the development process by doing the following:
+ - I ran the code through the PEP8 linter.
+ - Given invalid input and checked the logical and visual consistency of the error messages.
+ - Entered substrings, extended ASCII characters, lower and upper case letters. 
+ - Checked how many lines to display for better readability. 
+ - Tested colours and their consistnecy for better readability.
 
-        1. As a returning visitor, I want to find the same game but with less bugs. 
-        2. As a returning visitor with a disability, I want to find the same or even better accessibility than before.
-        
--   ### Wireframes
+### Issues
+  The program has so far proven to be free of arithmetic, syntax, resource, multi-threading and interfacing bugs. 
+  The program operates correctly and doesn't terminate abnormally. 
+  The following logical errors provided undesired output. While the output was consitent with the input, a much broader result was desired. 
 
-The site is designed with an intuitive layout, it is accessible, easy to browse, with the absolutely necessary information and less invasive images.
-[Balsamiq](https://balsamiq.com/) was used to put "ideas on paper". 
+#### Fixed
+Matching is not possible with a partial string. e.g. the title must be complete, actor/director must searched by full name in order to display the desired result. 
+:  Implementation of a nested loop to work efficiently with a multi-dimensional data structure like this dataset. If the substring provided by the user was matched by iterating through the spreadsheet and its columns (this dataset is a list that contains other lists), boolean variable returns true and the output displayed. 
 
-Home page: [Desktop](https://github.com/cla-cif/RPS-Lizard-Spock/blob/main/assets/screenshots/Main%20desktop.png) / [Mobile](https://github.com/cla-cif/RPS-Lizard-Spock/blob/main/assets/screenshots/Main%20mobile.png) 
+Extended ASCII characters (character code 128-255) present in some names couldn't be matched providing printable ASCII characters (character code 128-255) . 
+:  The dataframe is parsed twice (looking for printable and extended ASCII chars) before informing the user that no matches were found. To match extended ASCII, the normalize method is applied to the dataframe. 
 
-Support page: [Desktop](https://github.com/cla-cif/RPS-Lizard-Spock/blob/main/assets/screenshots/Support%20desktop.png) / [Mobile](https://github.com/cla-cif/RPS-Lizard-Spock/blob/main/assets/screenshots/Support%20mobile.png) 
+#### Remaining
+In case a value is present in the dataframe but not in the interested column, the output will display a list with the columns' headers (keys) and an an empty index array. This happens because the input is compared against the df.values.
 
--  ### Design
-
-    - __Colours__
-        -   The three main colours used are a shade of white, yellow and blue. Yellow and blue were chosen as a tribute to the Ukrainian, which was ravaged by war at the time this project was created. White was chosen to achieve an optimal contrast ratio between the background and the text. 
-    - __Typography__
-        -   The font "Smooch Sans" from Google Fonts was chosen for its modern, captivating and playful style. 
-    - __Images__
-        -   The svg files for user and computer choice are clear, simple and display optimally on all screens.
-        
-## Features 
-
--   Responsive on all device sizes. How it looks like on iPhone 12: [Home page](https://github.com/cla-cif/RPS-Lizard-Spock/blob/main/assets/screenshots/Homepage%20layout%20on%20iPhone%2012.jpg) / [Support page](https://github.com/cla-cif/RPS-Lizard-Spock/blob/main/assets/screenshots/Support%20page%20layout%20on%20iPhone%2012.png)
-
--   Accessible for users with hearing and visual impairments.
--   Interactive elements.
-
-![Home page screenshot from Am I Responsive webpage](https://github.com/cla-cif/RPS-Lizard-Spock/blob/main/assets/screenshots/responsive-home.png)
-![Support page screenshot from Am I Responsive webpage](https://github.com/cla-cif/RPS-Lizard-Spock/blob/main/assets/screenshots/responsive-support.png)
-
-- Note:
-    - Given the recreative/social purpose of the project, links to the developer's social media were not deemed necessary. 
-    - Given the size of the project, a .xml sitemap was not deemed necessary. 
-
-### Existing Features - Home page
-
-- __Header__
-
-  - The Header contains the name of the game (Rock Paper Scissors Lizard Spock), the challenge (Who gets to 10 first?) and the link to the 'Support' page, called by the message "Psst! Click me". The header bar is fixed to the top, the page is not scrollable and intended to fit the viewheight. The header's text is white on a blue background.
- 
-![Header](https://github.com/cla-cif/RPS-Lizard-Spock/blob/main/assets/screenshots/header.png)
-
-- __Main section__
-
-  - The main section contains the score area, the game area split in two (user's and computer's) and the reset button. 
-
-![Main](https://github.com/cla-cif/RPS-Lizard-Spock/blob/main/assets/screenshots/main.png)
-
-- __Scores area__
-
-  - The 'Scores area' is split in three equally sized section. In this area is tracked the user's score on the left and the computer's on the right. In the middle a message with the result of the game ("You won! or "Computer won!") and of the match as soon as 10 points are reached by one of the two opponents ("You won the match!", "Computer won the match!");
-
-![Scores area](https://github.com/cla-cif/RPS-Lizard-Spock/blob/main/assets/screenshots/score-area.png)
-
-- __Game area__
-
-  - The 'Game area' is split in two: the user's choices are presented on the left and highlighted in blue on hover. Computer's choices are on the right but initially are not visible. 
-  - The game starts with the user clicking on one of the five icons. The click will generate a random number associated with the computer's choice. The computer choiche will ve visible for 1.5 seconds. The winner of the game is calculated based on the game's rules, the winner is announced by a temporary message appearing between the two scoreboards. One point is assigned to the winner and visible on the respective scoreboard. 
-  
-![Game area](https://github.com/cla-cif/RPS-Lizard-Spock/blob/main/assets/screenshots/game-area.png)
-
-- __Reset area__ 
-
-  - The 'Reset area' section presents a minimalistic 'Reset' button, consistent in style with the rest of the page's objects. 
-  - The game can be restarted by the user at any point clicking the reset button but it's automatically reset once one of the two opponents reaches 10 points. 
-
-![Reset area](https://github.com/cla-cif/RPS-Lizard-Spock/blob/main/assets/screenshots/reset-area.png)
-
-- __The Footer__ 
-
-  - The 'Footer' shows the name of the developer and the year the project was created. The text is black on a yellow background. 
-  - The footer sticks to the bottom.
-  
-![Footer](https://github.com/cla-cif/RPS-Lizard-Spock/blob/main/assets/screenshots/footer.png)
-
-- __Other features__ 
-    - The website has an [apple-touch-icon](https://github.com/cla-cif/RPS-Lizard-Spock/blob/main/assets/icons/apple-touch-icon.png) to make the page stand out from other bookmarks, with a representation of an atom: a tribute to "The Big Bang Theory" TV series. 
-    - The same [symbol](https://github.com/cla-cif/RPS-Lizard-Spock/blob/main/assets/icons/game-favicon.ico) was chosen to make the home page easy to find among the many open tabs.
-    - The website has two hands embracing a [hearth with Ukranian colors favicon](https://github.com/cla-cif/RPS-Lizard-Spock/blob/main/assets/icons/support-favicon.ico) to make the support page easy to find among the many opens tabs and to spread a support message in favor of the Ukraninan people. 
-    - The website has a "Google site verification" to verify the website's ownership as shown [here](https://search.google.com/search-console/ownership?resource_id=https%3A%2F%2Fcla-cif.github.io%2FRPS-Lizard-Spock%2F).
-    - The site has keywords and a description of appropriate length to give the user a brief impression of the site on the browser results page.
-
-### Existing Features - Support page
-
-- __Header__
-
-  - The Header is minimalistic, matches the color of the home page and the size of the footer. It has one home icon and the label 'Home' on the top left area. The label has been added for a better accessibility. 
- 
-![Header](https://github.com/cla-cif/RPS-Lizard-Spock/blob/main/assets/screenshots/header-support.png)
-
-- __Main section__
-
-  - The main section contains the developer's message to the user and a link to [support Ukraine](https://supportukrainenow.org/). The message is brief, simple but effective. The link, styled as a button, matches the Ukranian flag on default and on hover.  
-
-![Main](https://github.com/cla-cif/RPS-Lizard-Spock/blob/main/assets/screenshots/main-support.png)
-
-- __The Footer__ 
-
-  - The 'Footer' shows the name of the developer and the year the project was created. The text is black on a yellow background. 
-  - The footer sticks to the bottom.
-  
-![Footer](https://github.com/cla-cif/RPS-Lizard-Spock/blob/main/assets/screenshots/footer.png)
-
-### Features to implement
-
-- Add privacy policy and copyright information. 
-- Get the website a domain name. 
-- Add choices and levels to increase complexity. If users will like the project and ask for further development, here are some [ideas](https://www.naturphilosophie.co.uk/winning-rock-paper-scissors-lizard-spock/). And a visual schema of the potential [Expansion](https://raw.githubusercontent.com/cla-cif/RPS-Lizard-Spock/main/assets/screenshots/Rock_Paper_Scissors_Lizard_Spock_Spider-Man_Batman_Wizard_Glock.webp)
+### Validator
+- PEP8: no errors were returned from the PEP8 validator. 
 
 ## Technologies used
-
+The project is coded with Python and relies on [pandas 1.4.2:](https://pypi.org/project/pandas/) to analyse data.
 ### Languages used
 
--   [HTML5](https://en.wikipedia.org/wiki/HTML5)
--   [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
--   [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
+-   [Python](https://docs.python.org/3/)
 
 ### Frameworks, Libraries & Programs Used
 
-- [Google Fonts:](https://fonts.google.com/)
-    - Google Fonts were used to import the 'Smooch Sans' font into the HTML pages (home and suppor). 
-- [Font Awesome:](https://fontawesome.com/)
-    - Font Awesome was used for the home icon of the 'support page' header.
-- [Gitpod](https://www.gitpod.io/)
-    - Gitpod Dashboard was used to write the code and its terminal to 'commit' to GitHub and 'push' to GitHub Pages.
-- [GitHub:](https://github.com/)
-    - GitHub is used to store the projects code after being pushed from Git.
-- [Iconfinder](https://www.iconfinder.com/)
-    - Favicons (.ico) and apple touch icons (.png) are from Iconfinder.
-- [Balsamiq:](https://balsamiq.com/)
-    - Balsamiq was used to create the [wireframe](https://github.com/cla-cif/english-with-claudia/blob/main/screenshot/index-wireframe.png) before the deployment process began.
- 
-## Testing 
-
-### General Testing 
-
-The website's features were thoroughly tested using some well-known free web testers. Both pages (home page and support page) were tested.
-
-- __Web Responsive__
-    - The responsive feature has been tested using Chrome DevTools and an online Web Design checker from [Media Genesis](https://responsivedesignchecker.com/). 
-Here is the result of the [Home page](https://responsivedesignchecker.com/checker.php?url=https%3A%2F%2Fcla-cif.github.io%2FRPS-Lizard-Spock%2F&width=1400&height=700) and here is the result of the [Support page](https://cla-cif.github.io/RPS-Lizard-Spock/support.html).
-The website's layout has been tested on a range of different screen sizes, from small 320x480 screens (e.g. Apple iPhone 3) to widescreen 24" and their landscape view providing a good user experience. 
-    - The website has passed the [Google mobile-friendly test](https://search.google.com/test/mobile-friendly/result?id=OPXjC51ESN7aQgtAmaf9Uw).
-
-- __Accessibility__
-
-  - __Colours:__ All colours checked with [WebAim](https://webaim.org/resources/contrastchecker/) have an optimal contrast ratio(6.32:1 (blue/white), 4.91:1(blue/yellow), 14.97:1 (yellow/black))
-  - __Reduced motion:__ All animations are disabled when "Show animation in Windows" is disabled from settings in Win10. 
-  - __Colour blindness:__ Colour-blind webpage filters have been taken into account with [Toptal](https://www.toptal.com/designers/colorfilter/) e.g. Here is how the website looks like for users affected by [Tritanopia](https://www.toptal.com/designers/colorfilter?orig_uri=https://cla-cif.github.io/RPS-Lizard-Spock/&process_type=tritan)
-  - __Screen Reader:__ Texts, links and images' 'alt text' were read with the Google Chrome extension Screen Reader (version 53.0.2784.13). 
-  - __Presbiopia:__ All fonts are 'sans serif' and have a sufficient size so that the text can be easily read without glasses.
-  - __General Accessibility:__ has been tested with satisfactory results on:
-      1. Google Light House (mobile and desktop version). 
-      2. [Power Mapper - Home page](https://try.powermapper.com/demo/Report/06cd2a9f-7881-4034-ab93-d188bfbe9a91) and [Power Mapper - support page](https://try.powermapper.com/demo/Report/ce53642e-2b2f-45d7-98ee-b6e796513e5d) showing minor issues. 
-      3. [Wave - Home and Support pages](https://wave.webaim.org/report#/https://cla-cif.github.io/RPS-Lizard-Spock/index.html).
-
-- __Browser Compatibility__
-    - The website's pages were tested with [Power Mapper](https://try.powermapper.com/demo/Report/06cd2a9f-7881-4034-ab93-d188bfbe9a91) presenting issues with IE11 regarding CSS3 properties. Such choices were deemed necessary for a better user experience and devices compatibility. 
-
-- __SEO__
-  - The website's Home page was tested on [Seobility](https://freetools.seobility.net/en/seocheck/check?url=https%3A%2F%2Fcla-cif.github.io%2FRPS-Lizard-Spock%2F&crawltype=1) and similar results were obtained on the Support page..
-  - Tests ran with Google Light House (mobile and desktop version) on both pages obtained a SEO score of 100%.
-
-- __Performances__
-  - The website was tested on [Power Mapper](https://try.powermapper.com/demo/Report/06cd2a9f-7881-4034-ab93-d188bfbe9a91).
-  - The general performance was evaluated by [GTMetrix](https://gtmetrix.com/reports/cla-cif.github.io/KTcDefkf/).
-
-### Bugs and Future developments
-
-- __Fixed bugs__
-
-- ##  
-     - __Description__ : The message showing the result of the game and the image corresponding to the computer choiche are set to disappear after 1.5s. 
-     - __Bug__: If the user selects another choiche before timeout, two (or more) computer choices will be visible at the same time. 
-     - __Fix__: The events are handled with JQuery. on click of the user on another choiche, previous computer's choiche disappears.
-    
-- ##   
-     - __Description__: On mouse :hover user's choiches are coloured in blue. Default setting is black. 
-     - __Bug__: :hover property is not available on touch screen. Once clicked, the user choiches do not go back to their default style.
-     - __Fix__: The events are handled with JQuery. on click of the user on another choiche, previous user's choiche is back to default.
-
-   
-- __Unfixed bugs__
-    - Webiste performance analysis show a considerable loss of usability on IE 11 because some of CSS3 properties are not supported. In particular grid layout and viewport units, used extensively in the project, are not supported as showned by [CanIUse](https://caniuse.com/viewport-units).  
-Note: The issue has not yet been fixed as Microsoft will soon be phasing out IE 11 as stated [here](https://blogs.windows.com/windowsexperience/2021/05/19/the-future-of-internet-explorer-on-windows-10-is-in-microsoft-edge/#:~:text=With%20Microsoft%20Edge%20capable%20of,certain%20versions%20of%20Windows%2010.). 
-   - On iOS, a quick series of "taps" isn't handled well and may result in loss of information (e.g. winning message and computer selection) and animations (e.g. user selection). The bug is shown [here](https://github.com/cla-cif/RPS-Lizard-Spock/blob/main/assets/screenshots/Homepage%20bugs%20on%20iPhone%2012.mov).
-   - In addition, the problems mentioned above can sometimes occur even on slower "taps".
-
-- __Future developments__
-    - Improve mobile experience with better handling of touch events and better rendition of the :hover property. 
-    - Add more "playful events" (e.g. make it more clear when one of the two player wins, add "easter egg", music). 
-    - Fix or improve other issues highlighted by user. 
-
-### Testing User Stories from User Experience (UX) Section
-
- #### __First Time Visitor Goals__
-
-- As a First-time visitor, I want to play a simple and intuitive game. 
-    - The layout is simple, the icons are intuitive, all essential information are displayed. 
-          
-- As a First-time visitor, I want to learn more about the project and its developer. 
-    - The 'Click me' button lands to a page where it's explained why and how the user can support the developer. 
-
--  As a First-time first-time visitor with an impairment, I want to be able to read all the text by myself or with a screen reader and find colours that are not misleading, and find animations disabled if so set. 
-     - Colours contrast with the background and are colour blindness friendly as information is still clear regardless of visual impairment.
-     - Font sizes are sufficiently large by default and therefore easy to read.
-     - All text, labels and images are readable with the Chrome Screen Reader extension.
-     - Animations are disabled when the user sets the "prefer reduced motion" option.
-
- #### __Returning Visitor Goals__
-
-- As a returning visitor, I want to find the same game but with less bugs. 
-     - The first version of this website was deployed on March 2022, the developer strives to work on the webiste and improve its usability.  
-    
-- As a returning visitor with a disability, I want to find the same or even better accessibility than before.
-     - Accessibility will be kept up to date in accordance with the latest guidelines and users' feedback.
-              
-### Validator Testing 
-
-- HTML
-  - No errors were returned when running the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcla-cif.github.io%2FRPS-Lizard-Spock%2F).
-- CSS
-  - No errors were found when running the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fcla-cif.github.io%2FRPS-Lizard-Spock%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en).
-- JavaScript
-  - The code passed through [JSHint](https://jshint.com/) with no significant issues. 
+- [pandas 1.4.2:](https://pypi.org/project/pandas/) which was installed along with [seaborn 0.11.2](https://pypi.org/project/seaborn/)
+- [colorama 0.4.4](https://pypi.org/project/colorama/)
+- [pyfiglet 0.8.post1](https://pypi.org/project/pyfiglet/)
+- [pycodestyle 2.8.0](https://pypi.org/project/pycodestyle/)
+--
+- The dataset is a [Google Sheet](https://www.google.com/sheets/about/) file
 
 ## Deployment
+The project is coded and hosted on GitHub and deployed with Heroku. 
 
-### GitHub Pages
-- A video showing how a similar repository was deployed is available [here](https://github.com/cla-cif/RPS-Lizard-Spock/blob/main/assets/screenshots/create-publish-repository.mp4). 
-- The site has been deployed on GitHub pages. The steps to deploy and publish the repository are as follows: 
-    - Create a new repository:
-        - Click on "New" button (top-right of the page). 
-        - Select the "Owner" (your account for instance). 
-        - Chose a Repository name. Note: The name must be unique among all the user's repositories and words must be separated by hypen. 
-        - The repository will be "public" by default. Note: a "private" repository can't be hosted on [GitHub pages](https://pages.github.com/).
-        - Click on "Create Repository". 
-        - The page will refresh and the Repository is successfully created. 
-     - Host repository on GitHub Pages:
-        - Click on "Settings" (top-right of the page).
-        - Click on "Pages" (menu on the left). 
-        - Select branch > main from the "Source" section. (or any other if present). 
-        - Click on "Save", the page will refresh and the site, now hosted on GitHub Pages is ready to be published. 
-        - After a few minutes, the ribbon will turn green and the site is reachable at an address similar to your-username/.github.io/your-repository-name/. 
-        - Develop the project, commit, push and the changes will be visible on the page within a few minutes. 
+### Creating the Heroku app 
+The steps needed to deploy this projects are as follows:
+
+1. Create a `requirement.txt` file in GitHub, for Heroku to read, listing the dependancies the program needs in order to run.
+2. `push` the recent changes to GitHub and go to your [Heroku account page](https://id.heroku.com/login) to create and deploy the app running the project. 
+3. Chose "CREATE NEW APP", give it a unique name, and select a geographical region. 
+4. From the _Settings_ tab, configure the environment variables (_config var_ section).
+5. Copy/paste the `CREDS.json` file, if the project has credentials, in the `VALUE` field, type `CREDS` in the corresponding KEY box, click the "ADD" button.
+6. Create another config var, set `PORT` as KEY and assign it the VALUE `8000`.
+7. Add two buildpacks from the _Settings_ tab. The ordering is as follows:
+   `heroku/python`
+   `heroku/nodejs`
+8. From the _Deployment_ tab, chose GitHub as deployment method, connect to GitHub and select the project's repository. 
+9. Click to "Enable Automatic Deploys " or chose to "Deploy Branch" from the _Manual Deploy_ section. 
+10. Wait for the logs to run while the dependencies are installed and the app is being built.
+11. The mock terminal is then ready and accessible from a link similar to `https://your-projects-name.herokuapp.com/`
 
 ### Forking the Repository
 
-- By forking this GitHub Repository you make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original repository. The steps to fork the repository are as follows:
-    - Locate the [GitHub Repository](https://github.com/cla-cif/RPS-Lizard-Spock) of this project and log into your GitHub account. 
-    - Click on the "Fork" button, on the top right of the page, just above the "Settings". 
-    - Decide where to fork the repository (your account for instance)
-    - You now have a copy of the original repository in your GitHub account.
+By forking this GitHub Repository you make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original repository. The steps to fork the repository are as follows:
+- Locate this [GitHub Repository](https://github.com/cla-cif/movie-DB-2000s) of this project and log into your GitHub account. 
+- Click on the "Fork" button, on the top right of the page, just above the _Settings_. 
+- Decide where to fork the repository (your account for instance)
+- You now have a copy of the original repository in your GitHub account.
 
 ### Making a local clone
 
-- Cloning a repository pulls down a full copy of all the repository data that GitHub.com has at that point in time, including all versions of every file and folder for the project. The steps to clone a repository are as follows:
-    - Locate the [GitHub Repository](https://github.com/cla-cif/RPS-Lizard-Spock) of this project and log into your GitHub account. 
-    - Click on the "Code" button, on the top right of the page, next to the green "Gitpod" button. 
-    - Chose one of the available options: Clone with HTTPS, Open with Git Hub desktop, Download ZIP. 
-    - To clone the repository using HTTPS, under "Clone with HTTPS", copy the link.
-    - Open Git Bash. [How to download and install](https://phoenixnap.com/kb/how-to-install-git-windows).
-    - Chose the location where you want the repository to be created. 
-    - Type:
+Cloning a repository pulls down a full copy of all the repository data that GitHub.com has at that point in time, including all versions of every file and folder for the project. The steps to clone a repository are as follows:
+- Locate this [GitHub Repository](https://github.com/cla-cif/movie-DB-2000s) of this project and log into your GitHub account. 
+- Click on the "Code" button, on the top right of the page, next to the green "Gitpod" button. 
+- Chose one of the available options: Clone with HTTPS, Open with Git Hub desktop, Download ZIP. 
+- To clone the repository using HTTPS, under "Clone with HTTPS", copy the link.
+- Open Git Bash. [How to download and install](https://phoenixnap.com/kb/how-to-install-git-windows).
+- Chose the location where you want the repository to be created. 
+- Type:
     ```
-    $ git clone https://github.com/microsoft/RockPaperScissorsLizardSpock.git
+    $ git clone https://github.com/cla-cif/movie-DB-2000s.git
     ```
-    - Press Enter, the following lines will appear and your repository is now created.
+- Press Enter, the following lines will appear and your repository is now created.
     ```
-   $ git clone https://github.com/cla-cif/RPS-Lizard-Spock.git
-   Cloning into 'RPS-Lizard-Spock'...
-    remote: Enumerating objects: 614, done.
-    remote: Counting objects: 100% (614/614), done.
-    remote: Compressing objects: 100% (450/450), done.
-    remote: Total 614 (delta 338), reused 352 (delta 143), pack-reused 0
-    Receiving objects: 100% (614/614), 6.50 MiB | 1.77 MiB/s, done.
-    Resolving deltas: 100% (338/338), done.
+   Cloning into 'movie-DB-2000s'...
+    remote: Enumerating objects: 257, done.
+    remote: Counting objects: 100% (257/257), done.
+    remote: Compressing objects: 100% (182/182), done.
+    remote: Total 257 (delta 157), reused 158 (delta 72), pack-reused 0Receiving obj
+    Receiving objects:  81% (209/257)
+    Receiving objects: 100% (257/257), 54.76 KiB | 549.00 KiB/s, done.
+    Resolving deltas: 100% (157/157), done.
     ```
-    - Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository#cloning-a-repository-to-github-desktop) for a more detailed explaination. 
-
-__You can find the live link to the site here: [RPS Lizard Spock](https://cla-cif.github.io/RPS-Lizard-Spock/)__
-
-## Credits 
-
-### Code
+- Click [here](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository#cloning-a-repository-to-github-desktop) for a more detailed explaination. 
+    
+## Credits
 
 -  All content written by developer Claudia Cifaldi - [cla-cif](https://github.com/cla-cif) on GitHub. 
 -  The template used for this project belongs to CodeInstitute - [GitHub](https://github.com/Code-Institute-Submissions) and [website](https://codeinstitute.net/global/).
+- The dataset is part of Kaggle's ["The Movies Dataset"](https://www.kaggle.com/datasets/rounakbanik/the-movies-dataset) under CC0: Public Domain Licence. 
 
-### Content and Media
-
-- The icons were taken from the developer JLChamberlain on [GitHub](https://github.com/cla-cif/RPSLS).
-- A fully functioning project was studied from  [FreeCodeCamp's tutorials](https://www.youtube.com/watch?v=jaVNP3nIAv0).
-- The icon in the Support page's header was taken from [Font Awesome](https://fontawesome.com/).
-- Fonts from [Google Fonts](https://fonts.google.com/).
-- The game was originally created by Sam Kass and Karen Bryla. 
-
-## Extra 
-
-### Links to people we like. 
-
-- [GitHub supporting Ukraine](https://github.blog/2022-03-02-our-response-to-the-war-in-ukraine/).
-- [GitHub repository by iimetra](https://github.com/stop-war-in-ukraine/stop-russia-it). 
-- [GitHub repository by AndrewStetsenko](https://github.com/AndrewStetsenko/Support-Ukraine).
-
-[Link to top](#top) 
+-----
+[Here is the live version](https://movie-db-2000s.herokuapp.com/)
+[Link to top](#top)
