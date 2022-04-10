@@ -8,14 +8,14 @@ The instructions are extremely simply written and require only a minimum of inte
 [Here is the live version](https://movie-db-2000s.herokuapp.com/)
 
 ## Content
- [How to use](#How-to-use)
- [Features](#Features)
- [Data Model](#Data-model)
- [Testing](#Testing)
- [Technologies](#Technologies-used)
- [Deployment](#Deployment)
- [Credits](#Credits)
- [Extra](#Extra)
+ - [How to use](#How-to-use)
+ - [Features](#Features)
+ - [Data Model](#Data-model)
+ - [Testing](#Testing)
+ - [Technologies](#Technologies-used)
+ - [Deployment](#Deployment)
+ - [Credits](#Credits)
+ - [Extra](#Extra)
 
 ## How to use
 - The user is welcomed by a large title and a short welcome message explaining how to use the app. 
